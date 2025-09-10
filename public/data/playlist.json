@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "All Time Best English",
+    "cover": "playlists/english-best.jpg",
+    "songIds": [1] 
+  },
+  {
+    "id": 2,
+    "title": "Bollywood Classics",
+    "cover": "playlists/bollywood.jpg",
+    "songIds": [2]
+  }
+]

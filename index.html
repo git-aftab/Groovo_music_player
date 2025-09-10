@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="/assets/images/GroovoLogo02.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Groovo</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/assets/images/GroovoLogo02.png" alt="" class="logo-img" />
+        <p>Groovo</p>
+        <span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80px"
+            height="80px"
+            viewBox="0 0 48 48"
+            id="b"
+          >
+            <defs>
+              <style>
+                .o {
+                  fill: none;
+                  stroke: #faa128;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                }
+              </style>
+            </defs>
+
+            <g id="c">
+              <line
+                id="d"
+                class="o"
+                x1="13.1159"
+                y1="11.7737"
+                x2="13.1159"
+                y2="36.2263"
+              />
+
+              <line
+                id="e"
+                class="o"
+                x1="8.8039"
+                y1="16.8329"
+                x2="8.8039"
+                y2="31.1671"
+              />
+
+              <line
+                id="f"
+                class="o"
+                x1="4.5"
+                y1="21.4705"
+                x2="4.5"
+                y2="26.5295"
+              />
+
+              <line
+                id="g"
+                class="o"
+                x1="17.4569"
+                y1="16.8329"
+                x2="17.4569"
+                y2="31.1671"
+              />
+
+              <line
+                id="h"
+                class="o"
+                x1="21.9465"
+                y1="21.4705"
+                x2="21.9465"
+                y2="26.5295"
+              />
+            </g>
+
+            <g id="i">
+              <line
+                id="j"
+                class="o"
+                x1="34.6693"
+                y1="11.7737"
+                x2="34.6693"
+                y2="36.2263"
+              />
+
+              <line
+                id="k"
+                class="o"
+                x1="30.3573"
+                y1="16.8329"
+                x2="30.3573"
+                y2="31.1671"
+              />
+
+              <line
+                id="l"
+                class="o"
+                x1="26.0535"
+                y1="21.4705"
+                x2="26.0535"
+                y2="26.5295"
+              />
+
+              <line
+                id="m"
+                class="o"
+                x1="39.0104"
+                y1="16.8329"
+                x2="39.0104"
+                y2="31.1671"
+              />
+
+              <line
+                id="n"
+                class="o"
+                x1="43.5"
+                y1="21.4705"
+                x2="43.5"
+                y2="26.5295"
+              />
+            </g>
+          </svg>
+        </span>
+      </div>
+      <nav>
+        <div id="search-bar">
+          <span id="search-icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search your songs"
+          />
+        </div>
+        <span id="sign-in" class="auth-btn">Sign In</span>
+        <span id="sign-up" class="auth-btn">Sign Up</span>
+      </nav>
+    </header>
+    <main>
+      <aside id="sidebar">
+        <div class="playlist-div">
+          <p class="playlist-head">Your Plalists</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="create-playlist">
+          <p>Create Your First Playlist</p>
+          <!-- <p></p> -->
+          <button>Create Playlist</button>
+        </div>
+      </aside>
+      <aside id="main">
+        <div class="main-head01">
+          <h1>All Time Best Songs</h1>
+          <span class="music-logo01">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34px"
+              height="34px"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 19.5C12 20.8807 10.8807 22 9.5 22C8.11929 22 7 20.8807 7 19.5C7 18.1193 8.11929 17 9.5 17C10.8807 17 12 18.1193 12 19.5Z"
+                stroke="#1C274c"
+                stroke-width="1.5"
+              />
+              <path
+                d="M22 17.5C22 18.8807 20.8807 20 19.5 20C18.1193 20 17 18.8807 17 17.5C17 16.1193 18.1193 15 19.5 15C20.8807 15 22 16.1193 22 17.5Z"
+                stroke="#1C274C"
+                stroke-width="1.5"
+              />
+              <path
+                d="M22 8L12 12"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M14.4556 5.15803L14.7452 5.84987L14.4556 5.15803ZM16.4556 4.32094L16.1661 3.62909L16.4556 4.32094ZM21.1081 3.34059L20.6925 3.96496L20.6925 3.96496L21.1081 3.34059ZM12.75 19.0004V8.84787H11.25V19.0004H12.75ZM22.75 17.1542V8.01078H21.25V17.1542H22.75ZM14.7452 5.84987L16.7452 5.01278L16.1661 3.62909L14.1661 4.46618L14.7452 5.84987ZM22.75 8.01078C22.75 6.67666 22.752 5.59091 22.6304 4.76937C22.5067 3.93328 22.2308 3.18689 21.5236 2.71622L20.6925 3.96496C20.8772 4.08787 21.0473 4.31771 21.1466 4.98889C21.248 5.67462 21.25 6.62717 21.25 8.01078H22.75ZM16.7452 5.01278C18.0215 4.47858 18.901 4.11263 19.5727 3.94145C20.2302 3.77391 20.5079 3.84204 20.6925 3.96496L21.5236 2.71622C20.8164 2.24554 20.0213 2.2792 19.2023 2.48791C18.3975 2.69298 17.3967 3.114 16.1661 3.62909L16.7452 5.01278ZM12.75 8.84787C12.75 8.18634 12.751 7.74991 12.7875 7.41416C12.822 7.09662 12.8823 6.94006 12.9594 6.8243L11.7106 5.99325C11.4527 6.38089 11.3455 6.79864 11.2963 7.25218C11.249 7.68752 11.25 8.21893 11.25 8.84787H12.75ZM14.1661 4.46618C13.5859 4.70901 13.0953 4.91324 12.712 5.12494C12.3126 5.34549 11.9686 5.60562 11.7106 5.99325L12.9594 6.8243C13.0364 6.70855 13.1575 6.59242 13.4371 6.438C13.7328 6.27473 14.135 6.10528 14.7452 5.84987L14.1661 4.46618Z"
+                fill="#1C274C"
+              />
+              <path
+                opacity="0.5"
+                d="M7 11V2C7 4.07107 8.75736 5 10 5M7 10.5C7 11.8807 5.88071 13 4.5 13C3.11929 13 2 11.8807 2 10.5C2 9.11929 3.11929 8 4.5 8C5.88071 8 7 9.11929 7 10.5Z"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="song-cards">
+          <!-- English All bset -->
+          <div class="card">
+            <img src="./assets/images/English01.jpeg" alt="" />
+            <p class="head-para">All Time Best Of English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <!-- Hindi All best  -->
+          <div class="card">
+            <img src="./assets/images/hindi02.jpeg" alt="" />
+            <p class="head-para">All Time Best Of English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <!-- Tamil All best -->
+          <div class="card">
+            <img src="./assets/images/Tamil02.jpeg" alt="" />
+            <p class="head-para">All Time Best Of English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <!-- Urdu All best -->
+          <div class="card">
+            <img src="./assets/images/urdu02.jpeg" alt="" />
+            <p class="head-para">All Time Best Of English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/TelguAllTimeBest.jpeg" alt="" />
+            <p class="head-para">All Time Best Of English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/malyalamAllTime.webp" alt="" />
+            <p class="head-para">All Time Best Of English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/PunjabiAllTime.jpeg" alt="" />
+            <p class="head-para">All Time Best Of English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+        </div>
+        <br />
+        <div class="main-head01">
+          <h1>Currently Trending..</h1>
+          <span class="music-logo01">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34px"
+              height="34px"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 19.5C12 20.8807 10.8807 22 9.5 22C8.11929 22 7 20.8807 7 19.5C7 18.1193 8.11929 17 9.5 17C10.8807 17 12 18.1193 12 19.5Z"
+                stroke="#1C274c"
+                stroke-width="1.5"
+              />
+              <path
+                d="M22 17.5C22 18.8807 20.8807 20 19.5 20C18.1193 20 17 18.8807 17 17.5C17 16.1193 18.1193 15 19.5 15C20.8807 15 22 16.1193 22 17.5Z"
+                stroke="#1C274C"
+                stroke-width="1.5"
+              />
+              <path
+                d="M22 8L12 12"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M14.4556 5.15803L14.7452 5.84987L14.4556 5.15803ZM16.4556 4.32094L16.1661 3.62909L16.4556 4.32094ZM21.1081 3.34059L20.6925 3.96496L20.6925 3.96496L21.1081 3.34059ZM12.75 19.0004V8.84787H11.25V19.0004H12.75ZM22.75 17.1542V8.01078H21.25V17.1542H22.75ZM14.7452 5.84987L16.7452 5.01278L16.1661 3.62909L14.1661 4.46618L14.7452 5.84987ZM22.75 8.01078C22.75 6.67666 22.752 5.59091 22.6304 4.76937C22.5067 3.93328 22.2308 3.18689 21.5236 2.71622L20.6925 3.96496C20.8772 4.08787 21.0473 4.31771 21.1466 4.98889C21.248 5.67462 21.25 6.62717 21.25 8.01078H22.75ZM16.7452 5.01278C18.0215 4.47858 18.901 4.11263 19.5727 3.94145C20.2302 3.77391 20.5079 3.84204 20.6925 3.96496L21.5236 2.71622C20.8164 2.24554 20.0213 2.2792 19.2023 2.48791C18.3975 2.69298 17.3967 3.114 16.1661 3.62909L16.7452 5.01278ZM12.75 8.84787C12.75 8.18634 12.751 7.74991 12.7875 7.41416C12.822 7.09662 12.8823 6.94006 12.9594 6.8243L11.7106 5.99325C11.4527 6.38089 11.3455 6.79864 11.2963 7.25218C11.249 7.68752 11.25 8.21893 11.25 8.84787H12.75ZM14.1661 4.46618C13.5859 4.70901 13.0953 4.91324 12.712 5.12494C12.3126 5.34549 11.9686 5.60562 11.7106 5.99325L12.9594 6.8243C13.0364 6.70855 13.1575 6.59242 13.4371 6.438C13.7328 6.27473 14.135 6.10528 14.7452 5.84987L14.1661 4.46618Z"
+                fill="#1C274C"
+              />
+              <path
+                opacity="0.5"
+                d="M7 11V2C7 4.07107 8.75736 5 10 5M7 10.5C7 11.8807 5.88071 13 4.5 13C3.11929 13 2 11.8807 2 10.5C2 9.11929 3.11929 8 4.5 8C5.88071 8 7 9.11929 7 10.5Z"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="song-cards">
+          <div class="card">
+            <img src="./assets/images/English02.jpeg" alt="" />
+            <p class="head-para">Trending English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/hindi01.jpeg" alt="" />
+            <p class="head-para">Trending English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/Tamil01.jpeg" alt="" />
+            <p class="head-para">Trending English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/urdu01.jpeg" alt="" />
+            <p class="head-para">Trending English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/TelguTrends.jpeg" alt="" />
+            <p class="head-para">Trending English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/malyalamTrends.jpeg" alt="" />
+            <p class="head-para">Trending English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="card">
+            <img src="./assets/images/PunjabiTrends.jpeg" alt="" />
+            <p class="head-para">Trending English</p>
+            <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+        </div>
+        <br />
+        <div class="main-head02">
+          <h1>Artists</h1>
+          <div class="artist-row">
+            <div class="artist-details">
+              <div class="artist-img">
+                <img src="/assets/images/Weekend.jpeg" alt="" />
+              </div>
+              <div class="artist-name">Weeknd</div>
+            </div>
+            <div class="artist-details">
+              <div class="artist-img">
+                <img src="/assets/images/EdSheeran.jpeg" alt="" />
+              </div>
+              <div class="artist-name">Ed Sheeran</div>
+            </div>
+            <div class="artist-details">
+              <div class="artist-img">
+                <img src="/assets/images/Anirudh.jpeg" alt="" />
+              </div>
+              <div class="artist-name">Anirudh</div>
+            </div>
+            <div class="artist-details">
+              <div class="artist-img">
+                <img src="/assets/images/Arijit.jpeg" alt="" />
+              </div>
+              <div class="artist-name">Arijit</div>
+            </div>
+            <div class="artist-details">
+              <div class="artist-img">
+                <img src="/assets/images/Atif.jpeg" alt="" />
+              </div>
+              <div class="artist-name">Atif Aslam</div>
+            </div>
+            <div class="artist-details">
+              <div class="artist-img">
+                <img src="/assets/images/pritam.jpeg" alt="" />
+              </div>
+              <div class="artist-name">Pritam</div>
+            </div>
+            <div class="artist-details">
+              <div class="artist-img">
+                <img src="/assets/images/Aur.jpeg" alt="" />
+              </div>
+              <div class="artist-name">AUR</div>
+            </div>
+            <div class="artist-details">
+              <div class="artist-img">
+                <img src="/assets/images/farhanKhan.jpeg" alt="" />
+              </div>
+              <div class="artist-name">Farhan Khan</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

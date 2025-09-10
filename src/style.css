@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+}
+
+/* Fonts lists */
+@font-face {
+  font-family: MyFont_01;
+  src: url(../fonts/Chicago_Athletic.ttf);
+}
+
+@font-face {
+  font-family: MyFont_02;
+  src: url(/fonts/Chicago_Athletic.tt) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  height: 70px;
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 1px solid #4d4d4d; */
+}
+header p {
+  font-family: MyFont_01;
+  font-size: xx-large;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+.logo-img {
+  height: 80px; /* increase size */
+  width: auto; /* keeps aspect ratio */
+  margin-right: 10px; /* spacing between logo and text */
+  vertical-align: middle; /* aligns with text */
+}
+
+header svg {
+  height: 50px;
+  width: 50px;
+  margin-top: 8px;
+  stroke-width: 3; /* makes lines “bolder” */
+  fill: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+#search-bar {
+  border: 1px solid #414141;
+  border-radius: 2rem;
+  padding: 5px;
+}
+
+#search-input {
+  height: 40px;
+  padding: 0 5px;
+  min-width: 300px;
+  border-radius: 2rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+}
+#search-icon {
+  padding: 0 3px;
+}
+.auth-btn {
+  background-color: #fff;
+  color: black;
+  padding: 15px 15px;
+  border-radius: 2rem;
+}
+
+.auth-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+}
+
+main aside {
+  background-color: #121212;
+  width: 25vw;
+  height: calc(100vh - 70px);
+  margin: 5px;
+  border-radius: 5px;
+  /* background: linear-gradient(180deg, #111111, #1c1c1c); */
+}
+main #main {
+  width: 74vw;
+  background: linear-gradient(135deg, #2a2a2a, #141414, #000000);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+#sidebar {
+  background: linear-gradient(135deg, #222222, #141414, #000000);
+}
+.playlist-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #221713;
+}
+.playlist-head {
+  font-family: MyFont_02, sans-serif;
+  font-size: large;
+}
+
+.create-playlist {
+  height: 20%;
+  width: 100%;
+  padding: 30px;
+  font-family: MyFont_02, sans-serif;
+  /* background:  linear-gradient(135deg, #222222, #141414, #000000); */
+  /* background-color: #000; */
+  border-radius: 5px;
+}
+.create-playlist button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+.create-playlist button:hover {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Cards */
+.main-head01 h1 {
+  margin: 10px 0 0 20px;
+  font-family: MyFont_02, sans-serif;
+}
+
+.main-head01 {
+  display: flex;
+  align-items: flex-end;
+}
+.song-cards {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 0 10px;
+  scrollbar-width: none;
+}
+
+.card {
+  height: 95%;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin: 15px 5px;
+  padding: 10px 5px;
+  background-color: #000;
+  position: relative;
+}
+.card i {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  font-size: 40px;
+  color: rgb(200, 56, 8);
+}
+
+.card img {
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 180px;
+  width: 185px;
+  object-fit: cover;
+}
+
+.card img:hover {
+  width: 200px;
+}
+
+.card .head-para {
+  font-family: MyFont_02, sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.card .head-para:hover {
+  text-decoration: underline;
+  color: #929292;
+  cursor: pointer;
+}
+.subHead-para {
+  font-family: MyFont_02, sans-serif;
+  width: 150px;
+  min-width: 100px;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+.subHead-para:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #929292;
+}
+
+.main-head02 {
+  margin: 20px 0 0 25px;
+}
+.main-head02 h1 {
+  font-family: MyFont_02, sans-serif;
+}
+
+.artist-row{
+  display: flex;
+  gap: 0 20px;
+  padding: 0 0 20px 0;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.artist-details:hover{
+  cursor: pointer;
+}
+
+.artist-img img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px 0px;
+}
+.artist-name{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+

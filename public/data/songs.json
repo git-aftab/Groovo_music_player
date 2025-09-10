@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Perfect",
+    "duration": "4:23",
+    "artistId": 1,
+    "language": "English",
+    "cover": "covers/perfect.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  }
+]

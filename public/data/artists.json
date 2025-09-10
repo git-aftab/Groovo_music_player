@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Ed Sheeran",
+    "image": "artists/ed-sheeran.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Arijit Singh",
+    "image": "artists/arijit.jpg"
+  }
+]
