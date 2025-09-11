@@ -1,12 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Ed Sheeran",
-    "image": "artists/ed-sheeran.jpg"
+    "name": "Weeknd",
+    "image": "../assets/images/weekend.jpeg"
   },
   {
     "id": 2,
-    "name": "Arijit Singh",
-    "image": "artists/arijit.jpg"
+    "name": "Ed Sheeran",
+    "image": "../assets/images/EdSheeran.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Anirudh",
+    "image":"../assets/images/Anirudh.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Arijit",
+    "image":"../assets/images/Arijit.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Atif Aslam",
+    "image":"../assets/images/Atif.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Pritam",
+    "image":"../assets/images/pritam.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "AUR",
+    "image":"../assets/images/Aur.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Farhan Khan",
+    "image":"../assets/images/farhanKhan.jpeg"
   }
 ]
