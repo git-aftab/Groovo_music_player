@@ -1,14 +1,86 @@
 [
   {
     "id": 1,
-    "title": "All Time Best English",
-    "cover": "playlists/english-best.jpg",
+    "title": "All Time Best Of English",
+    "cover": "../assets/images/English01.jpeg",
     "songIds": [1] 
   },
   {
     "id": 2,
     "title": "Bollywood Classics",
-    "cover": "playlists/bollywood.jpg",
+    "cover": "../assets/images/hindi02.jpeg",
     "songIds": [2]
+  },
+  {
+    "id": 3,
+    "title": "All Time Best Of Tamil",
+    "cover": "../assets/images/Tamil02.jpeg",
+    "songIds": [3]
+  },
+  {
+    "id": 4,
+    "title": "All Time Best Of Urdu",
+    "cover": "../assets/images/urdu02.jpeg",
+    "songIds": [4]
+  },
+  {
+    "id": 5,
+    "title": "All Time Best Of Telugu",
+    "cover": "../assets/images/TeluguAllTimeBest.jpeg",
+    "songIds": [5]
+  },
+  {
+    "id": 6,
+    "title": "All Time Best Of Malyalam",
+    "cover": "../assets/images/malyalamAllTime.jpeg",
+    "songIds": [6]
+  },
+  {
+    "id": 7,
+    "title": "All Time Best Of Punjabi",
+    "cover": "../assets/images/PunjabiAllTime.jpeg",
+    "songIds": [7]
+  },
+  {
+    "id": 8,
+    "title": "Trending English",
+    "cover": "../assets/images/English02.jpeg",
+    "songIds": [8]
+  },
+  {
+    "id": 9,
+    "title": "Trending Hindi",
+    "cover": "../assets/images/Hindi01.jpeg",
+    "songIds": [9]
+  },
+  {
+    "id": 10,
+    "title": "Trending Tamil",
+    "cover": "../assets/images/Tamil01.jpeg",
+    "songIds": [10]
+  },
+  {
+    "id": 11,
+    "title": "Trending Urdu",
+    "cover": "../assets/images/urdu01.jpeg",
+    "songIds": [11]
+  },
+  {
+    "id": 12,
+    "title": "Trending Telugu",
+    "cover": "../assets/images/TeluguTrends.jpeg",
+    "songIds": [12]
+  },
+  {
+    "id": 13,
+    "title": "Trending Malyalam",
+    "cover": "../assets/images/malyalamTrends.jpeg",
+    "songIds": [13]
+  },
+  {
+    "id": 14,
+    "title": "Trending Punjabi",
+    "cover": "../assets/images/PunjabiTrends.jpeg",
+    "songIds": [14]
   }
 ]
