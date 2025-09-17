@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: sans-serif; */
+  font-family: sans-serif;
+  /* color: #C1BDAC; */
 }
 
 /* Fonts lists */
@@ -19,7 +20,7 @@
 }
 
 /* Utils */
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -74,7 +75,7 @@ nav {
 }
 
 #search-bar {
-  border: 1px solid #414141;
+  border: 1px solid #ff3c00;
   border-radius: 2rem;
   padding: 5px;
 }
@@ -101,8 +102,8 @@ nav {
 
 .auth-btn:hover {
   background-color: #000;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #ff3c00;
+  border: 1px solid #ff3c00;
   cursor: pointer;
 }
 
@@ -120,6 +121,7 @@ main aside {
 }
 main #main {
   width: 74vw;
+  height: calc(100vh - 165px);
   background: linear-gradient(135deg, #2a2a2a, #141414, #000000);
   overflow-y: scroll;
   scrollbar-width: none;
@@ -128,6 +130,7 @@ main #main {
 
 #sidebar {
   background: linear-gradient(135deg, #222222, #141414, #000000);
+  position: relative;
 }
 .playlist-div {
   display: flex;
@@ -159,9 +162,17 @@ main #main {
 }
 .create-playlist button:hover {
   background-color: #000;
-  border: 1px solid #fff;
+  border: 1px solid #ff3c00;
   color: #fff;
   cursor: pointer;
+  color: #ff3c00;
+}
+
+#back-button{
+  position: absolute;
+  bottom: 200px;
+  left: 30px;
+
 }
 
 /* Cards */
@@ -202,7 +213,7 @@ main #main {
   top: 45%;
   right: 20px;
   font-size: 40px;
-  color: rgb(200, 56, 8);
+  color: #ff3c00;
 }
 
 .card img {
@@ -224,7 +235,7 @@ main #main {
 }
 .card .head-para:hover {
   text-decoration: underline;
-  color: #929292;
+  color: #ff3c00;
   cursor: pointer;
 }
 .subHead-para {
@@ -238,7 +249,7 @@ main #main {
 .subHead-para:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: #929292;
+  color: #ff3c00;
 }
 
 .main-head02 {
@@ -248,14 +259,14 @@ main #main {
   font-family: MyFont_02, sans-serif;
 }
 
-.artist-row{
+.artist-row {
   display: flex;
   gap: 0 20px;
   padding: 0 0 20px 0;
   overflow-x: scroll;
   scrollbar-width: none;
 }
-.artist-details:hover{
+.artist-details:hover {
   cursor: pointer;
 }
 
@@ -266,7 +277,7 @@ main #main {
   border-radius: 50%;
   margin: 20px 0px;
 }
-.artist-name{
+.artist-name {
   font-family: sans-serif;
   text-align: center;
   font-size: large;
@@ -274,19 +285,19 @@ main #main {
 }
 
 /* Song Page */
-.song-page{
+.song-page {
   width: 74vw;
   height: 100vh;
 }
 
-.song-banner{
+.song-banner {
   height: 280px;
   width: 73vw;
   background-color: #d83016;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.play-wrapper{
+.play-wrapper {
   height: 80px;
   width: 73vw;
   background-color: #ce4213;
@@ -294,51 +305,50 @@ main #main {
   border-bottom-left-radius: 5px;
 }
 
-.banner-song-card{
+.banner-song-card {
   height: 220px;
   width: 220px;
   background-color: #000;
   margin: 30px 0 0 20px;
   border-radius: 5px;
-  box-shadow: rgba(red, green, blue, alpha); 
+  box-shadow: rgba(red, green, blue, alpha);
 }
-.banner-song-card img{
+.banner-song-card img {
   height: 100%;
   width: 100%;
   border-radius: 5px;
 }
 
-.song-banner-wrapper{
+.song-banner-wrapper {
   display: flex;
-  align-items:end;
+  align-items: end;
   gap: 20px;
 }
 
-.banner-song-dets{
-  font-family: MyFont_02,sans-serif;
+.banner-song-dets {
+  font-family: MyFont_02, sans-serif;
 }
-.banner-song-dets h1{
+.banner-song-dets h1 {
   font-size: 90px;
 }
 
-.song-artist-dets{
+.song-artist-dets {
   /* margin-top: px; */
   display: flex;
   align-items: center;
-  gap: 0 20px ;
+  gap: 0 20px;
 }
-.song-artist-dets img{
+.song-artist-dets img {
   height: 28px;
   width: 28px;
   border-radius: 50%;
-
 }
-.play-wrapper{
+.play-wrapper {
   display: flex;
   align-items: center;
 }
 
-.play-wrapper p{
+.play-wrapper p {
   padding: 20px;
   border-radius: 50%;
   background-color: #000;
@@ -347,3 +357,138 @@ main #main {
   cursor: pointer;
 }
 
+.play-area {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100vw;
+  background-color: #ff3c00;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: #000;
+}
+.played-song-dets {
+  padding: 0 0 0 50px;
+  gap: 10px;
+  display: flex;
+  /* flex-direction: row; */
+}
+.details-of-played {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.played-song-img img {
+  height: 90px;
+  width: 90px;
+  border-radius: .5rem;
+}
+
+.song-player-funcs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.s-time{
+  font-size: 5px;
+}
+.song-player-funcs span {
+  margin: 40px;
+  font-size: 24px;
+  /* color: #fff; */
+  cursor: pointer;
+}
+.song-player-funcs input {
+  width: 400px;
+  height: 5px;
+}
+
+.player-time-mtr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.queue-icon{
+  font-size: 24px;
+  padding: 24px;
+  cursor: pointer;
+}
+.volume{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.volume input{
+  width: 300px;
+}
+
+/* base slider */
+.seek {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px; /* overall hit area; visual track set below */
+  background: transparent;
+  cursor: pointer;
+}
+
+/* WebKit/Blink track */
+.seek::-webkit-slider-runnable-track {
+  height: 4px;
+  /* background: linear-gradient(to right, #a6b7bc 0 var(--fill, 25%), #4b4b4b var(--fill, 25%) 100%); */
+  background-color: #000;
+  border-radius: 9999px;
+}
+
+.seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  margin-top: -4px; /* centers on 4px track */
+  border-radius: 50%;
+  background: #a6b7bc; /* light gray like the reference */
+  border: 0;
+}
+
+.songList-header,
+.songList-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 1fr 1fr; /* fixed + equal */
+  padding: 20px 20px;
+  align-items: center;
+}
+
+.songList-header {
+  font-size: large;
+  font-weight: bold;
+  background: #111;   /* header bg */
+  color: #fff;
+}
+
+.songList-row {
+  border-bottom: 1px solid #333;
+  color: #ddd;
+}
+
+.songList-row:hover {
+  background: #222;   /* hover effect */
+}
+
+#song-title-in-banner{
+  font-size: clamp(14px, 5vw, 88px); 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

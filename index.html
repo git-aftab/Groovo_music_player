@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="/assets/images/GroovoLogo02.png" />
+    <link rel="icon" type="image" href="/assets/images/GroovoLogo03.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
     <link
@@ -17,7 +17,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="/assets/images/GroovoLogo02.png" alt="" class="logo-img" />
+        <img src="/assets/images/GroovoLogo03.png" alt="" class="logo-img" />
         <p>Groovo</p>
         <span
           ><svg
@@ -31,7 +31,7 @@
               <style>
                 .o {
                   fill: none;
-                  stroke: #faa128;
+                  stroke: #ff3c00;
                   stroke-linecap: round;
                   stroke-linejoin: round;
                 }
@@ -158,7 +158,10 @@
         <div class="create-playlist">
           <p>Create Your First Playlist</p>
           <!-- <p></p> -->
-          <button>Create Playlist</button>
+          <button id="create-playlist">Create Playlist</button>
+
+          <!-- Back Button -->
+           <button id="back-button" class="hidden">Go Back</button>
         </div>
       </aside>
       <aside id="main" class="hidde">
@@ -170,32 +173,32 @@
               width="34px"
               height="34px"
               viewBox="0 0 24 24"
-              fill="none"
+              fill="red"
             >
               <path
                 d="M12 19.5C12 20.8807 10.8807 22 9.5 22C8.11929 22 7 20.8807 7 19.5C7 18.1193 8.11929 17 9.5 17C10.8807 17 12 18.1193 12 19.5Z"
-                stroke="#1C274c"
+                stroke="red"
                 stroke-width="1.5"
               />
               <path
                 d="M22 17.5C22 18.8807 20.8807 20 19.5 20C18.1193 20 17 18.8807 17 17.5C17 16.1193 18.1193 15 19.5 15C20.8807 15 22 16.1193 22 17.5Z"
-                stroke="#1C274C"
+                stroke="red"
                 stroke-width="1.5"
               />
               <path
                 d="M22 8L12 12"
-                stroke="#1C274C"
+                stroke="red"
                 stroke-width="1.5"
                 stroke-linecap="round"
               />
               <path
                 d="M14.4556 5.15803L14.7452 5.84987L14.4556 5.15803ZM16.4556 4.32094L16.1661 3.62909L16.4556 4.32094ZM21.1081 3.34059L20.6925 3.96496L20.6925 3.96496L21.1081 3.34059ZM12.75 19.0004V8.84787H11.25V19.0004H12.75ZM22.75 17.1542V8.01078H21.25V17.1542H22.75ZM14.7452 5.84987L16.7452 5.01278L16.1661 3.62909L14.1661 4.46618L14.7452 5.84987ZM22.75 8.01078C22.75 6.67666 22.752 5.59091 22.6304 4.76937C22.5067 3.93328 22.2308 3.18689 21.5236 2.71622L20.6925 3.96496C20.8772 4.08787 21.0473 4.31771 21.1466 4.98889C21.248 5.67462 21.25 6.62717 21.25 8.01078H22.75ZM16.7452 5.01278C18.0215 4.47858 18.901 4.11263 19.5727 3.94145C20.2302 3.77391 20.5079 3.84204 20.6925 3.96496L21.5236 2.71622C20.8164 2.24554 20.0213 2.2792 19.2023 2.48791C18.3975 2.69298 17.3967 3.114 16.1661 3.62909L16.7452 5.01278ZM12.75 8.84787C12.75 8.18634 12.751 7.74991 12.7875 7.41416C12.822 7.09662 12.8823 6.94006 12.9594 6.8243L11.7106 5.99325C11.4527 6.38089 11.3455 6.79864 11.2963 7.25218C11.249 7.68752 11.25 8.21893 11.25 8.84787H12.75ZM14.1661 4.46618C13.5859 4.70901 13.0953 4.91324 12.712 5.12494C12.3126 5.34549 11.9686 5.60562 11.7106 5.99325L12.9594 6.8243C13.0364 6.70855 13.1575 6.59242 13.4371 6.438C13.7328 6.27473 14.135 6.10528 14.7452 5.84987L14.1661 4.46618Z"
-                fill="#1C274C"
+                fill="red"
               />
               <path
                 opacity="0.5"
                 d="M7 11V2C7 4.07107 8.75736 5 10 5M7 10.5C7 11.8807 5.88071 13 4.5 13C3.11929 13 2 11.8807 2 10.5C2 9.11929 3.11929 8 4.5 8C5.88071 8 7 9.11929 7 10.5Z"
-                stroke="#1C274C"
+                stroke="red"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -222,14 +225,14 @@
           <div class="card">
             <img src="./assets/images/Tamil02.jpeg" alt="" />
             <p class="head-para">All Time Best Of Tamil</p>
-            <p class="subHead-para">Anirudh, Yuvan, <br>Sai Abhyankkar...</p>
+            <p class="subHead-para">Anirudh, Yuvan, <br />Sai Abhyankkar...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
           <!-- Urdu All best -->
           <div class="card">
             <img src="./assets/images/urdu02.jpeg" alt="" />
             <p class="head-para">All Time Best Of Urdu</p>
-            <p class="subHead-para">AUR, Talha, <br>Farhan Khan...</p>
+            <p class="subHead-para">AUR, Talha, <br />Farhan Khan...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
           <div class="card">
@@ -247,7 +250,7 @@
           <div class="card">
             <img src="./assets/images/PunjabiAllTime.jpeg" alt="" />
             <p class="head-para">All Time Best Of Punjabi</p>
-            <p class="subHead-para">shub, Ap Dhillon, <br>Guru Randhawa</p>
+            <p class="subHead-para">shub, Ap Dhillon, <br />Guru Randhawa</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
         </div>
@@ -261,32 +264,32 @@
               width="34px"
               height="34px"
               viewBox="0 0 24 24"
-              fill="none"
+              fill="red"
             >
               <path
                 d="M12 19.5C12 20.8807 10.8807 22 9.5 22C8.11929 22 7 20.8807 7 19.5C7 18.1193 8.11929 17 9.5 17C10.8807 17 12 18.1193 12 19.5Z"
-                stroke="#1C274c"
+                stroke="red"
                 stroke-width="1.5"
               />
               <path
                 d="M22 17.5C22 18.8807 20.8807 20 19.5 20C18.1193 20 17 18.8807 17 17.5C17 16.1193 18.1193 15 19.5 15C20.8807 15 22 16.1193 22 17.5Z"
-                stroke="#1C274C"
+                stroke="red"
                 stroke-width="1.5"
               />
               <path
                 d="M22 8L12 12"
-                stroke="#1C274C"
+                stroke="red"
                 stroke-width="1.5"
                 stroke-linecap="round"
               />
               <path
                 d="M14.4556 5.15803L14.7452 5.84987L14.4556 5.15803ZM16.4556 4.32094L16.1661 3.62909L16.4556 4.32094ZM21.1081 3.34059L20.6925 3.96496L20.6925 3.96496L21.1081 3.34059ZM12.75 19.0004V8.84787H11.25V19.0004H12.75ZM22.75 17.1542V8.01078H21.25V17.1542H22.75ZM14.7452 5.84987L16.7452 5.01278L16.1661 3.62909L14.1661 4.46618L14.7452 5.84987ZM22.75 8.01078C22.75 6.67666 22.752 5.59091 22.6304 4.76937C22.5067 3.93328 22.2308 3.18689 21.5236 2.71622L20.6925 3.96496C20.8772 4.08787 21.0473 4.31771 21.1466 4.98889C21.248 5.67462 21.25 6.62717 21.25 8.01078H22.75ZM16.7452 5.01278C18.0215 4.47858 18.901 4.11263 19.5727 3.94145C20.2302 3.77391 20.5079 3.84204 20.6925 3.96496L21.5236 2.71622C20.8164 2.24554 20.0213 2.2792 19.2023 2.48791C18.3975 2.69298 17.3967 3.114 16.1661 3.62909L16.7452 5.01278ZM12.75 8.84787C12.75 8.18634 12.751 7.74991 12.7875 7.41416C12.822 7.09662 12.8823 6.94006 12.9594 6.8243L11.7106 5.99325C11.4527 6.38089 11.3455 6.79864 11.2963 7.25218C11.249 7.68752 11.25 8.21893 11.25 8.84787H12.75ZM14.1661 4.46618C13.5859 4.70901 13.0953 4.91324 12.712 5.12494C12.3126 5.34549 11.9686 5.60562 11.7106 5.99325L12.9594 6.8243C13.0364 6.70855 13.1575 6.59242 13.4371 6.438C13.7328 6.27473 14.135 6.10528 14.7452 5.84987L14.1661 4.46618Z"
-                fill="#1C274C"
+                fill="red"
               />
               <path
                 opacity="0.5"
                 d="M7 11V2C7 4.07107 8.75736 5 10 5M7 10.5C7 11.8807 5.88071 13 4.5 13C3.11929 13 2 11.8807 2 10.5C2 9.11929 3.11929 8 4.5 8C5.88071 8 7 9.11929 7 10.5Z"
-                stroke="#1C274C"
+                stroke="red"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -310,7 +313,7 @@
           <div class="card">
             <img src="./assets/images/Tamil01.jpeg" alt="" />
             <p class="head-para">Trending Tamil</p>
-            <p class="subHead-para">Anirudh, </p>
+            <p class="subHead-para">Anirudh,</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
           <div class="card">
@@ -395,19 +398,27 @@
       </aside>
       <!-- .............................................................................. -->
       <!-- Plalyist or song page -->
-      <aside class="song-page hidden">
+      <aside class="song-page hidden" id="song-banner-page">
         <div class="song-banner">
           <div class="song-banner-wrapper">
             <div class="banner-song-card">
-              <img src="/assets/images/pritam.jpeg" alt="song" />
+              <img
+                id="songOrPlaylist-img"
+                src="public/assets/images/findingHer.jpeg"
+                alt="song"
+              />
             </div>
             <div class="banner-song-dets">
               <h4>Song</h4>
-              <h1>Name</h1>
+              <h1 id="song-title-in-banner">Finding Her</h1>
               <div class="song-artist-dets">
-                <img src="/assets/images/pritam.jpeg" alt="artist">
-                <h4>Artist</h4>
-                <h4>03:56</h4>
+                <img
+                  id="song-artist-img"
+                  src="public/assets/images/findingHer.jpeg"
+                  alt="artist"
+                />
+                <h4 id="artist-name-banner">kushagra</h4>
+                <h4 id="song-duration">03:37</h4>
               </div>
             </div>
           </div>
@@ -415,7 +426,74 @@
         <div class="play-wrapper">
           <p><i class="fa-solid fa-play"></i></p>
         </div>
+
+        <section id="song-lists">
+        <!-- Header -->
+        <div class="songList-header">
+          <div class="title">#S.NO.</div>
+          <div class="title">#Title</div>
+          <div class="title">#Artist/Album</div>
+          <div class="title">#Duration</div>
+        </div>
+
+        <!-- Song Rows -->
+        <div class="songList-row">
+          <div class="cell">1</div>
+          <div class="cell">Finding Her</div>
+          <div class="cell">Kushagra</div>
+          <div class="cell">03:37</div>
+        </div>
+
+        <div class="songList-row">
+          <div class="cell">2</div>
+          <div class="cell">Sky Dreams</div>
+          <div class="cell">Aria</div>
+          <div class="cell">04:12</div>
+        </div>
+        </section>
+
       </aside>
+
+      <!-- Play Area    ________________________________________ -->
+      <div class="play-area">
+        <div class="played-song-dets">
+          <div class="played-song-img">
+            <img src="./assets/images/Tamil01.jpeg" alt="" />
+          </div>
+          <div class="details-of-played">
+            <h3>Song Name</h3>
+            <p>Artist</p>
+          </div>
+        </div>
+        <div class="song-player-funcs">
+          <div>
+            <span><i class="fa-solid fa-backward-step"></i></span>
+            <span class=""><i class="fa-solid fa-play"></i></span>
+            <span><i class="fa-solid fa-forward-step"></i></span>
+          </div>
+          <!-- <div class="player-time-mtr">
+            <span class="s-time">00:00</span>
+            <input class="seek" type="range" min="0" max="240" step="1" value="60" />
+            <span class="s-time">3:53</span>
+          </div> -->
+        </div>
+        <div>
+          <div class="volume">
+            <div class="queue-icon"><i class="fa-solid fa-database"></i></div>
+            <i class="fa-solid fa-volume-high"></i>
+            <span
+              ><input
+                class="seek"
+                type="range"
+                min="0"
+                max="240"
+                step="1"
+                value="60"
+                style="width: 100px"
+            /></span>
+          </div>
+        </div>
+      </div>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>

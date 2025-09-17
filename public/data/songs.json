@@ -3,9 +3,161 @@
     "id": 1,
     "title": "Perfect",
     "duration": "4:23",
-    "artistId": 1,
+    "artistId": 2,
     "language": "English",
     "cover": "covers/perfect.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Blinding Lights",
+    "duration": "4:22",
+    "artistId": 1,
+    "language": "English",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Shape of you",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "English",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Star Boy",
+    "duration": "4:22",
+    "artistId": 1,
+    "language": "English",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Die With a Smile",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "English",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tum Hi Ho",
+    "duration": "4:22",
+    "artistId": 2,
+    "language": "Hindi",
+    "cover": "covers/tum-hi-ho.jpg"
   },
   {
     "id": 2,
