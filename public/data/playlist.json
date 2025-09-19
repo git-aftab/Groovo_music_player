@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "title": "All Time Best Of English",
+    "title": "Best Of English",
     "cover": "../assets/images/English01.jpeg",
     "songIds": [1] 
   },
   {
     "id": 2,
     "title": "Bollywood Classics",
-    "cover": "../assets/images/hindi02.jpeg",
+    "cover": "../assets/images/Bollywood_Classic.jpg",
     "songIds": [2]
   },
   {

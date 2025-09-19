@@ -161,7 +161,7 @@
           <button id="create-playlist">Create Playlist</button>
 
           <!-- Back Button -->
-           <button id="back-button" class="hidden">Go Back</button>
+          <button id="back-button" class="hidden">Go Back</button>
         </div>
       </aside>
       <aside id="main" class="hidde">
@@ -208,46 +208,46 @@
         </div>
         <div class="song-cards">
           <!-- English All bset -->
-          <div class="card">
+          <div class="card" data-id="1">
             <img src="./assets/images/English01.jpeg" alt="" />
-            <p class="head-para">All Time Best Of English</p>
+            <p class="head-para">Best Of English</p>
             <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
           <!-- Hindi All best  -->
-          <div class="card">
-            <img src="./assets/images/hindi02.jpeg" alt="" />
+          <div class="card" data-id="2">
+            <img src="./assets/images/Bollywood_Classic.jpg" alt="" />
             <p class="head-para">Bollywood Classics</p>
             <p class="subHead-para">Arijit, Pritam, Atif, Sonu, Vishal...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
           <!-- Tamil All best -->
-          <div class="card">
+          <div class="card" data-id="3">
             <img src="./assets/images/Tamil02.jpeg" alt="" />
             <p class="head-para">All Time Best Of Tamil</p>
             <p class="subHead-para">Anirudh, Yuvan, <br />Sai Abhyankkar...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
           <!-- Urdu All best -->
-          <div class="card">
+          <div class="card" data-id="4">
             <img src="./assets/images/urdu02.jpeg" alt="" />
             <p class="head-para">All Time Best Of Urdu</p>
             <p class="subHead-para">AUR, Talha, <br />Farhan Khan...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="5">
             <img src="./assets/images/TelguAllTimeBest.jpeg" alt="" />
             <p class="head-para">All Time Best Of Telugu</p>
             <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="6">
             <img src="./assets/images/malyalamAllTime.webp" alt="" />
             <p class="head-para">All Time Best Of Malyalam</p>
             <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="7">
             <img src="./assets/images/PunjabiAllTime.jpeg" alt="" />
             <p class="head-para">All Time Best Of Punjabi</p>
             <p class="subHead-para">shub, Ap Dhillon, <br />Guru Randhawa</p>
@@ -298,43 +298,43 @@
           </span>
         </div>
         <div class="song-cards">
-          <div class="card">
+          <div class="card" data-id="8">
             <img src="./assets/images/English02.jpeg" alt="" />
             <p class="head-para">Trending English</p>
             <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="9">
             <img src="public/assets/images/hindi01.jpeg" alt="" />
             <p class="head-para">Trending Hindi</p>
             <p class="subHead-para">kushagra, Sachet, Tanisk, Faheem...</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="10">
             <img src="./assets/images/Tamil01.jpeg" alt="" />
             <p class="head-para">Trending Tamil</p>
             <p class="subHead-para">Anirudh,</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="11">
             <img src="./assets/images/urdu01.jpeg" alt="" />
             <p class="head-para">Trending Urdu</p>
             <p class="subHead-para">AUR, Talha, Taimur....</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="12">
             <img src="./assets/images/TelguTrends.jpeg" alt="" />
             <p class="head-para">Trending Telugu</p>
             <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="13">
             <img src="./assets/images/malyalamTrends.jpeg" alt="" />
             <p class="head-para">Trending Malyalam</p>
             <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
             <i class="fa-solid fa-circle-play"></i>
           </div>
-          <div class="card">
+          <div class="card" data-id="14">
             <img src="./assets/images/PunjabiTrends.jpeg" alt="" />
             <p class="head-para">Trending Punjabi</p>
             <p class="subHead-para">Ed Sheeran, Lady Gaga, Bruno Mars</p>
@@ -427,31 +427,30 @@
           <p><i class="fa-solid fa-play"></i></p>
         </div>
 
-        <section id="song-lists">
-        <!-- Header -->
         <div class="songList-header">
           <div class="title">#S.NO.</div>
           <div class="title">#Title</div>
           <div class="title">#Artist/Album</div>
           <div class="title">#Duration</div>
         </div>
+        <section id="song-lists">
+          <!-- Header -->
 
-        <!-- Song Rows -->
-        <div class="songList-row">
-          <div class="cell">1</div>
-          <div class="cell">Finding Her</div>
-          <div class="cell">Kushagra</div>
-          <div class="cell">03:37</div>
-        </div>
+          <!-- Song Rows -->
+          <div class="songList-row">
+            <div class="cell">1</div>
+            <div class="cell">Finding Her</div>
+            <div class="cell">Kushagra</div>
+            <div class="cell">03:37</div>
+          </div>
 
-        <div class="songList-row">
-          <div class="cell">2</div>
-          <div class="cell">Sky Dreams</div>
-          <div class="cell">Aria</div>
-          <div class="cell">04:12</div>
-        </div>
+          <div class="songList-row">
+            <div class="cell">2</div>
+            <div class="cell">Sky Dreams</div>
+            <div class="cell">Aria</div>
+            <div class="cell">04:12</div>
+          </div>
         </section>
-
       </aside>
 
       <!-- Play Area    ________________________________________ -->

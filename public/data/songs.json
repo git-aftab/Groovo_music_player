@@ -1,170 +1,112 @@
 [
   {
     "id": 1,
+    "playListId": 1,
     "title": "Perfect",
-    "duration": "4:23",
-    "artistId": 2,
     "language": "English",
+    "artistId": 1,
+    "artistName": "Ed Sheeran",
+    "duration": "4:23",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/perfect.jpg"
   },
   {
     "id": 2,
+    "playListId": 1,
     "title": "Blinding Lights",
-    "duration": "4:22",
-    "artistId": 1,
     "language": "English",
+    "artistId": 1,
+    "artistName": "Weeknd",
+    "duration": "4:22",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {
     "id": 3,
+    "playListId": 1,
     "title": "Shape of you",
-    "duration": "4:22",
-    "artistId": 2,
     "language": "English",
+    "artistId": 2,
+    "artistName": "Ed Sheeran",
+    "duration": "4:22",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {
     "id": 4,
+    "playListId": 1,
     "title": "Star Boy",
-    "duration": "4:22",
-    "artistId": 1,
     "language": "English",
+    "artistId": 1,
+    "artistName": "Weeknd",
+    "duration": "4:22",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {
     "id": 5,
+    "playListId": 1,
     "title": "Die With a Smile",
-    "duration": "4:22",
-    "artistId": 2,
     "language": "English",
+    "artistId": 2,
+    "artistName": "Lady Gaga, Bruno Mars",
+    "duration": "4:22",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {
-    "id": 6,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
+    "id": 1,
+    "playListId": 2,
+    "title": "Aadat Unplugged",
+    "language": "Hind",
     "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
+    "artistName": "Atif Aslam",
     "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {
     "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
+    "playListId": 2,
+    "title": "Ae Dil hai Muskil",
     "language": "Hindi",
+    "artistId": 2,
+    "artistName": "Arijit Singh",
+    "duration": "4:22",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
+    "id": 3,
+    "playListId": 2,
+    "title": "Agar Tum Saath Ho",
     "language": "Hindi",
+    "artistId": 2,
+    "artistName": "Arijit Singh, Shreya Ghosal",
+    "duration": "4:22",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
+    "id": 4,
+    "playListId": 2,
+    "title": "Ajib Dastan",
+    "language": "English",
     "artistId": 2,
-    "language": "Hindi",
+    "artistName": "Arijit Singh",
+    "duration": "4:22",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
+    "id": 5,
+    "playListId": 2,
+    "title": "Dil Hai Ki Manta nhi",
+    "language": "English",
     "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
+    "artistName": "Lady Gaga, Bruno Mars",
     "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
-    "cover": "covers/tum-hi-ho.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Tum Hi Ho",
-    "duration": "4:22",
-    "artistId": 2,
-    "language": "Hindi",
+    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   }
 ]
