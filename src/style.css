@@ -81,7 +81,7 @@ nav {
 }
 
 #search-input {
-  height: 40px;
+  height: 30px;
   padding: 0 5px;
   min-width: 300px;
   border-radius: 2rem;
@@ -91,12 +91,12 @@ nav {
   color: #fff;
 }
 #search-icon {
-  padding: 0 3px;
+  padding: 0 3px 0 4px;
 }
 .auth-btn {
   background-color: #fff;
   color: black;
-  padding: 15px 15px;
+  padding: 10px 15px;
   border-radius: 2rem;
 }
 
@@ -402,8 +402,8 @@ main #main {
   font-size: 5px;
 }
 .song-player-funcs span {
-  margin: 40px;
-  font-size: 24px;
+  margin: 5px 40px ;
+  font-size: 1.1rem;
   /* color: #fff; */
   cursor: pointer;
 }
