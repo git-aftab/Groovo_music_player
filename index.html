@@ -457,22 +457,24 @@
       <div class="play-area">
         <div class="played-song-dets">
           <div class="played-song-img">
-            <img src="./assets/images/Tamil01.jpeg" alt="" />
+            <span class="loader hidden"></span>
+            <img id="played-song-img" src="./assets/images/Tamil01.jpeg" alt="played-song" />
           </div>
           <div class="details-of-played">
-            <h3>Song Name</h3>
-            <p>Artist</p>
+            <h3 id="played-song-name">Song Name</h3>
+            <p id="Played-song-artist">Artist</p>
           </div>
         </div>
         <div class="song-player-funcs">
           <div>
-            <span><i class="fa-solid fa-backward-step"></i></span>
-            <span class=""><i class="fa-solid fa-play"></i></span>
-            <span><i class="fa-solid fa-forward-step"></i></span>
+            <span id="previous-song"><i class="fa-solid fa-backward-step"></i></span>
+            <span class="play-btn" id="play-btn"><i class="fa-solid fa-play"></i></span>
+            <span class="play-btn hidden" id="pause-btn"><i class="fa-solid fa-pause"></i></span>
+            <span id="next-song"><i class="fa-solid fa-forward-step"></i></span>
           </div>
           <div class="player-time-mtr">
             <span class="s-time">00:00</span>
-            <input class="seek" type="range" min="0" max="240" step="1" value="60" />
+            <input class="seek" type="range" id="progress-rnage" min="0" max="100" step="1" value="0" />
             <span class="s-time">00:00</span>
             <audio id="audio-player"></audio>
           </div>
