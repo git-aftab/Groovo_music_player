@@ -289,10 +289,10 @@ function playNextSong() {
   console.log("next Position: ", nextPosition);
   console.log("After Calculation: ", nextPosition);
 
-  // const nextSong = playlistSongs[nextPosition];
-  // console.log("next song: ", nextSong.title);
+  const nextSong = playlistSongs[nextPosition];
+  console.log("next song: ", nextSong.title);
 
-  // playSong(nextSong.id);
+  playSong(nextSong.id);
 }
 
 function playPreviousSong() {
