@@ -74,7 +74,7 @@ const songData = await res.json();
 // console.log(songData);
 
 async function renderSongs(playListID) {
-  console.log("RENDERING GOES HERE--------------");
+  // console.log("RENDERING GOES HERE--------------");
   const playListSong = songData.filter(
     (song) => song.playListId === playListID
   );
@@ -121,7 +121,7 @@ function setCurrentSong(songId) {
   currentSongData = songData[currentSongIndex];
 
   console.log("current song set to ", currentSongData.title);
-  console.log("song index ", currentSongData.id);
+  // console.log("song index ", currentSongData.id);
 }
 
 function stopCurrentSong() {
@@ -130,23 +130,37 @@ function stopCurrentSong() {
     currentAudio.currentTime = 0;
     currentAudio = null;
     isPlaying = false;
-    console.log("previous song stopped");
+    // console.log("previous song stopped");
   }
 }
 
-function getCurrentPlaylistInfo(){
-  if(!currentSongData) return null;
-  const currentPlaylist  = currentSongData.playListId;
-  const playlistSongs = songData.filter(song = song.id === song.playListId)
-  const currentSongPosition = playlistSongs.findIndex(song=> song.id === currentSongId)
+function getCurrentPlaylistInfo() {
+  console.log("Clicked next/prev btn, running getCurrentPlaylistInfo fun()");
+  if (!currentSongData) return null;
+  const currentPlaylist = currentSongData.playListId;
+  // console.log("Current playlist: ",currentPlaylist)
+  const playlistSongs = songData.filter(
+    (song) => song.playListId === currentPlaylist
+  );
+  console.log(playlistSongs);
+  const currentSongPosition = playlistSongs.findIndex(
+    (song) => song.id === currentSongId
+  );
+  // console.log("CurrentsongPos: ",currentSongPosition)
+
+  console.log("Debug isLastSong calculation:", {
+    currentSongPosition,
+    playlistLength: playlistSongs.length,
+    isLastSong: currentSongPosition === playlistSongs.length - 1,
+  });
 
   return {
     playlistSongs,
     currentSongPosition,
     totalSongs: playlistSongs.length,
-    ifFirstSong : currentSongPosition === 0,
-    isLastSong : playlistSongs.length -1,
-  }
+    ifFirstSong: currentSongPosition === 0,
+    isLastSong: playlistSongs.length - 1,
+  };
 }
 
 async function playSong(songId) {
@@ -205,7 +219,7 @@ async function playedSongImg(songId) {
 
 // play pause logic
 function togglePlayPause() {
-  console.log("PLAY PAUSE TOGGLE GOES HERE--------------");
+  // console.log("PLAY PAUSE TOGGLE GOES HERE--------------");
   // Case 1: No song is selected
   if (!currentSongData) {
     console.log("No song selected");
@@ -260,53 +274,43 @@ function playNextSong() {
   console.log("PLAY NEXT SONG GOES HERE--------------");
   if (currentSongData === null || currentSongIndex === -1) return;
 
-  const currentPlaylistId = currentSongData.playListId;
-  console.log(currentPlaylistId);
-  const playListSongs = songData.filter(
-    (song) => song.playListId === currentPlaylistId
-  );
-  console.log(playListSongs);
-  currentAudio.pause();
+  const playlistInfo = getCurrentPlaylistInfo();
+  if (!playlistInfo) {
+    console.log("no current song");
+    return;
+  }
 
-  // find the index of the current song in the playList
-  const currentIndexInPlayList = playListSongs.findIndex(
-    (song) => song.id === currentSongData.id
-  );
-  console.log(currentIndexInPlayList);
+  const { playlistSongs, currentSongPosition, isLastSong } = playlistInfo;
 
-  const nextIndexInPlaylist =
-    (currentIndexInPlayList + 2) % playListSongs.length;
-  const nextSong = playListSongs[nextIndexInPlaylist];
-  console.log("nextIndexInPlaylist", nextIndexInPlaylist);
-  console.log("nextSong ", nextSong);
+  console.log("Before calculation: ",{currentSongPosition,isLastSong});
 
-  const nextSongIndex = songData.findIndex((song) => song.id === nextSong.id);
+  // const nextPosition =
+ console.log("Calculation Check", isLastSong ? 0 : currentSongPosition + 1)
+  console.log("next Position: ", nextPosition);
+  console.log("After Calculation: ", nextPosition);
 
-  playSong(nextSongIndex);
+  // const nextSong = playlistSongs[nextPosition];
+  // console.log("next song: ", nextSong.title);
+
+  // playSong(nextSong.id);
 }
 
 function playPreviousSong() {
-  console.log("PLAYING PREV SONGS");
+  console.log("Playing prev song");
 
-  if (currentSongData === null || currentSongIndex === -1) return;
+  const playlistInfo = getCurrentPlaylistInfo();
+  if (!playlistInfo) {
+    console.log("No current Song or playList info");
+    return;
+  }
 
-  const currentPlaylistId = currentSongData.playListId;
-  const playListSongs = songData.filter(
-    (song) => song.playListId === currentPlaylistId
-  );
-  currentAudio.pause();
+  const { playlistSongs, currentSongPosition, isFirstSong } = playlistInfo;
+  const previousPosition = isFirstSong
+    ? playlistSongs.length - 1
+    : currentSongPosition - 1;
 
-  const currentIndexInPlayList = playListSongs.findIndex(
-    (song) => song.id === currentSongData.id
-  );
-  console.log(currentIndexInPlayList);
-
-  const previousIndexInPlaylist =
-    (currentIndexInPlayList - 1) % playListSongs.length;
-
-  const previousSong = playListSongs[previousIndexInPlaylist];
-
-
+  const previousSong = playlistSongs[previousPosition];
+  console.log("Previous song:", previousSong.title);
   playSong(previousSong.id);
 }
 
