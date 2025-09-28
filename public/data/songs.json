@@ -8,7 +8,7 @@
     "artistId": 1,
     "artistName": "Ed Sheeran",
     "duration": "4:23",
-    "songAddress": "AllTimeBests/Perfect.mp3",
+    "songAddress": "Test_files/Ed Sheeran - Perfect (Lyrics)(M4A_128K).m4a",
     "cover": "images/ShapeOfYou.jpeg"
   },
   {
@@ -20,7 +20,7 @@
     "artistId": 1,
     "artistName": "Weeknd",
     "duration": "3:20",
-    "songAddress": "AllTimeBests/BlindingLights.mp3",
+    "songAddress": "Test_files/Blinding Lights.mp3",
     "cover": "images/BlindingLights.jpeg"
   },
   {
@@ -32,7 +32,7 @@
     "artistId": 2,
     "artistName": "Ed Sheeran",
     "duration": "4:23",
-    "songAddress": "AllTimeBests/ShapeOfYou.mp3",
+    "songAddress": "Test_files/Ed Sheeran - Shape of You (Official Music Video)(MP3_128K).mp3",
     "cover": "images/ShapeOfYou.jpeg"
   },
   {
@@ -44,7 +44,7 @@
     "artistId": 1,
     "artistName": "Weeknd",
     "duration": "4:33",
-    "songAddress": "AllTimeBests/StarBoy.mp3",
+    "songAddress": "Test_files/The Weeknd - Starboy ft. Daft Punk (Official Video)(MP3_160K).mp3",
     "cover": "images/StarBoy.jpeg"
   },
   {
@@ -56,43 +56,43 @@
     "artistId": 2,
     "artistName": "Lady Gaga, Bruno Mars",
     "duration": "4:14",
-    "songAddress": "AllTimeBests/DieWithaSmile.mp3",
+    "songAddress": "Test_files/Lady Gaga_ Bruno Mars - Die With A Smile(MP3_160K).mp3",
     "cover": "images/DieWithaSmile.jpeg"
   },
   {
     "id": 6,
     "count":1,
     "playListId": 2,
-    "title": "Aadat Unplugged",
-    "language": "Hind",
+    "title": "Surili Ankhiyon Wali",
+    "language": "Hindi",
     "artistId": 2,
     "artistName": "Atif Aslam",
     "duration": "4:22",
-    "songAddress": "AllTimeBests/AadatByAtifAslam.MP3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "songAddress": "Groovo Hindi/Surili Ankhiyon wali.mp3",
+    "cover": "images/Aadat.jpeg"
   },
   {
     "id": 7,
     "count":2,
     "playListId": 2,
-    "title": "Ae Dil hai Muskil",
+    "title": "Ho Gaya Hai Tujhko Pyaar",
     "language": "Hindi",
     "artistId": 2,
     "artistName": "Arijit Singh",
     "duration": "4:22",
-    "songAddress": "AllTimeBests/Ae Dil Hai Mushkil.mp3",
+    "songAddress": "Groovo Hindi/Ho Gaya Hai Tujhko Pyaar.mp3",
     "cover": "images/AeDilHaiMuskil.jpeg"
   },
   {
     "id": 8,
     "count":3,
     "playListId": 2,
-    "title": "Agar Tum Saath Ho",
+    "title": "Dekha Ek Khawaab",
     "language": "Hindi",
     "artistId": 2,
     "artistName": "Arijit Singh, Shreya Ghosal",
     "duration": "4:22",
-    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
+    "songAddress": "Groovo Hindi/Dekha Ek Khawaab.mp3",
     "cover": "images/AgarTumSaathHo.jpeg"
   },
   {
@@ -104,55 +104,55 @@
     "artistId": 2,
     "artistName": "Arijit Singh",
     "duration": "4:22",
-    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
+    "songAddress": "Groovo Hindi/AjibDastan.mp3",
     "cover": "images/AjibDastan.jpeg"
   },
   {
     "id": 10,
     "count":5,
     "playListId": 2,
-    "title": "Dil Hai Ki Manta nhi",
+    "title": "Dil Hai Ke Manta nhi",
     "language": "Hindi",
     "artistId": 2,
     "artistName": "Lady Gaga, Bruno Mars",
     "duration": "4:22",
-    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
+    "songAddress": "Groovo Hindi/DilHaiKiMantaNahin.mp3",
     "cover": "images/DilHaiKeMantaHiNahi.jpeg"
   },
   {
     "id": 11,
     "count":1,
     "playListId": 3,
-    "title": "Dil Hai Ki Manta nhi",
-    "language": "Hindi",
+    "title": "Jaadu Teri Nazar",
+    "language": "Tamil",
     "artistId": 2,
     "artistName": "Lady Gaga, Bruno Mars",
     "duration": "4:22",
-    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "songAddress": "AllTimeBests/Chellamma.mp3",
+    "cover": "images/AeDilHaiMuskil.jpeg"
   },
   {
     "id": 12,
     "count":2,
     "playListId": 3,
-    "title": "Dil Hai Ki Manta nhi",
-    "language": "Hindi",
+    "title": "Kangal Edho",
+    "language": "Tamil",
     "artistId": 2,
-    "artistName": "Lady Gaga, Bruno Mars",
+    "artistName": "Lady Gaga",
     "duration": "4:22",
-    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "songAddress": "AllTimeBests/KangalEdho.mp3",
+    "cover": "images/AeDilHaiMuskil.jpeg"
   },
   {
     "id": 13,
     "count":3,
     "playListId": 3,
-    "title": "Dil Hai Ki Manta nhi",
-    "language": "Hindi",
+    "title": "Naa Ready - LEO",
+    "language": "Tamil",
     "artistId": 2,
     "artistName": "Lady Gaga, Bruno Mars",
     "duration": "4:22",
-    "songAddress": "../assets/songs/AadatByAtifAslam.mp3",
+    "songAddress": "AllTimeBests/NaaReadyLeo.mp3",
     "cover": "covers/tum-hi-ho.jpg"
   },
   {

@@ -12,10 +12,10 @@ let playBtn = document.querySelectorAll(".play-btn");
 let pauseBtnId = document.getElementById("pause-btn");
 let playBtnId = document.getElementById("play-btn");
 let nextSongBtn = document.getElementById("next-song");
-let previousSong = document.getElementById("previous-song");
+let previousSongBtn = document.getElementById("previous-song");
 let playedSongImgTag = document.getElementById("played-song-img");
-let playedSongTitle = document.getElementById("played-song-name")
-let playedSongArtist = document.getElementById("Played-song-artist")
+let playedSongTitle = document.getElementById("played-song-name");
+let playedSongArtist = document.getElementById("Played-song-artist");
 
 // Banner page Selectors
 let songTitleInBanner = document.getElementById("song-title-in-banner");
@@ -131,6 +131,21 @@ function stopCurrentSong() {
     currentAudio = null;
     isPlaying = false;
     console.log("previous song stopped");
+  }
+}
+
+function getCurrentPlaylistInfo(){
+  if(!currentSongData) return null;
+  const currentPlaylist  = currentSongData.playListId;
+  const playlistSongs = songData.filter(song = song.id === song.playListId)
+  const currentSongPosition = playlistSongs.findIndex(song=> song.id === currentSongId)
+
+  return {
+    playlistSongs,
+    currentSongPosition,
+    totalSongs: playlistSongs.length,
+    ifFirstSong : currentSongPosition === 0,
+    isLastSong : playlistSongs.length -1,
   }
 }
 
@@ -270,31 +285,96 @@ function playNextSong() {
   playSong(nextSongIndex);
 }
 
-// function setupAudioEventListeners(){
-//   console.log("SETTING UP TIMESTAMP");
-//   if(!currentAudio) return;
+function playPreviousSong() {
+  console.log("PLAYING PREV SONGS");
 
-//   // Load metadata
-//   currentAudio.addEventListener('metadata',()=>{
-//     const duration = currentAudio.duration;
-//     console.log(duration)
-//     updatDuration(duration)
+  if (currentSongData === null || currentSongIndex === -1) return;
 
-//     const progressRange = document.getElementById("progress-range")
-//     if(progressRange){
-//       progressRange.max = Math.floor(duration)
-//     }
-//   })
+  const currentPlaylistId = currentSongData.playListId;
+  const playListSongs = songData.filter(
+    (song) => song.playListId === currentPlaylistId
+  );
+  currentAudio.pause();
 
-//   currentAudio.addEventListener('timestamp',()=>{
-//     const currTime = currentAudio.currentTime;
-//     const duration = currentAudio.duration;
+  const currentIndexInPlayList = playListSongs.findIndex(
+    (song) => song.id === currentSongData.id
+  );
+  console.log(currentIndexInPlayList);
 
-//     updateCurrentTime(currTime)
-//     updatProgressBar(currTime,duration)
-//   })
+  const previousIndexInPlaylist =
+    (currentIndexInPlayList - 1) % playListSongs.length;
 
-//   currentAudio.addEventListener('ended',()=>{
-//     handleSongEnd();
-//   })
-// }
+  const previousSong = playListSongs[previousIndexInPlaylist];
+
+
+  playSong(previousSong.id);
+}
+
+previousSongBtn.addEventListener("click", () => {
+  playPreviousSong();
+});
+
+// Getting the metadata of the song being played
+function setupAudioEventListeners() {
+  console.log("SETTING UP TIMESTAMP");
+  if (!currentAudio) return;
+
+  // Load metadata
+  currentAudio.addEventListener("metadata", () => {
+    const duration = currentAudio.duration;
+    console.log(duration);
+    updatDuration(duration);
+
+    const progressRange = document.getElementById("progress-range");
+    if (progressRange) {
+      progressRange.max = Math.floor(duration);
+    }
+  });
+
+  currentAudio.addEventListener("timestamp", () => {
+    const currTime = currentAudio.currentTime;
+    const duration = currentAudio.duration;
+
+    updateCurrentTime(currTime);
+    updatProgressBar(currTime, duration);
+  });
+
+  currentAudio.addEventListener("ended", () => {
+    handleSongEnd();
+  });
+}
+
+// Function to format Time in MM:SS
+function formatTime(seconds) {
+  if (isNaN(seconds)) return "00:00";
+
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.floor(seconds % 60);
+
+  return `${minutes.toString.padStart(
+    2,
+    "0"
+  )}:${remainingSeconds.toString.padStart(2, "0")}`;
+}
+
+// update current time display && Duration
+function updateCurrentTime(currTime) {
+  const currentTimeElement = document.getElementById("current-time");
+  if (currentTimeElement) {
+    currentTimeElement.textContent = formatTime(currTime);
+  }
+}
+function updatDuration(duration) {
+  const durationElement = document.getElementById("duration");
+  if (durationElement) {
+    durationElement.textContent = formatTime(duration);
+  }
+}
+
+// update progress bar
+function updatProgressBar(currTime, duration) {
+  const progressRange = document.getElementById("progress-range");
+  if (progressRange && duration > 0) {
+    progressRange.value = currTime;
+  }
+}
