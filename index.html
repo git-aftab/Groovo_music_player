@@ -453,29 +453,72 @@
         </section>
       </aside>
 
+      <!-- Search Result  -->
+      <div class="search-result-outer-div">
+        <span class="loader02 hidden" id="loader02"></span>
+        <div class="search-result hidden">
+          <div class="search-heading">
+           <div class="pre-search-heading">
+             <h1 >Explore These</h1>
+             <p class="Explore-msg">Re-Click search input to Explore more Songs</p>
+           </div>
+            <h1 class="post-search-heading hidden">Songs Found</h1>
+            <div class="cross-icon"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+
+          <!-- result box -->
+          <div class="result-box" id="result-box">
+            <div class="searched-songs-result" id="searched-songs-result">
+              <!-- <div>
+                <h3 id="searched-song-name">Blinding Lights</h3>
+                <p id="searched-song-artist">The Weeknd</p>
+              </div>
+              <span id="searched-song-duration">04:40</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Play Area    ________________________________________ -->
       <div class="play-area">
         <div class="played-song-dets">
           <div class="played-song-img">
             <span class="loader hidden"></span>
-            <img id="played-song-img" src="./assets/images/Tamil01.jpeg" alt="played-song" />
+            <img
+              id="played-song-img"
+              src="./assets/images/GroovoLogo03.png"
+              alt="played-song"
+            />
           </div>
           <div class="details-of-played">
-            <h3 id="played-song-name">Song Name</h3>
-            <p id="Played-song-artist">Artist</p>
+            <h3 id="played-song-name">Groovo</h3>
+            <p id="Played-song-artist">Aftab</p>
           </div>
         </div>
         <div class="song-player-funcs">
           <div>
-            <span id="previous-song"><i class="fa-solid fa-backward-step"></i></span>
-            <span class="play-btn" id="play-btn"><i class="fa-solid fa-play"></i></span>
-            <span class="play-btn hidden" id="pause-btn"><i class="fa-solid fa-pause"></i></span>
+            <span id="previous-song"
+              ><i class="fa-solid fa-backward-step"></i
+            ></span>
+            <span class="play-btn" id="play-btn"
+              ><i class="fa-solid fa-play"></i
+            ></span>
+            <span class="play-btn hidden" id="pause-btn"
+              ><i class="fa-solid fa-pause"></i
+            ></span>
             <span id="next-song"><i class="fa-solid fa-forward-step"></i></span>
           </div>
           <div class="player-time-mtr">
-            <span class="current-time">00:00</span>
-            <input class="seek" type="range" id="progress-rnage" min="0" max="100" step="1" value="0" />
-            <span class="duration">00:00</span>
+            <span id="current-time">00:00</span>
+            <input
+              class="seek"
+              type="range"
+              id="progress-range"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <span id="duration">00:00</span>
             <audio id="audio-player"></audio>
           </div>
         </div>
