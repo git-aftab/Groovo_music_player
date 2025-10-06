@@ -16,6 +16,7 @@ let previousSongBtn = document.getElementById("previous-song");
 let playedSongImgTag = document.getElementById("played-song-img");
 let playedSongTitle = document.getElementById("played-song-name");
 let playedSongArtist = document.getElementById("Played-song-artist");
+let mainArtistImg = document.querySelectorAll(".main-artist-img");
 
 let searchInput = document.getElementById("search-input");
 let searchPage = document.querySelector(".search-result");
@@ -517,11 +518,11 @@ searchInput.addEventListener("input", () => {
               <span id="searched-song-duration">${result.duration}</span>
     `;
     searchedSongResult.appendChild(songField);
-    songField.addEventListener('click',()=>{
-      playSong(result.id)
-      playBtnId.classList.add("hidden")
-      pauseBtnId.classList.remove("hidden")
-    })
+    songField.addEventListener("click", () => {
+      playSong(result.id);
+      playBtnId.classList.add("hidden");
+      pauseBtnId.classList.remove("hidden");
+    });
   });
 });
 
@@ -531,7 +532,7 @@ crossIcon.addEventListener("click", () => {
 
 function displayRandomSongInSearch() {
   const randomSongs = songData.sort(() => 0.5 - Math.random()).slice(0, 10);
-  console.log("RandomSongs:",randomSongs);
+  console.log("RandomSongs:", randomSongs);
 
   searchedSongResult.innerHTML = " ";
   randomSongs.forEach((randomsong) => {
@@ -546,10 +547,21 @@ function displayRandomSongInSearch() {
     `;
     searchedSongResult.appendChild(songField);
 
-    songField.addEventListener('click',()=>{
-      playSong(randomsong.id)
-      playBtnId.classList.add('hidden')
-      pauseBtnId.classList.remove('hidden')
-    })
+    songField.addEventListener("click", () => {
+      playSong(randomsong.id);
+      playBtnId.classList.add("hidden");
+      pauseBtnId.classList.remove("hidden");
+    });
   });
 }
+
+mainArtistImg.forEach((artist,index) => {
+  artist.addEventListener("click",(id)=>{
+    console.log('artist id:',index,artist,id)
+  })
+});
+
+
+createPlaylistBtn.addEventListener('click',()=>{
+  console.log("Clicked playlist btn")
+})

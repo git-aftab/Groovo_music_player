@@ -189,6 +189,7 @@ main #main {
 #sidebar {
   background: linear-gradient(135deg, #222222, #141414, #000000);
   position: relative;
+  overflow-y: hidden;
 }
 .playlist-div {
   display: flex;
@@ -226,6 +227,40 @@ main #main {
   color: #ff3c00;
 }
 
+.playlist-list-div{
+  height: 40vh;
+  width: 100%;
+  background-color: #322f2f;
+  margin: 20px 0px;
+  border-radius: 5px;
+  
+}
+
+.playlist-list-head{
+  display: flex;
+  /* justify-content: center; */
+  font-size: large;
+  font-weight: 700;
+  border-bottom:1px solid #000000;
+  padding: 10px;
+  align-items: center;
+}
+.playlist-lists{
+  height: 100%;
+  overflow: hidden;
+  overflow-y:scroll;
+  scrollbar-width: none;
+}
+.playlist-folder{
+  padding: 10px;
+  font-size: large;
+  /* margin: 2px; */
+  border-radius: 5px;
+}
+.playlist-folder:hover{
+  cursor: pointer;
+   border: 1px solid #ff3c00;
+}
 #back-button{
   position: absolute;
   bottom: 200px;
@@ -345,7 +380,9 @@ main #main {
 /* Song Page */
 .song-page {
   width: 74vw;
-  height: 100vh;
+  height: 82vh;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .song-banner {
