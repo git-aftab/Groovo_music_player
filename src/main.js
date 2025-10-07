@@ -4,8 +4,7 @@ img.onload = () => console.log("Image loaded successfully");
 img.onerror = () => console.log("Image failed to load");
 img.src = "../assets/images/farhanKhan.jpeg";
 
-// Main page Selectors
-let createPlaylistBtn = document.getElementById("create-playlist");
+// Main page Selectors --------------------
 let playListCards = document.querySelectorAll(".card");
 let audioPlayer = document.getElementById("audio-player");
 let playBtn = document.querySelectorAll(".play-btn");
@@ -17,15 +16,23 @@ let playedSongImgTag = document.getElementById("played-song-img");
 let playedSongTitle = document.getElementById("played-song-name");
 let playedSongArtist = document.getElementById("Played-song-artist");
 let mainArtistImg = document.querySelectorAll(".main-artist-img");
+let playlistTempMsg = document.querySelector(".playlist-temp-msg");
 
+// Playlist DOM ---------------------------
+let createPlaylistBtn = document.getElementById("create-playlist-btn");
+let playlistNameCardBg = document.getElementById("playlist-name-card-bg");
+let crossIcon02 = document.querySelector(".cross-icon02");
 let searchInput = document.getElementById("search-input");
 let searchPage = document.querySelector(".search-result");
 let preSearchHeading = document.querySelector(".pre-search-heading");
 let postSearchHeading = document.querySelector(".post-search-heading");
 let crossIcon = document.querySelector(".cross-icon");
 let searchedSongResult = document.getElementById("searched-songs-result");
+let playlistInput = document.getElementById("playlistInput");
+let savePlaylistBtn = document.getElementById("save-playlist-btn");
+let playlistLists = document.getElementById("playlist-list");
 
-// Banner page Selectors
+// Banner page Selectors------------------
 let songTitleInBanner = document.getElementById("song-title-in-banner");
 let artistNameBanner = document.getElementById("artist-name-banner");
 let songDuration = document.getElementById("song-duration");
@@ -33,7 +40,7 @@ let songArtistImg = document.getElementById("song-artist-img");
 let songOrPlaylistImgBanner = document.getElementById("songOrPlaylist-img");
 let songListContainer = document.getElementById("song-lists");
 
-// Button Selectors
+// Button Selectors--------------------------
 let backBtn = document.getElementById("back-button");
 let loader = document.querySelector(".loader");
 let loader2 = document.getElementById("loader02");
@@ -555,13 +562,38 @@ function displayRandomSongInSearch() {
   });
 }
 
-mainArtistImg.forEach((artist,index) => {
-  artist.addEventListener("click",(id)=>{
-    console.log('artist id:',index,artist,id)
-  })
+mainArtistImg.forEach((artist, index) => {
+  artist.addEventListener("click", (id) => {
+    console.log("artist id:", index, artist, id);
+  });
 });
 
+createPlaylistBtn.addEventListener("click", () => {
+  console.log("Clicked playlist btn");
+  playlistNameCardBg.classList.remove("hidden");
+});
+crossIcon02.addEventListener("click", () => {
+  playlistNameCardBg.classList.add("hidden");
+});
 
-createPlaylistBtn.addEventListener('click',()=>{
-  console.log("Clicked playlist btn")
-})
+savePlaylistBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let playlistName = playlistInput.value.trim();
+  console.log("Playlist Created: ", playlistName);
+  playlistTempMsg.classList.add("hidden");
+
+  // playlistLists.innerHTML = " ";
+
+  let createdPlaylist = document.createElement("p");
+  createdPlaylist.className = "playlist-folder";
+  createdPlaylist.textContent = playlistName;
+  playlistLists.appendChild(createdPlaylist);
+
+  playlistNameCardBg.classList.add("hidden");
+  playlistInput.value = " ";
+  // logic on clicking the song
+
+  createdPlaylist.addEventListener("click", () => {
+    console.log("clicked the playlist:", playlistName);
+  });
+});

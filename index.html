@@ -158,25 +158,16 @@
         <div class="create-playlist">
           <p>Create Your Playlist Here</p>
           <!-- <p></p> -->
-          <button id="create-playlist">Create Playlist</button>
+          <button class="create-playlist-btn" id="create-playlist-btn">
+            Create Playlist
+          </button>
 
           <div class="playlist-list-div" id="playlist-list-div">
             <p class="playlist-list-head">Your Collections</p>
             <div class="playlist-lists" id="playlist-list">
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
-              <p class="playlist-folder" id="playlist-folder">playlist01</p>
+              <p class="playlist-temp-msg">You Don't Have Playlists</p>
+              <!-- <p class="playlist-folder">playlist1</p> -->
             </div>
-
           </div>
 
           <!-- Back Button -->
@@ -184,6 +175,25 @@
         </div>
       </aside>
       <aside id="main" class="hidde">
+        <!-- Playlist name card:----------------------------- -->
+        <div class="playlist-name-card-bg hidden" id="playlist-name-card-bg">
+          <div class="playlist-name-card">
+            <h3>Enter Playlist Name:</h3>
+            <div class="cross-icon02"><i class="fa-solid fa-xmark"></i></div>
+            <form class="playlist-name-dets">
+              <input
+                type="text"
+                id="playlistInput"
+                required
+                placeholder="eg: Favourites..."
+              />
+              <button class="create-playlist-btn" id="save-playlist-btn">
+                Create Playlist
+              </button>
+            </form>
+          </div>
+        </div>
+
         <div class="main-head01">
           <h1>All Time Best Songs</h1>
           <span class="music-logo01">
@@ -366,49 +376,81 @@
           <div class="artist-row">
             <div class="artist-details">
               <div class="artist-img">
-                <img src="/assets/images/Weekend.jpeg" alt="" class="main-artist-img" />
+                <img
+                  src="/assets/images/Weekend.jpeg"
+                  alt=""
+                  class="main-artist-img"
+                />
               </div>
               <div class="artist-name">Weeknd</div>
             </div>
             <div class="artist-details">
               <div class="artist-img">
-                <img src="/assets/images/EdSheeran.jpeg" alt="" class="main-artist-img"/>
+                <img
+                  src="/assets/images/EdSheeran.jpeg"
+                  alt=""
+                  class="main-artist-img"
+                />
               </div>
               <div class="artist-name">Ed Sheeran</div>
             </div>
             <div class="artist-details">
               <div class="artist-img">
-                <img src="/assets/images/Anirudh.jpeg" alt="" class="main-artist-img"/>
+                <img
+                  src="/assets/images/Anirudh.jpeg"
+                  alt=""
+                  class="main-artist-img"
+                />
               </div>
               <div class="artist-name">Anirudh</div>
             </div>
             <div class="artist-details">
               <div class="artist-img">
-                <img src="/assets/images/Arijit.jpeg" alt="" class="main-artist-img"/>
+                <img
+                  src="/assets/images/Arijit.jpeg"
+                  alt=""
+                  class="main-artist-img"
+                />
               </div>
               <div class="artist-name">Arijit</div>
             </div>
             <div class="artist-details">
               <div class="artist-img">
-                <img src="/assets/images/Atif.jpeg" alt="" class="main-artist-img"/>
+                <img
+                  src="/assets/images/Atif.jpeg"
+                  alt=""
+                  class="main-artist-img"
+                />
               </div>
               <div class="artist-name">Atif Aslam</div>
             </div>
             <div class="artist-details">
               <div class="artist-img">
-                <img src="/assets/images/pritam.jpeg" alt="" class="main-artist-img"/>
+                <img
+                  src="/assets/images/pritam.jpeg"
+                  alt=""
+                  class="main-artist-img"
+                />
               </div>
               <div class="artist-name">Pritam</div>
             </div>
             <div class="artist-details">
               <div class="artist-img">
-                <img src="/assets/images/Aur.jpeg" alt="" class="main-artist-img"/>
+                <img
+                  src="/assets/images/Aur.jpeg"
+                  alt=""
+                  class="main-artist-img"
+                />
               </div>
               <div class="artist-name">AUR</div>
             </div>
             <div class="artist-details">
               <div class="artist-img">
-                <img src="/assets/images/farhanKhan.jpeg" alt="" class="main-artist-img"/>
+                <img
+                  src="/assets/images/farhanKhan.jpeg"
+                  alt=""
+                  class="main-artist-img"
+                />
               </div>
               <div class="artist-name">Farhan Khan</div>
             </div>
@@ -477,10 +519,12 @@
         <span class="loader02 hidden" id="loader02"></span>
         <div class="search-result hidden">
           <div class="search-heading">
-           <div class="pre-search-heading">
-             <h1 >Explore These</h1>
-             <p class="Explore-msg">Re-Click search input to Explore more Songs</p>
-           </div>
+            <div class="pre-search-heading">
+              <h1>Explore These</h1>
+              <p class="Explore-msg">
+                Re-Click search input to Explore more Songs
+              </p>
+            </div>
             <h1 class="post-search-heading hidden">Songs Found</h1>
             <div class="cross-icon"><i class="fa-solid fa-xmark"></i></div>
           </div>
