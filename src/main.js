@@ -4,8 +4,7 @@ img.onload = () => console.log("Image loaded successfully");
 img.onerror = () => console.log("Image failed to load");
 img.src = "../assets/images/farhanKhan.jpeg";
 
-// Main page Selectors
-let createPlaylistBtn = document.getElementById("create-playlist");
+// Main page Selectors --------------------
 let playListCards = document.querySelectorAll(".card");
 let audioPlayer = document.getElementById("audio-player");
 let playBtn = document.querySelectorAll(".play-btn");
@@ -16,8 +15,35 @@ let previousSongBtn = document.getElementById("previous-song");
 let playedSongImgTag = document.getElementById("played-song-img");
 let playedSongTitle = document.getElementById("played-song-name");
 let playedSongArtist = document.getElementById("Played-song-artist");
+let mainArtistImg = document.querySelectorAll(".main-artist-img");
+let playlistTempMsg = document.querySelector(".playlist-temp-msg");
 
-// Banner page Selectors
+// Playlist DOM ---------------------------
+let createPlaylistBtn = document.getElementById("create-playlist-btn");
+let playlistNameCardBg = document.getElementById("playlist-name-card-bg");
+let crossIcon02 = document.querySelector(".cross-icon02");
+let searchInput = document.getElementById("search-input");
+let searchPage = document.querySelector(".search-result");
+let searchHeading = document.querySelector(".search-heading");
+let preSearchHeading = document.querySelector(".pre-search-heading");
+let postSearchHeading = document.querySelector(".post-search-heading");
+let crossIcon = document.querySelectorAll(".cross-icon");
+let searchedSongResult = document.getElementById("searched-songs-result");
+let playlistInput = document.getElementById("playlistInput");
+let savePlaylistBtn = document.getElementById("save-playlist-btn");
+let playlistLists = document.getElementById("playlist-list");
+
+let openedPlaylist = document.querySelector(".opened-playlist");
+let openedPlaylistTempMsg = document.getElementById("opened-play-temp-msg");
+let crossIcon03 = document.querySelector(".cross-icon03");
+let addSongsinPlaylist = document.querySelectorAll(
+  ".opened-playlist-addSong-btn"
+);
+let addSongsMainBtn = document.getElementById("add-songs-main-btn");
+let emptyPlaylistMsg = document.getElementById("empty-playlist-msg");
+let playlistSongsList = document.querySelector(".playlist-songs-list");
+
+// Banner page Selectors------------------
 let songTitleInBanner = document.getElementById("song-title-in-banner");
 let artistNameBanner = document.getElementById("artist-name-banner");
 let songDuration = document.getElementById("song-duration");
@@ -25,9 +51,10 @@ let songArtistImg = document.getElementById("song-artist-img");
 let songOrPlaylistImgBanner = document.getElementById("songOrPlaylist-img");
 let songListContainer = document.getElementById("song-lists");
 
-// Button Selectors
+// Button Selectors--------------------------
 let backBtn = document.getElementById("back-button");
 let loader = document.querySelector(".loader");
+let loader2 = document.getElementById("loader02");
 
 // Toggle Selectors
 let songBannerPage = document.getElementById("song-banner-page");
@@ -114,6 +141,10 @@ let isPaused = false;
 let currentSongId = null;
 let currentSongData = null;
 let currentSongIndex = 0;
+let isUserSeeking = false;
+// playlist
+let SearchedMode = "play";
+let targetPlaylist = null;
 
 function setCurrentSong(songId) {
   currentSongId = songId;
@@ -148,18 +179,12 @@ function getCurrentPlaylistInfo() {
   );
   // console.log("CurrentsongPos: ",currentSongPosition)
 
-  console.log("Debug isLastSong calculation:", {
-    currentSongPosition,
-    playlistLength: playlistSongs.length,
-    isLastSong: currentSongPosition === playlistSongs.length - 1,
-  });
-
   return {
     playlistSongs,
     currentSongPosition,
     totalSongs: playlistSongs.length,
-    ifFirstSong: currentSongPosition === 0,
-    isLastSong: playlistSongs.length - 1,
+    isFirstSong: currentSongPosition === 0,
+    isLastSong: currentSongPosition === playlistSongs.length - 1,
   };
 }
 
@@ -168,6 +193,7 @@ async function playSong(songId) {
   console.log("Playing song ID:", songId);
   stopCurrentSong();
   setCurrentSong(songId);
+  await playedSongImg(songId);
 
   const songToPlay = songData.find((song) => song.id === songId);
   console.log(songToPlay);
@@ -181,7 +207,7 @@ async function playSong(songId) {
     try {
       await currentAudio.play();
       isPlaying = true;
-      playedSongImg(songId);
+      // playedSongImg(songId);
       console.log("✅ Song is playing", songToPlay.title);
     } catch (error) {
       currentAudio = null;
@@ -210,7 +236,7 @@ async function playedSongImg(songId) {
         loader.classList.add("hidden");
       };
     } catch (error) {
-      playedSongImgTag.src = "./assets/images/Tamil01.jpeg";
+      playedSongImgTag.src = "./assets/images/GroovoLogo03.png";
       console.log("Error fetching Imag:", error);
     }
     loader.classList.remove("hidden");
@@ -219,7 +245,6 @@ async function playedSongImg(songId) {
 
 // play pause logic
 function togglePlayPause() {
-  // console.log("PLAY PAUSE TOGGLE GOES HERE--------------");
   // Case 1: No song is selected
   if (!currentSongData) {
     console.log("No song selected");
@@ -282,17 +307,17 @@ function playNextSong() {
 
   const { playlistSongs, currentSongPosition, isLastSong } = playlistInfo;
 
-  console.log("Before calculation: ",{currentSongPosition,isLastSong});
+  console.log("Before calculation: ", { currentSongPosition, isLastSong });
 
-  // const nextPosition =
- console.log("Calculation Check", isLastSong ? 0 : currentSongPosition + 1)
+  const nextPosition = isLastSong ? 0 : currentSongPosition + 1;
   console.log("next Position: ", nextPosition);
   console.log("After Calculation: ", nextPosition);
 
   const nextSong = playlistSongs[nextPosition];
   console.log("next song: ", nextSong.title);
-
   playSong(nextSong.id);
+  playBtnId.classList.add("hidden");
+
 }
 
 function playPreviousSong() {
@@ -324,18 +349,20 @@ function setupAudioEventListeners() {
   if (!currentAudio) return;
 
   // Load metadata
-  currentAudio.addEventListener("metadata", () => {
+  currentAudio.addEventListener("loadedmetadata", () => {
     const duration = currentAudio.duration;
-    console.log(duration);
-    updatDuration(duration);
+    console.log("metadata loaded - duration:", duration);
+    console.log("song Duration: ", formatTime(duration));
 
     const progressRange = document.getElementById("progress-range");
     if (progressRange) {
       progressRange.max = Math.floor(duration);
     }
+    updatDuration(duration);
+    updateCurrentTime(0);
   });
 
-  currentAudio.addEventListener("timestamp", () => {
+  currentAudio.addEventListener("timeupdate", () => {
     const currTime = currentAudio.currentTime;
     const duration = currentAudio.duration;
 
@@ -346,39 +373,296 @@ function setupAudioEventListeners() {
   currentAudio.addEventListener("ended", () => {
     handleSongEnd();
   });
+
+  currentAudio.addEventListener("play", () => {
+    console.log("Audio Timer Started");
+  });
+  currentAudio.addEventListener("pause", () => {
+    console.log("Audio Paused");
+  });
 }
 
 // Function to format Time in MM:SS
 function formatTime(seconds) {
-  if (isNaN(seconds)) return "00:00";
+  if (isNaN(seconds) || seconds < 0) return "00:00";
 
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = Math.floor(seconds % 60);
 
-  return `${minutes.toString.padStart(
-    2,
-    "0"
-  )}:${remainingSeconds.toString.padStart(2, "0")}`;
+  return `${minutes.toString().padStart(2, "0")}:${remainingSeconds
+    .toString()
+    .padStart(2, "0")}`;
 }
 
 // update current time display && Duration
 function updateCurrentTime(currTime) {
   const currentTimeElement = document.getElementById("current-time");
+  // console.log(
+  //   "Updating current time:",
+  //   currTime,
+  //   "Element found:",
+  // !!currentTimeElement
+  // );
   if (currentTimeElement) {
     currentTimeElement.textContent = formatTime(currTime);
+  } else {
+    console.error("currentTime element not found");
   }
 }
 function updatDuration(duration) {
   const durationElement = document.getElementById("duration");
+  console.log(
+    "Updating duration:",
+    duration,
+    "Element found:",
+    !!durationElement
+  );
   if (durationElement) {
     durationElement.textContent = formatTime(duration);
+  } else {
+    console.error("duration element not found");
   }
 }
 
 // update progress bar
 function updatProgressBar(currTime, duration) {
+  if (isUserSeeking) return;
+
   const progressRange = document.getElementById("progress-range");
   if (progressRange && duration > 0) {
     progressRange.value = currTime;
   }
 }
+
+// Handle user Clicking/dragging the progess bar
+function setupProgressBarControls() {
+  const progressRange = document.getElementById("progress-range");
+
+  if (progressRange) {
+    progressRange.addEventListener("mousedown", () => {
+      isUserSeeking = true;
+    });
+    progressRange.addEventListener("mouseup", () => {
+      if (currentAudio && isUserSeeking) {
+        const seekTime = parseInt(progressRange.value);
+        currentAudio.currentTime = seekTime;
+        updateCurrentTime(seekTime);
+        console.log(`Seeked to : ${formatTime(seekTime)}`);
+      }
+      isUserSeeking = false;
+    });
+
+    progressRange.addEventListener("input", () => {
+      if (isUserSeeking) {
+        const seekTime = parseInt(progressRange.value);
+        updateCurrentTime(seekTime);
+        console.log("Seeked Time: ", seekTime);
+      }
+    });
+
+    progressRange.addEventListener("mouseleave", () => {
+      if (isUserSeeking && currentAudio) {
+        const seekTime = parseFloat(progressRange.value);
+        currentAudio.currTime = seekTime;
+      }
+    });
+  }
+}
+
+function handleSongEnd() {
+  console.log("Song Ended");
+  const progressRange = document.getElementById("progress-range");
+  if (progressRange) {
+    progressRange.value = 0;
+  }
+  updateCurrentTime(0);
+  if (playBtn) playBtn.classList.remove("hidden");
+  if (pauseBtnId) pauseBtnId.classList.add("hidden");
+
+  isPlaying = false;
+  isPaused = false;
+
+  // PlayNext song
+  playNextSong();
+}
+
+// Initialize progress bar controls when page loads
+document.addEventListener("DOMContentLoaded", function () {
+  setupProgressBarControls();
+  console.log("Progress bar controls initialized");
+});
+
+console.log("Timer elements check:", {
+  currentTime: document.getElementById("currentTime"),
+  duration: document.getElementById("duration"),
+  progressRange: document.getElementById("progressRange"),
+});
+
+// setting search the result
+
+searchInput.addEventListener("click", () => {
+  searchPage.classList.remove("hidden");
+  loader2.classList.remove("hidden");
+  setTimeout(() => {
+    loader2.classList.add("hidden");
+    displayRandomSongInSearch();
+  }, 1000);
+});
+searchInput.addEventListener("input", () => {
+  if (!searchInput.value) {
+    preSearchHeading.classList.remove("hidden");
+    postSearchHeading.classList.add("hidden");
+  } else {
+    postSearchHeading.classList.remove("hidden");
+    preSearchHeading.classList.add("hidden");
+  }
+
+  // fetching songData
+  const searchValue = searchInput.value;
+  const results = songData.filter(
+    (song) =>
+      song.title?.toLowerCase().includes(searchValue) ||
+      song.artistName?.toLowerCase().includes(searchValue)
+  );
+  console.log("Songs/Artist Found: ", results);
+
+  searchedSongResult.innerHTML = " ";
+  results.forEach((result) => {
+    let songField = document.createElement("div");
+    songField.className = "searched-song-field";
+
+    songField.innerHTML = `
+              <div>
+                <h3 id="searched-song-name">${result.title}</h3>
+                <p id="searched-song-artist">${result.artistName}</p>
+              </div>
+              <span id="searched-song-duration">${result.duration}</span>
+    `;
+    searchedSongResult.appendChild(songField);
+    songField.addEventListener("click", () => {
+      playSong(result.id);
+      playBtnId.classList.add("hidden");
+      pauseBtnId.classList.remove("hidden");
+    });
+  });
+});
+
+crossIcon.forEach((btn)=>{
+  btn.addEventListener("click", () => {
+    searchPage.classList.add("hidden");
+  });
+})
+
+function displayRandomSongInSearch() {
+  const randomSongs = songData.sort(() => 0.5 - Math.random()).slice(0, 10);
+  console.log("RandomSongs:", randomSongs);
+
+  searchedSongResult.innerHTML = " ";
+  randomSongs.forEach((randomsong) => {
+    let songField = document.createElement("div");
+    songField.className = "searched-song-field";
+    songField.innerHTML = `
+              <div>
+                <h3 id="searched-song-name">${randomsong.title}</h3>
+                <p id="searched-song-artist">${randomsong.artistName}</p>
+              </div>
+              <span id="searched-song-duration">${randomsong.duration}</span>
+    `;
+    searchedSongResult.appendChild(songField);
+
+    songField.addEventListener("click", () => {
+      playSong(randomsong.id);
+      playBtnId.classList.add("hidden");
+      pauseBtnId.classList.remove("hidden");
+    });
+  });
+}
+
+mainArtistImg.forEach((artist, index) => {
+  artist.addEventListener("click", (id) => {
+    console.log("artist id:", index, artist, id);
+  });
+});
+
+createPlaylistBtn.addEventListener("click", () => {
+  console.log("Clicked playlist btn");
+  playlistNameCardBg.classList.remove("hidden");
+});
+crossIcon02.addEventListener("click", () => {
+  playlistNameCardBg.classList.add("hidden");
+});
+
+savePlaylistBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let playlistName = playlistInput.value.trim();
+  console.log("Playlist Created: ", playlistName);
+  playlistTempMsg.classList.add("hidden");
+
+  // playlistLists.innerHTML = " ";
+
+  let createdPlaylist = document.createElement("p");
+  createdPlaylist.className = "playlist-folder";
+  createdPlaylist.textContent = playlistName;
+  playlistLists.appendChild(createdPlaylist);
+
+  playlistNameCardBg.classList.add("hidden");
+  playlistInput.value = " ";
+
+  // logic on clicking the song
+  createdPlaylist.addEventListener("click", () => {
+    console.log("clicked the playlist:", playlistName);
+    songMainPage.classList.add("hidden");
+    openedPlaylist.classList.remove("hidden");
+    targetPlaylist = playlistName;
+
+    if (!playlistSongsList.innerHTML) {
+      addSongsMainBtn.classList.remove("hidden");
+      emptyPlaylistMsg.classList.remove("hidden");
+      return;
+    }
+  });
+  crossIcon03.addEventListener("click", () => {
+    openedPlaylist.classList.add("hidden");
+    songMainPage.classList.remove("hidden");
+  });
+});
+
+addSongsinPlaylist.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("Add songs btn clicked");
+    SearchedMode = "addToPlaylist";
+    console.log(SearchedMode, targetPlaylist);
+    searchPage.classList.remove("hidden");
+    // searchHeading.innerHTML=" "
+    searchHeading.innerHTML = `
+        <div class="pre-search-heading">
+              <h1>Add Songs - ${targetPlaylist}</h1>
+            </div>
+            <div class="cross-icon"><i class="fa-solid fa-xmark"></i></div>
+    `;
+    const newCrossIcon = searchHeading.querySelector(".cross-icon");
+    newCrossIcon.addEventListener('click',()=>{
+      SearchedMode = "play"
+      targetPlaylist = null
+      searchPage.classList.add('hidden')
+    })
+  });
+});
+
+// Structure to store in localStorage
+
+// Structure to store in localStorage
+// {
+//   "playlists": {
+//     "English": {
+//       name: "English",
+//       songs: [1, 5, 8], // Array of song IDs
+//       createdAt: "2025-01-10"
+//     },
+//     "Hindi": {
+//       name: "Hindi", 
+//       songs: [2, 3],
+//       createdAt: "2025-01-10"
+//     }
+//   }
+// }
