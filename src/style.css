@@ -92,11 +92,34 @@
 }
 
 .search-result-outer-div {
-  position: relative;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 500;
 }
 
 .hidden {
   display: none;
+}
+
+.btn {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #000;
+  border: 1px solid #ff3c00;
+  color: #fff;
+  cursor: pointer;
+  color: #ff3c00;
+}
+.icon:hover {
+  color: #ff3c00;
+  cursor: pointer;
 }
 
 body {
@@ -194,11 +217,12 @@ main aside {
   height: calc(100vh - 70px);
   margin: 5px;
   border-radius: 5px;
+
   /* background: linear-gradient(180deg, #111111, #1c1c1c); */
 }
 main #main {
   width: 74vw;
-  height: calc(100vh - 165px);
+  height: 100vh;
   background: linear-gradient(135deg, #2a2a2a, #141414, #000000);
   overflow-y: scroll;
   scrollbar-width: none;
@@ -230,7 +254,7 @@ main #main {
   /* background-color: #000; */
   border-radius: 5px;
 }
-.create-playlist-btn{
+.create-playlist-btn {
   padding: 5px 20px;
   border-radius: 5px;
   border: none;
@@ -297,13 +321,14 @@ main #main {
 .playlist-name-card-bg {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 82vh;
+  right: 0;
+  width: 74vw;
+  height: 100vh;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.1);
   z-index: 2;
 }
-.playlist-name-card{
+.playlist-name-card {
   position: absolute;
   top: 30%;
   left: 22%;
@@ -313,14 +338,14 @@ main #main {
   border-radius: 10px;
   padding: 50px;
 }
-.playlist-name-dets{
+.playlist-name-dets {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
 }
 
-.playlist-name-dets input{
+.playlist-name-dets input {
   margin: 10px 0;
   height: 25px;
   padding: 25px;
@@ -328,31 +353,26 @@ main #main {
   color: #ff3c00;
   border-radius: 10px;
   font-size: large;
-  border: none;
+  border: 1px solid #fff;
 }
 
-.playlist-name-dets input:hover{
+.playlist-name-dets input:hover {
   border: 1px solid #ff3c00;
 }
 
-.playlist-name-dets input:focus{
+.playlist-name-dets input:focus {
   border: 1px solid #ff3c00;
   outline: none;
 }
-.playlist-name-dets button{
+.playlist-name-dets button {
   height: 40px;
 }
 
-.cross-icon02{
+.cross-icon02 {
   position: absolute;
   top: 30px;
   right: 20px;
   font-size: larger;
-}
-.cross-icon02:hover{
-  color: #ff3c00;
-  /* transform: scale(1.05); */
-  cursor: pointer;
 }
 #back-button {
   position: absolute;
@@ -475,6 +495,7 @@ main #main {
   height: 82vh;
   overflow: hidden;
   overflow-y: scroll;
+  /* position: relative; */
 }
 
 .song-banner {
@@ -546,6 +567,7 @@ main #main {
 
 .play-area {
   position: fixed;
+  z-index: 100;
   bottom: 0;
   height: 100px;
   width: 100vw;
@@ -756,4 +778,54 @@ main #main {
 .Explore-msg {
   font-size: small;
   padding-left: 25px;
+}
+
+.opened-playlist {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 74vw;
+  height: 110vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* backdrop-filter: blur(5px); */
+  background-color: #000;
+  z-index: 2;
+  padding: 10px;
+}
+.opened-playlist h2 {
+  color: #ff3c00;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+#opened-play-temp-msg {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.add-playlistSong-plus {
+  position: absolute;
+  top: 80px;
+  right: 120px;
+}
+.cross-icon03{
+  position: absolute;
+  top: 80px;
+  right: 60px;
+}
+
+/* Footer section  */
+
+footer {
+  margin-top: 20px;
+  height: 45vh;
+  margin-bottom: 110px;
+  width: 100%;
+  background-color: #333;
 }

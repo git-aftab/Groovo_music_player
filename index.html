@@ -153,7 +153,6 @@
       <aside id="sidebar">
         <div class="playlist-div">
           <p class="playlist-head">Your Plalists</p>
-          <i class="fa-solid fa-plus"></i>
         </div>
         <div class="create-playlist">
           <p>Create Your Playlist Here</p>
@@ -171,29 +170,11 @@
           </div>
 
           <!-- Back Button -->
-          <button id="back-button" class="hidden">Go Back</button>
+          <button id="back-button" class="btn hidden">Go Back</button>
         </div>
       </aside>
       <aside id="main" class="hidde">
         <!-- Playlist name card:----------------------------- -->
-        <div class="playlist-name-card-bg hidden" id="playlist-name-card-bg">
-          <div class="playlist-name-card">
-            <h3>Enter Playlist Name:</h3>
-            <div class="cross-icon02"><i class="fa-solid fa-xmark"></i></div>
-            <form class="playlist-name-dets">
-              <input
-                type="text"
-                id="playlistInput"
-                required
-                placeholder="eg: Favourites..."
-              />
-              <button class="create-playlist-btn" id="save-playlist-btn">
-                Create Playlist
-              </button>
-            </form>
-          </div>
-        </div>
-
         <div class="main-head01">
           <h1>All Time Best Songs</h1>
           <span class="music-logo01">
@@ -498,19 +479,6 @@
           <!-- Header -->
 
           <!-- Song Rows -->
-          <div class="songList-row">
-            <div class="cell">1</div>
-            <div class="cell">Finding Her</div>
-            <div class="cell">Kushagra</div>
-            <div class="cell">03:37</div>
-          </div>
-
-          <div class="songList-row">
-            <div class="cell">2</div>
-            <div class="cell">Sky Dreams</div>
-            <div class="cell">Aria</div>
-            <div class="cell">04:12</div>
-          </div>
         </section>
       </aside>
 
@@ -603,6 +571,48 @@
         </div>
       </div>
     </main>
+
+    <div class="playlist-name-card-bg hidden" id="playlist-name-card-bg">
+      <div class="playlist-name-card">
+        <h3>Enter Playlist Name:</h3>
+        <div class="cross-icon02 icon"><i class="fa-solid fa-xmark"></i></div>
+        <form class="playlist-name-dets">
+          <input
+            type="text"
+            id="playlistInput"
+            required
+            placeholder="eg: Favourites..."
+          />
+          <button class="create-playlist-btn" id="save-playlist-btn">
+            Create Playlist
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="opened-playlist hidden">
+      <h2 class="opened-playlist-header" id="opened-playlist-header">
+        Favourites
+      </h2>
+      <div class="add-playlistSong-plus opened-playlist-addSong-btn icon">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="cross-icon03 icon"><i class="fa-solid fa-xmark"></i></div>
+      <div id="opened-play-temp-msg">
+        <p id="empty-playlist-msg">Your Playlist is Empty</p>
+        <button class="opened-playlist-addSong-btn btn" id="add-songs-main-btn">
+          Add Songs
+        </button>
+      </div>
+      <div class="playlist-songs-list">
+        <!-- <p>Hey I am a song..... click to play</p> <i class="fa-solid fa-circle-plus"></i> -->
+      </div>
+
+      <div class="playlist-songs-container" id="playlist-songs-container"></div>
+    </div>
+    <!-- <footer>
+      <section></section>
+    </footer> -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

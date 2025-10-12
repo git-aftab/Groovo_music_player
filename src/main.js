@@ -24,13 +24,24 @@ let playlistNameCardBg = document.getElementById("playlist-name-card-bg");
 let crossIcon02 = document.querySelector(".cross-icon02");
 let searchInput = document.getElementById("search-input");
 let searchPage = document.querySelector(".search-result");
+let searchHeading = document.querySelector(".search-heading");
 let preSearchHeading = document.querySelector(".pre-search-heading");
 let postSearchHeading = document.querySelector(".post-search-heading");
-let crossIcon = document.querySelector(".cross-icon");
+let crossIcon = document.querySelectorAll(".cross-icon");
 let searchedSongResult = document.getElementById("searched-songs-result");
 let playlistInput = document.getElementById("playlistInput");
 let savePlaylistBtn = document.getElementById("save-playlist-btn");
 let playlistLists = document.getElementById("playlist-list");
+
+let openedPlaylist = document.querySelector(".opened-playlist");
+let openedPlaylistTempMsg = document.getElementById("opened-play-temp-msg");
+let crossIcon03 = document.querySelector(".cross-icon03");
+let addSongsinPlaylist = document.querySelectorAll(
+  ".opened-playlist-addSong-btn"
+);
+let addSongsMainBtn = document.getElementById("add-songs-main-btn");
+let emptyPlaylistMsg = document.getElementById("empty-playlist-msg");
+let playlistSongsList = document.querySelector(".playlist-songs-list");
 
 // Banner page Selectors------------------
 let songTitleInBanner = document.getElementById("song-title-in-banner");
@@ -131,6 +142,9 @@ let currentSongId = null;
 let currentSongData = null;
 let currentSongIndex = 0;
 let isUserSeeking = false;
+// playlist
+let SearchedMode = "play";
+let targetPlaylist = null;
 
 function setCurrentSong(songId) {
   currentSongId = songId;
@@ -533,9 +547,11 @@ searchInput.addEventListener("input", () => {
   });
 });
 
-crossIcon.addEventListener("click", () => {
-  searchPage.classList.add("hidden");
-});
+crossIcon.forEach((btn)=>{
+  btn.addEventListener("click", () => {
+    searchPage.classList.add("hidden");
+  });
+})
 
 function displayRandomSongInSearch() {
   const randomSongs = songData.sort(() => 0.5 - Math.random()).slice(0, 10);
@@ -591,9 +607,62 @@ savePlaylistBtn.addEventListener("click", (e) => {
 
   playlistNameCardBg.classList.add("hidden");
   playlistInput.value = " ";
-  // logic on clicking the song
 
+  // logic on clicking the song
   createdPlaylist.addEventListener("click", () => {
     console.log("clicked the playlist:", playlistName);
+    songMainPage.classList.add("hidden");
+    openedPlaylist.classList.remove("hidden");
+    targetPlaylist = playlistName;
+
+    if (!playlistSongsList.innerHTML) {
+      addSongsMainBtn.classList.remove("hidden");
+      emptyPlaylistMsg.classList.remove("hidden");
+      return;
+    }
+  });
+  crossIcon03.addEventListener("click", () => {
+    openedPlaylist.classList.add("hidden");
+    songMainPage.classList.remove("hidden");
   });
 });
+
+addSongsinPlaylist.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("Add songs btn clicked");
+    SearchedMode = "addToPlaylist";
+    console.log(SearchedMode, targetPlaylist);
+    searchPage.classList.remove("hidden");
+    // searchHeading.innerHTML=" "
+    searchHeading.innerHTML = `
+        <div class="pre-search-heading">
+              <h1>Add Songs - ${targetPlaylist}</h1>
+            </div>
+            <div class="cross-icon"><i class="fa-solid fa-xmark"></i></div>
+    `;
+    const newCrossIcon = searchHeading.querySelector(".cross-icon");
+    newCrossIcon.addEventListener('click',()=>{
+      SearchedMode = "play"
+      targetPlaylist = null
+      searchPage.classList.add('hidden')
+    })
+  });
+});
+
+// Structure to store in localStorage
+
+// Structure to store in localStorage
+// {
+//   "playlists": {
+//     "English": {
+//       name: "English",
+//       songs: [1, 5, 8], // Array of song IDs
+//       createdAt: "2025-01-10"
+//     },
+//     "Hindi": {
+//       name: "Hindi", 
+//       songs: [2, 3],
+//       createdAt: "2025-01-10"
+//     }
+//   }
+// }
