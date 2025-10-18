@@ -39,6 +39,7 @@ let crossIcon03 = document.querySelector(".cross-icon03");
 let addSongsinPlaylistBtn = document.querySelectorAll(
   ".opened-playlist-addSong-btn"
 );
+let openedPlaylistHeader = document.getElementById("opened-playlist-header")
 let addSongsMainBtn = document.getElementById("add-songs-main-btn");
 let emptyPlaylistMsg = document.getElementById("empty-playlist-msg");
 let playlistSongsList = document.querySelector(".playlist-songs-list");
@@ -613,19 +614,26 @@ crossIcon02.addEventListener("click", () => {
 savePlaylistBtn.addEventListener("click", (e) => {
   e.preventDefault();
   let playlistName = playlistInput.value.trim();
+
+  if (!playlistName) {
+    alert("please enter a playlist name!");
+    return;
+  }
+  if (playlistData.playlists[playlistName]) {
+    alert("playlist already exists");
+    return;
+  }
   console.log("Playlist Created: ", playlistName);
   playlistTempMsg.classList.add("hidden");
 
-  // playlistLists.innerHTML = " ";
-
-  function createdPlaylist(){}
   let createdPlaylist = document.createElement("p");
   createdPlaylist.className = "playlist-folder";
   createdPlaylist.textContent = playlistName;
+  createdPlaylist.setAttribute("data-playlist", playlistName);
   playlistLists.appendChild(createdPlaylist);
 
   playlistNameCardBg.classList.add("hidden");
-  playlistInput.value = " ";
+  playlistInput.value = "";
 
   // logic on clicking the song
   createdPlaylist.addEventListener("click", () => {
@@ -637,18 +645,23 @@ savePlaylistBtn.addEventListener("click", (e) => {
     const playlistSongs = getPlaylistSongs(playlistName);
     console.log("songs in Playlist:", playlistSongs);
 
-    if (!playlistSongsList.innerHTML) {
+    if (playlistSongsList.length === 0) {
+      playlistSongsList.innerHTML = "";
       addSongsMainBtn.classList.remove("hidden");
       emptyPlaylistMsg.classList.remove("hidden");
       return;
+    } else {
+      addSongsMainBtn.classList.add("hidden");
+      emptyPlaylistMsg.classList.add("hidden");
+      displayPlaylistSongs(playlistSongs, playlistName);
     }
-  });
-  crossIcon03.addEventListener("click", () => {
-    openedPlaylist.classList.add("hidden");
-    songMainPage.classList.remove("hidden");
   });
 
   createPlayist(playlistName);
+});
+crossIcon03.addEventListener("click", () => {
+  openedPlaylist.classList.add("hidden");
+  songMainPage.classList.remove("hidden");
 });
 
 addSongsinPlaylistBtn.forEach((btn) => {
@@ -674,25 +687,6 @@ addSongsinPlaylistBtn.forEach((btn) => {
     });
   });
 });
-
-// Structure to store in localStorage
-
-// Structure to store in localStorage
-// {
-//   "playlists": {
-//     "English": {
-//       name: "English",
-//       songs: [1, 5, 8], // Array of song IDs
-//       createdAt: "2025-01-10"
-//     },
-//     "Hindi": {
-//       name: "Hindi",
-//       songs: [2, 3],
-//       createdAt: "2025-01-10"
-//     }
-//   }
-// }
-
 //  LoadPlaylist if exists
 function loadPlaylist() {
   const stored = localStorage.getItem("userPlaylists");
@@ -700,6 +694,7 @@ function loadPlaylist() {
 }
 
 let playlistData = loadPlaylist();
+console.log("LS playlist ",playlistData.playlists)
 
 function savePlaylists() {
   localStorage.setItem("userPlaylists", JSON.stringify(playlistData));
@@ -728,7 +723,7 @@ function addSongsToPlaylist(playlistName, songId) {
       console.log("Song Already in Playlist");
       return false;
     }
-    return false
+    return false;
   }
 }
 
@@ -740,6 +735,64 @@ function getPlaylistSongs(playlistName) {
   return songData.filter((song) => songIds.includes(song.id));
 }
 
-// function displayPlaylistFolder(playlistName){
-//   let creat
-// }
+function displayPlaylistSongs(songs, playlistName) {
+  playlistSongsList.innerHTML = "";
+  songs.forEach((song, index) => {
+    let songRow = document.createElement("div");
+    songRow.className = "playlist-song-row";
+    songRow.innerHTML = `
+    <span>${index + 1}</span>
+    <div>
+      <h4 id= "playlist-song-title">${song.title}</h4>
+      <p id = "playlist-song-artistName">${song.artistName}</p>
+      <span id="playlist-song-duration>${song.duration}</span>
+      </div>
+    `;
+    songRow.addEventListener("clcik", () => {
+      playSong(song.id);
+    });
+
+    playlistSongsList.appendChild(songRow);
+  });
+}
+
+function loadSavedPlaylist() {
+  const playlists = Object.keys(playlistData.playlists);
+  console.log("line 759 playlists",playlists)
+  playlists.forEach((playlistName) => {
+    console.log("line 761 playlists:",playlistName)
+    let createdPlaylist = document.createElement("div");
+    createdPlaylist.className = "playlist-folder";
+    createdPlaylist.textContent = playlistName;
+    createdPlaylist.setAttribute("data-playlist", playlistName);
+
+    createdPlaylist.addEventListener("click", () => {
+      console.log("clicked the playlist:", playlistName);
+      songMainPage.classList.add("hidden");
+      openedPlaylist.classList.remove("hidden");
+      targetPlaylist = playlistName;
+      openedPlaylistHeader.textContent = playlistName +"🎶"
+
+      const playlistSongs = getPlaylistSongs(playlistName);
+      console.log("songs in playlists: ", playlistSongs);
+
+      if (playlistSongs.length === 0) {
+        playlistSongsList.innerHTML = "";
+        addSongsMainBtn.classList.remove("hidden");
+        emptyPlaylistMsg.classList.remove("hidden");
+      } else {
+        addSongsMainBtn.classList.remove("hidden");
+        emptyPlaylistMsg.classList.add("hidden");
+        displayPlaylistSongs(playlistSongs, playlistName);
+      }
+    });
+    playlistLists.appendChild(createdPlaylist);
+    playlistTempMsg.classList.add('hidden')
+  });
+}
+
+// document.addEventListener("DOMContentLoaded", ()=> {
+// });
+console.log('loading Dom content')
+loadSavedPlaylist();
+console.log("triggering the loadSavedPlaylist()")

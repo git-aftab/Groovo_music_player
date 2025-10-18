@@ -819,14 +819,44 @@ main #main {
 }
 .add-playlistSong-plus {
   position: absolute;
-  top: 80px;
+  top: 30px;
   right: 120px;
 }
 .cross-icon03{
   position: absolute;
-  top: 80px;
+  top: 30px;
   right: 60px;
 }
+
+.playlist-songs-list{
+  margin: 2px 0;
+}
+
+.playlist-song-row{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 10px 20px;
+  border: 1px solid #222222;
+  border-radius: 10px;
+}
+#playlist-song-title{
+  font-weight: 700;
+  font-size: large;
+}
+#playlist-song-artistName{
+  font-weight: 500;
+  font-size: small;
+  color: #736969;
+}
+
+.playlist-song-row:hover{
+  background-color: #ff3c00;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+
 
 /* Footer section  */
 
