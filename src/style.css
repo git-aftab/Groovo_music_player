@@ -49,7 +49,7 @@
   z-index: 200;
   width: 85px;
   height: 50px;
-  right: 20vh;
+  right: 28vh;
   top: 40vh;
   background-repeat: no-repeat;
   background-image: linear-gradient(#ff3c00 50px, transparent 0),
@@ -90,6 +90,13 @@
       10px 50px;
   }
 }
+
+.active{
+  background-color: #ff3c00;
+  color: #fff;
+}
+
+
 
 .search-result-outer-div {
   position: absolute;
@@ -792,7 +799,7 @@ main #main {
   position: absolute;
   top: 70px;
   right: 0;
-  width: 74vw;
+  width: 74.5vw;
   height: 110vh;
   overflow: hidden;
   overflow-y: scroll;
@@ -834,11 +841,14 @@ main #main {
 
 .playlist-song-row{
   display: flex;
+  gap: 20px;
   align-items: center;
   /* justify-content: center; */
-  padding: 10px 20px;
+  padding: 20px 20px;
   border: 1px solid #222222;
   border-radius: 10px;
+  margin: 5px;
+  position: relative;
 }
 #playlist-song-title{
   font-weight: 700;
@@ -849,13 +859,35 @@ main #main {
   font-size: small;
   color: #736969;
 }
+/* #playlist-song-artistName:hover{
+  color: black;
+  font-weight: 600;
+} */
 
 .playlist-song-row:hover{
   background-color: #ff3c00;
-  cursor: pointer;
   border: 1px solid #fff;
 }
+.playlist-song-row:hover .child{
+  color: #000;
+}
 
+#playlist-song-duration{
+  position: absolute;
+  top: 20px ;
+  right: 90px;
+}
+.playlist-song-del-btn{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  cursor: pointer;
+  /* z-index: 400; */
+}
+
+#playlist-song-del-btn:hover{
+  color: #000;
+}
 
 
 /* Footer section  */

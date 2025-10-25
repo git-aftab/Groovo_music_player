@@ -39,7 +39,7 @@ let crossIcon03 = document.querySelector(".cross-icon03");
 let addSongsinPlaylistBtn = document.querySelectorAll(
   ".opened-playlist-addSong-btn"
 );
-let openedPlaylistHeader = document.getElementById("opened-playlist-header")
+let openedPlaylistHeader = document.getElementById("opened-playlist-header");
 let addSongsMainBtn = document.getElementById("add-songs-main-btn");
 let emptyPlaylistMsg = document.getElementById("empty-playlist-msg");
 let playlistSongsList = document.querySelector(".playlist-songs-list");
@@ -635,17 +635,21 @@ savePlaylistBtn.addEventListener("click", (e) => {
   playlistNameCardBg.classList.add("hidden");
   playlistInput.value = "";
 
+  
+
   // logic on clicking the song
   createdPlaylist.addEventListener("click", () => {
     console.log("clicked the playlist:", playlistName);
     songMainPage.classList.add("hidden");
+    // createdPlaylist.classList.add('.active')
     openedPlaylist.classList.remove("hidden");
     targetPlaylist = playlistName;
 
     const playlistSongs = getPlaylistSongs(playlistName);
     console.log("songs in Playlist:", playlistSongs);
 
-    if (playlistSongsList.length === 0) {
+    if (playlistSongs.length === 0) {
+      console.log(playlistSongs.length)
       playlistSongsList.innerHTML = "";
       addSongsMainBtn.classList.remove("hidden");
       emptyPlaylistMsg.classList.remove("hidden");
@@ -665,7 +669,8 @@ crossIcon03.addEventListener("click", () => {
 });
 
 addSongsinPlaylistBtn.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
     console.log("Add songs btn clicked");
     SearchedMode = "addToPlaylist";
     console.log(SearchedMode, targetPlaylist);
@@ -694,7 +699,7 @@ function loadPlaylist() {
 }
 
 let playlistData = loadPlaylist();
-console.log("LS playlist ",playlistData.playlists)
+console.log("LS playlist ", playlistData.playlists);
 
 function savePlaylists() {
   localStorage.setItem("userPlaylists", JSON.stringify(playlistData));
@@ -717,6 +722,7 @@ function addSongsToPlaylist(playlistName, songId) {
     if (!playlistData.playlists[playlistName].songs.includes(songId)) {
       playlistData.playlists[playlistName].songs.push(songId);
       savePlaylists();
+      // displayPlaylistSongs(songId,playlistName)
       console.log(`Added song ${songId} to ${playlistName}`);
       return true;
     } else {
@@ -742,25 +748,65 @@ function displayPlaylistSongs(songs, playlistName) {
     songRow.className = "playlist-song-row";
     songRow.innerHTML = `
     <span>${index + 1}</span>
-    <div>
-      <h4 id= "playlist-song-title">${song.title}</h4>
-      <p id = "playlist-song-artistName">${song.artistName}</p>
-      <span id="playlist-song-duration>${song.duration}</span>
-      </div>
+    <h4 id= "playlist-song-title">${song.title}</h4>
+    <p id = "playlist-song-artistName">-by ${song.artistName}</p>
+    <p id = "playlist-song-duration"> ${song.duration}</p>
+    <p class = "playlist-song-del-btn"><i class="fa-solid fa-trash"></i></p>
     `;
-    songRow.addEventListener("clcik", () => {
+    songRow.addEventListener("click", () => {
       playSong(song.id);
+      playBtnId.classList.add("hidden");
+      pauseBtnId.classList.remove("hidden");
     });
 
     playlistSongsList.appendChild(songRow);
+
+    // delete plyalist songs
+    let playlistDelBtn = songRow.querySelector(".playlist-song-del-btn");
+    playlistDelBtn.addEventListener("click", (e) => {
+      console.log("clicked Playlist del btn at index", index);
+      e.stopPropagation();
+      if (confirm(`Delete ${song.title} from ${playlistName}..?`)) {
+        delSongFromPlaylist(playlistName, index);
+      }
+    });
   });
 }
 
+function delSongFromPlaylist(playlistName, index) {
+  console.log("hey deleting the song at index", index, "from", playlistName);
+  const userPlaylist = JSON.parse(localStorage.getItem("userPlaylists")) || {};
+  const LSplaylists = userPlaylist.playlists || {};
+  console.log("Full playlists object:", LSplaylists);
+  console.log(`Available playlist keys:`, Object.keys(LSplaylists));
+
+  if (LSplaylists[playlistName]) {
+    LSplaylists[playlistName].songs.splice(index, 1);
+
+    userPlaylist.playlists = LSplaylists
+
+    localStorage.setItem("userPlaylists", JSON.stringify(userPlaylist));
+
+    const songIDs = LSplaylists[playlistName].songs
+    const fullSongs = songIDs.map(id => songData.find(song =>song.id === id))
+
+    displayPlaylistSongs(fullSongs, playlistName);
+    console.log(`Deleted the song at ${index}`);
+    // console.log("Songs after Deletion:",LSplaylists[playlistName].songs)
+  } else {
+    console.log("playlist not found");
+    console.log("Looking for : ", playlistName);
+    console.log("Available playlists: ", Object.keys(LSplaylists));
+  }
+}
+// console.log("Playlist in localStorage:", localStorage.getItem("userPlaylists"));
+// console.log("All localStorage keys:", Object.keys(localStorage));
+
 function loadSavedPlaylist() {
   const playlists = Object.keys(playlistData.playlists);
-  console.log("line 759 playlists",playlists)
+  // console.log("playlists", playlists);
   playlists.forEach((playlistName) => {
-    console.log("line 761 playlists:",playlistName)
+    // console.log(" playlists:", playlistName);
     let createdPlaylist = document.createElement("div");
     createdPlaylist.className = "playlist-folder";
     createdPlaylist.textContent = playlistName;
@@ -771,7 +817,7 @@ function loadSavedPlaylist() {
       songMainPage.classList.add("hidden");
       openedPlaylist.classList.remove("hidden");
       targetPlaylist = playlistName;
-      openedPlaylistHeader.textContent = playlistName +"🎶"
+      openedPlaylistHeader.textContent = playlistName + "🎶";
 
       const playlistSongs = getPlaylistSongs(playlistName);
       console.log("songs in playlists: ", playlistSongs);
@@ -787,12 +833,10 @@ function loadSavedPlaylist() {
       }
     });
     playlistLists.appendChild(createdPlaylist);
-    playlistTempMsg.classList.add('hidden')
+    playlistTempMsg.classList.add("hidden");
   });
 }
 
-// document.addEventListener("DOMContentLoaded", ()=> {
-// });
-console.log('loading Dom content')
+// console.log("loading Dom content");
 loadSavedPlaylist();
-console.log("triggering the loadSavedPlaylist()")
+// console.log("triggering the loadSavedPlaylist()");
