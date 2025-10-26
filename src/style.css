@@ -91,9 +91,10 @@
   }
 }
 
-.active{
+.active-custom-playlist{
   background-color: #ff3c00;
   color: #fff;
+  border-radius: 5px;
 }
 
 
@@ -323,11 +324,6 @@ main #main {
   color: #fff;
   transform: scale(1.02);
 }
-.playlist-folder:active {
-  background-color: #ff3c00;
-  border: 1px solid #000;
-  color: #000;
-}
 
 .playlist-temp-msg {
   transform: translate(25%, 20vh);
@@ -341,7 +337,7 @@ main #main {
   height: 100vh;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.1);
-  z-index: 2;
+  z-index: 200;
 }
 .playlist-name-card {
   position: absolute;
@@ -761,10 +757,10 @@ main #main {
   border: 1px solid #ff3c00;
   cursor: pointer;
 }
-.searched-song-field:active {
+/* .searched-song-field:active {
   background-color: #ff3c00;
   color: #000;
-}
+} */
 
 #searched-song-artist {
   font-size: small;

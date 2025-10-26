@@ -635,34 +635,40 @@ savePlaylistBtn.addEventListener("click", (e) => {
   playlistNameCardBg.classList.add("hidden");
   playlistInput.value = "";
 
-  
-
   // logic on clicking the song
-  createdPlaylist.addEventListener("click", () => {
-    console.log("clicked the playlist:", playlistName);
-    songMainPage.classList.add("hidden");
-    // createdPlaylist.classList.add('.active')
-    openedPlaylist.classList.remove("hidden");
-    targetPlaylist = playlistName;
+  // createdPlaylist.addEventListener("click", () => {
+  //   console.log("clicked the playlist:", playlistName);
 
-    const playlistSongs = getPlaylistSongs(playlistName);
-    console.log("songs in Playlist:", playlistSongs);
+  //   document.querySelectorAll(".playlist-folder").forEach((p) => {
+  //     p.classList.remove("active-custom-playlist");
+  //     console.log(p.classList);
+  //   });
 
-    if (playlistSongs.length === 0) {
-      console.log(playlistSongs.length)
-      playlistSongsList.innerHTML = "";
-      addSongsMainBtn.classList.remove("hidden");
-      emptyPlaylistMsg.classList.remove("hidden");
-      return;
-    } else {
-      addSongsMainBtn.classList.add("hidden");
-      emptyPlaylistMsg.classList.add("hidden");
-      displayPlaylistSongs(playlistSongs, playlistName);
-    }
-  });
+  //   createdPlaylist.classList.add("active-custom-playlist");
+
+  //   songMainPage.classList.add("hidden");
+  //   openedPlaylist.classList.remove("hidden");
+  //   targetPlaylist = playlistName;
+
+  //   const playlistSongs = getPlaylistSongs(playlistName);
+  //   console.log("songs in Playlist:", playlistSongs);
+
+  //   if (playlistSongs.length === 0) {
+  //     console.log(playlistSongs.length);
+  //     playlistSongsList.innerHTML = "";
+  //     addSongsMainBtn.classList.remove("hidden");
+  //     emptyPlaylistMsg.classList.remove("hidden");
+  //     return;
+  //   } else {
+  //     addSongsMainBtn.classList.add("hidden");
+  //     emptyPlaylistMsg.classList.add("hidden");
+  //     displayPlaylistSongs(playlistSongs, playlistName);
+  //   }
+  // });
 
   createPlayist(playlistName);
 });
+
 crossIcon03.addEventListener("click", () => {
   openedPlaylist.classList.add("hidden");
   songMainPage.classList.remove("hidden");
@@ -783,12 +789,14 @@ function delSongFromPlaylist(playlistName, index) {
   if (LSplaylists[playlistName]) {
     LSplaylists[playlistName].songs.splice(index, 1);
 
-    userPlaylist.playlists = LSplaylists
+    userPlaylist.playlists = LSplaylists;
 
     localStorage.setItem("userPlaylists", JSON.stringify(userPlaylist));
 
-    const songIDs = LSplaylists[playlistName].songs
-    const fullSongs = songIDs.map(id => songData.find(song =>song.id === id))
+    const songIDs = LSplaylists[playlistName].songs;
+    const fullSongs = songIDs.map((id) =>
+      songData.find((song) => song.id === id)
+    );
 
     displayPlaylistSongs(fullSongs, playlistName);
     console.log(`Deleted the song at ${index}`);
@@ -814,6 +822,13 @@ function loadSavedPlaylist() {
 
     createdPlaylist.addEventListener("click", () => {
       console.log("clicked the playlist:", playlistName);
+
+      document.querySelectorAll(".playlist-folder").forEach((p) => {
+        p.classList.remove("active-custom-playlist");
+        console.log(p.classList);
+      });
+
+      createdPlaylist.classList.add("active-custom-playlist");
       songMainPage.classList.add("hidden");
       openedPlaylist.classList.remove("hidden");
       targetPlaylist = playlistName;
@@ -827,7 +842,7 @@ function loadSavedPlaylist() {
         addSongsMainBtn.classList.remove("hidden");
         emptyPlaylistMsg.classList.remove("hidden");
       } else {
-        addSongsMainBtn.classList.remove("hidden");
+        addSongsMainBtn.classList.add("hidden");
         emptyPlaylistMsg.classList.add("hidden");
         displayPlaylistSongs(playlistSongs, playlistName);
       }
@@ -837,6 +852,5 @@ function loadSavedPlaylist() {
   });
 }
 
-// console.log("loading Dom content");
 loadSavedPlaylist();
-// console.log("triggering the loadSavedPlaylist()");
+
