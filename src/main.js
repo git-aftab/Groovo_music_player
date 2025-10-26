@@ -500,14 +500,22 @@ console.log("Timer elements check:", {
 
 // setting search the result
 searchInput.addEventListener("click", () => {
-  if (SearchedMode === "addToPlaylist")
+  if (SearchedMode === "addToPlaylist") {
     searchInput.placeholder = "Search Songs for Playlist";
-  searchPage.classList.remove("hidden");
-  loader2.classList.remove("hidden");
-  setTimeout(() => {
-    loader2.classList.add("hidden");
-    displayRandomSongInSearch();
-  }, 1000);
+    searchPage.classList.remove("hidden");
+    loader2.classList.remove("hidden");
+    setTimeout(() => {
+      loader2.classList.add("hidden");
+      // displayRandomSongInSearch();
+    }, 1);
+  } else if (SearchedMode === "play") {
+    searchPage.classList.remove("hidden");
+    loader2.classList.remove("hidden");
+    setTimeout(() => {
+      loader2.classList.add("hidden");
+      displayRandomSongInSearch();
+    }, 1000);
+  }
 });
 searchInput.addEventListener("input", () => {
   if (!searchInput.value) {
@@ -540,8 +548,11 @@ searchInput.addEventListener("input", () => {
     `;
 
     searchedSongResult.appendChild(songField);
+
     songField.addEventListener("click", () => {
-      playSong(result.id);
+      if (SearchedMode === "play") {
+        playSong(result.id);
+      }
       playBtnId.classList.add("hidden");
       pauseBtnId.classList.remove("hidden");
 
@@ -555,7 +566,7 @@ searchInput.addEventListener("input", () => {
                 <p id="searched-song-artist">${result.artistName}</p>
               </div>
               <span id="add-searched-song"><i class="fa-solid fa-circle-plus"></i></span>
-    `;
+          `;
         if (success) {
           alert(`Added "${result.title}" to ${targetPlaylist}`);
         } else {
@@ -634,38 +645,6 @@ savePlaylistBtn.addEventListener("click", (e) => {
 
   playlistNameCardBg.classList.add("hidden");
   playlistInput.value = "";
-
-  // logic on clicking the song
-  // createdPlaylist.addEventListener("click", () => {
-  //   console.log("clicked the playlist:", playlistName);
-
-  //   document.querySelectorAll(".playlist-folder").forEach((p) => {
-  //     p.classList.remove("active-custom-playlist");
-  //     console.log(p.classList);
-  //   });
-
-  //   createdPlaylist.classList.add("active-custom-playlist");
-
-  //   songMainPage.classList.add("hidden");
-  //   openedPlaylist.classList.remove("hidden");
-  //   targetPlaylist = playlistName;
-
-  //   const playlistSongs = getPlaylistSongs(playlistName);
-  //   console.log("songs in Playlist:", playlistSongs);
-
-  //   if (playlistSongs.length === 0) {
-  //     console.log(playlistSongs.length);
-  //     playlistSongsList.innerHTML = "";
-  //     addSongsMainBtn.classList.remove("hidden");
-  //     emptyPlaylistMsg.classList.remove("hidden");
-  //     return;
-  //   } else {
-  //     addSongsMainBtn.classList.add("hidden");
-  //     emptyPlaylistMsg.classList.add("hidden");
-  //     displayPlaylistSongs(playlistSongs, playlistName);
-  //   }
-  // });
-
   createPlayist(playlistName);
 });
 
@@ -730,10 +709,10 @@ function addSongsToPlaylist(playlistName, songId) {
       savePlaylists();
       // displayPlaylistSongs(songId,playlistName)
       console.log(`Added song ${songId} to ${playlistName}`);
-      return true;
+      // return true;
     } else {
       console.log("Song Already in Playlist");
-      return false;
+      // return false;
     }
     return false;
   }
@@ -773,42 +752,73 @@ function displayPlaylistSongs(songs, playlistName) {
       console.log("clicked Playlist del btn at index", index);
       e.stopPropagation();
       if (confirm(`Delete ${song.title} from ${playlistName}..?`)) {
-        delSongFromPlaylist(playlistName, index);
+        delSongFromPlaylist(playlistName, song.id);
       }
     });
   });
 }
 
-function delSongFromPlaylist(playlistName, index) {
-  console.log("hey deleting the song at index", index, "from", playlistName);
-  const userPlaylist = JSON.parse(localStorage.getItem("userPlaylists")) || {};
-  const LSplaylists = userPlaylist.playlists || {};
-  console.log("Full playlists object:", LSplaylists);
-  console.log(`Available playlist keys:`, Object.keys(LSplaylists));
+function delSongFromPlaylist(playlistName, songId) {
+  console.log("hey deleting the song at index", songId, "from", playlistName);
 
-  if (LSplaylists[playlistName]) {
-    LSplaylists[playlistName].songs.splice(index, 1);
-
-    userPlaylist.playlists = LSplaylists;
-
-    localStorage.setItem("userPlaylists", JSON.stringify(userPlaylist));
-
-    const songIDs = LSplaylists[playlistName].songs;
-    const fullSongs = songIDs.map((id) =>
-      songData.find((song) => song.id === id)
-    );
-
-    displayPlaylistSongs(fullSongs, playlistName);
-    console.log(`Deleted the song at ${index}`);
-    // console.log("Songs after Deletion:",LSplaylists[playlistName].songs)
-  } else {
-    console.log("playlist not found");
-    console.log("Looking for : ", playlistName);
-    console.log("Available playlists: ", Object.keys(LSplaylists));
+  if (!playlistData.playlists[playlistName]) {
+    console.error("playlist Not Found:", playlistName);
+    alert("playlist Not Found:", playlistName);
+    return;
   }
+
+  const songIndex = playlistData.playlists[playlistName].songs.indexOf(songId);
+
+  if (songIndex === -1) {
+    console.error("Song not found in playlist");
+    alert("Song not found in playlist");
+    return;
+  }
+
+  playlistData.playlists[playlistName].songs.splice(songIndex, 1);
+
+  // save to LS
+  savePlaylists();
+
+  console.log(`Deleted the song ${songId} from ${playlistName}`);
+
+  const UpdatedSongs = getPlaylistSongs(playlistName);
+
+  if (UpdatedSongs.length === 0) {
+    playlistSongsList.innerHTML = "";
+    addSongsMainBtn.classList.remove("hidden");
+    emptyPlaylistMsg.classList.remove("hidden");
+  } else {
+    displayPlaylistSongs(UpdatedSongs, playlistName);
+  }
+
+  // const userPlaylist = JSON.parse(localStorage.getItem("userPlaylists")) || {};
+  // const LSplaylists = userPlaylist.playlists || {};
+  // console.log("Full playlists object:", LSplaylists);
+  // console.log(`Available playlist keys:`, Object.keys(LSplaylists));
+
+  // if (LSplaylists[playlistName]) {
+  //   LSplaylists[playlistName].songs.splice(index, 1);
+
+  //   userPlaylist.playlists = LSplaylists;
+
+  //   localStorage.setItem("userPlaylists", JSON.stringify(userPlaylist));
+
+  //   const songIDs = LSplaylists[playlistName].songs;
+  //   const fullSongs = songIDs.map((id) =>
+  //     songData.find((song) => song.id === id)
+  //   );
+
+  //   displayPlaylistSongs(fullSongs, playlistName);
+  //   console.log(`Deleted the song at ${index}`);
+
+  // } else {
+  //   console.log("playlist not found");
+  //   console.log("Looking for : ", playlistName);
+  //   console.log("Available playlists: ", Object.keys(LSplaylists));
+  // }
 }
-// console.log("Playlist in localStorage:", localStorage.getItem("userPlaylists"));
-// console.log("All localStorage keys:", Object.keys(localStorage));
+
 
 function loadSavedPlaylist() {
   const playlists = Object.keys(playlistData.playlists);
@@ -847,10 +857,15 @@ function loadSavedPlaylist() {
         displayPlaylistSongs(playlistSongs, playlistName);
       }
     });
+
+
     playlistLists.appendChild(createdPlaylist);
     playlistTempMsg.classList.add("hidden");
+
+    crossIcon03.addEventListener('click',()=>{
+    createdPlaylist.classList.remove('active-custom-playlist')
+  })
   });
 }
 
 loadSavedPlaylist();
-
