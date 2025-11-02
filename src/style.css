@@ -310,6 +310,9 @@ main #main {
   scrollbar-width: none;
 }
 .playlist-folder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   font-size: large;
   font-weight: bold;
@@ -318,11 +321,31 @@ main #main {
 }
 .playlist-folder:hover {
   border-radius: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
   border: 1px solid #ff3c00;
-  background-color: #000;
+  /* background-color: #000; */
   color: #fff;
   transform: scale(1.02);
+}
+.playlist-menu-icon{
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.playlist-menu-icon:hover{
+  color: #ff3c00;
+
+}
+
+.dropdown-item{
+  position: absolute;
+  font-weight: 400;
+  font-size: small;
+  padding: 3px 6px;
+  cursor: pointer;
+  background-color: #ff3c00;
+  
+  z-index: 10;
 }
 
 .playlist-temp-msg {

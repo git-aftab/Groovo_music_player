@@ -560,6 +560,7 @@ searchInput.addEventListener("input", () => {
         searchInput.placeholder = "Search Songs for Playlist";
 
         const success = addSongsToPlaylist(targetPlaylist, result.id);
+        console.log("563", success);
         songField.innerHTML = `
               <div>
                 <h3 id="searched-song-name">${result.title}</h3>
@@ -567,11 +568,11 @@ searchInput.addEventListener("input", () => {
               </div>
               <span id="add-searched-song"><i class="fa-solid fa-circle-plus"></i></span>
           `;
-        if (success) {
-          alert(`Added "${result.title}" to ${targetPlaylist}`);
-        } else {
-          alert(`song ALREADY in ${targetPlaylist}`);
-        }
+        // if (success) {
+        //   alert(`Added "${result.title}" to ${targetPlaylist}`);
+        // } else {
+        //   alert(`song ALREADY in ${targetPlaylist}`);
+        // }
       }
     });
   });
@@ -677,6 +678,7 @@ addSongsinPlaylistBtn.forEach((btn) => {
     });
   });
 });
+
 //  LoadPlaylist if exists
 function loadPlaylist() {
   const stored = localStorage.getItem("userPlaylists");
@@ -709,12 +711,9 @@ function addSongsToPlaylist(playlistName, songId) {
       savePlaylists();
       // displayPlaylistSongs(songId,playlistName)
       console.log(`Added song ${songId} to ${playlistName}`);
-      // return true;
     } else {
       console.log("Song Already in Playlist");
-      // return false;
     }
-    return false;
   }
 }
 
@@ -819,7 +818,6 @@ function delSongFromPlaylist(playlistName, songId) {
   // }
 }
 
-
 function loadSavedPlaylist() {
   const playlists = Object.keys(playlistData.playlists);
   // console.log("playlists", playlists);
@@ -827,15 +825,28 @@ function loadSavedPlaylist() {
     // console.log(" playlists:", playlistName);
     let createdPlaylist = document.createElement("div");
     createdPlaylist.className = "playlist-folder";
-    createdPlaylist.textContent = playlistName;
+    //createdPlaylist.textContent = playlistName;  // <i class="fa-solid fa-ellipsis-vertical"></i>
+
+    createdPlaylist.innerHTML = `
+      <span class = 'playlist-folder-name'>${playlistName}</span>
+      <div class="playlist-menu-wrapper">
+        <i class="fa-solid fa-ellipsis-vertical playlist-menu-icon"></i>
+        <div class="playlist-dropdown-menu hidden">
+          <div class="dropdown-item delete-playlist">Delete</div>
+        </div>
+      </div>
+    `;
     createdPlaylist.setAttribute("data-playlist", playlistName);
 
-    createdPlaylist.addEventListener("click", () => {
+    createdPlaylist.addEventListener("click", (e) => {
+      // Dont open playlist if click menu btn
+      if (e.target.closest(".playlist-menu-icon")) return;
+
       console.log("clicked the playlist:", playlistName);
 
       document.querySelectorAll(".playlist-folder").forEach((p) => {
         p.classList.remove("active-custom-playlist");
-        console.log(p.classList);
+        // console.log(p.classList);
       });
 
       createdPlaylist.classList.add("active-custom-playlist");
@@ -858,14 +869,77 @@ function loadSavedPlaylist() {
       }
     });
 
-
     playlistLists.appendChild(createdPlaylist);
     playlistTempMsg.classList.add("hidden");
 
-    crossIcon03.addEventListener('click',()=>{
-    createdPlaylist.classList.remove('active-custom-playlist')
-  })
+    crossIcon03.addEventListener("click", () => {
+      createdPlaylist.classList.remove("active-custom-playlist");
+    });
+
+    // Delete complete playlist Logic
+    let PlaylistMenuIcon = createdPlaylist.querySelector(".playlist-menu-icon");
+    let dropDownMenu = createdPlaylist.querySelector(".playlist-dropdown-menu");
+    let deleteItem = createdPlaylist.querySelector(".delete-playlist");
+
+    console.log('playlist menu icon found:',PlaylistMenuIcon)
+    console.log('dropdown menu found:',dropDownMenu)
+    console.log('deleteItem found:',deleteItem)
+
+    PlaylistMenuIcon.addEventListener("click", (e) => {
+      console.log("🔴 MENU ICON CLICKED");
+      e.stopPropagation();
+
+       console.log("dropDownMenu before toggle:", dropDownMenu.classList);
+
+      document.querySelectorAll(".playlist-dropdown-menu").forEach((menu) => {
+        // console.log(menu);
+        if (menu !== dropDownMenu) {
+          menu.classList.add("hidden");
+        }
+      });
+      dropDownMenu.classList.toggle("hidden");
+      
+    });
+
+    deleteItem.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropDownMenu.classList.add("hidden");
+      deleteCompPlaylist(playlistName);
+    });
   });
 }
 
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".playlist-menu-wrapper")) {
+    document.querySelectorAll(".playlist-dropdown-menu").forEach((menu) => {
+      menu.classList.add("hidden");
+    });
+  }
+});
+
 loadSavedPlaylist();
+
+function deleteCompPlaylist(playlistName) {
+  console.log("deleting playlist=>", playlistName);
+  console.log(playlistData.playlists[playlistName]);
+
+  if (!confirm(`Delete Entire Playlist: ${playlistName}`)) return;
+
+  // delete the playlist
+  delete playlistData.playlists[playlistName];
+  savePlaylists();
+
+  if (targetPlaylist === playlistName) {
+    openedPlaylist.classList.add("hidden");
+    songMainPage.classList.remove("hidden");
+  }
+
+  const playlistElement = document.querySelector(
+    `[data-playlist = "${playlistName}"]`
+  );
+  if (playlistElement) {
+    playlistElement.remove();
+  }
+
+  console.log(`Playlist "${playlistName}" deleted successfully`);
+}
