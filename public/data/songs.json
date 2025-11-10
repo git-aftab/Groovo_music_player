@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "count":1,
+    "count": 1,
     "playListId": 1,
     "title": "Perfect",
     "language": "English",
-    "artistId": 1,
+    "artistId": 2,
     "artistName": "Ed Sheeran",
     "duration": "4:23",
     "songAddress": "Test_files/Ed Sheeran - Perfect (Lyrics)(M4A_128K).m4a",
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "count":2,
+    "count": 2,
     "playListId": 1,
     "title": "Blinding Lights",
     "language": "English",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "count":3,
+    "count": 3,
     "playListId": 1,
     "title": "Shape of you",
     "language": "English",
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "count":4,
+    "count": 4,
     "playListId": 1,
     "title": "Star Boy",
     "language": "English",
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "count":5,
+    "count": 5,
     "playListId": 1,
     "title": "Die With a Smile",
     "language": "English",
@@ -61,11 +61,11 @@
   },
   {
     "id": 6,
-    "count":1,
+    "count": 1,
     "playListId": 2,
     "title": "Surili Ankhiyon Wali",
     "language": "Hindi",
-    "artistId": 2,
+    "artistId": 5,
     "artistName": "Atif Aslam",
     "duration": "4:22",
     "songAddress": "GroovoSongs/Surili Ankhiyon wali.mp3",
@@ -73,23 +73,23 @@
   },
   {
     "id": 7,
-    "count":2,
+    "count": 2,
     "playListId": 2,
     "title": "Ore Piya",
     "language": "Hindi",
-    "artistId": 2,
-    "artistName": "Arijit Singh",
+    "artistId": "",
+    "artistName": "Rahat Fateh Ali Khan",
     "duration": "4:22",
     "songAddress": "GroovoSongs/Ore Piya.mp3",
     "cover": "images/Ore Piya.jpeg"
   },
   {
     "id": 8,
-    "count":3,
+    "count": 3,
     "playListId": 2,
     "title": "Dekha Ek Khawaab",
     "language": "Hindi",
-    "artistId": 2,
+    "artistId": "",
     "artistName": "Arijit Singh, Shreya Ghosal",
     "duration": "4:22",
     "songAddress": "GroovoSongs/Dekha Ek Khawaab.mp3",
@@ -97,11 +97,11 @@
   },
   {
     "id": 9,
-    "count":4,
+    "count": 4,
     "playListId": 2,
     "title": "Ajib Dastan",
     "language": "Hindi",
-    "artistId": 2,
+    "artistId": 3,
     "artistName": "Arijit Singh",
     "duration": "4:22",
     "songAddress": "GroovoSongs/AjibDastan.mp3",
@@ -109,7 +109,7 @@
   },
   {
     "id": 10,
-    "count":5,
+    "count": 5,
     "playListId": 2,
     "title": "Dil Hai Ke Manta nhi",
     "language": "Hindi",
@@ -121,7 +121,7 @@
   },
   {
     "id": 11,
-    "count":6,
+    "count": 6,
     "playListId": 2,
     "title": "Chal Chhaiyya",
     "language": "Hindi",
@@ -133,7 +133,7 @@
   },
   {
     "id": 12,
-    "count":7,
+    "count": 7,
     "playListId": 2,
     "title": "Dil Ne Ye Kaha Hai Dil Se",
     "language": "Hindi",
@@ -145,7 +145,7 @@
   },
   {
     "id": 13,
-    "count":8,
+    "count": 8,
     "playListId": 2,
     "title": "Mere Khayalon ki Malika",
     "language": "Hindi",
@@ -157,7 +157,7 @@
   },
   {
     "id": 14,
-    "count":9,
+    "count": 9,
     "playListId": 2,
     "title": "Tumse Milke Dil Ka haal",
     "language": "Hindi",
@@ -169,7 +169,7 @@
   },
   {
     "id": 15,
-    "count":10,
+    "count": 10,
     "playListId": 2,
     "title": "Suraj Hua Madham",
     "language": "Hindi",
@@ -359,30 +359,22 @@
     "songAddress": "GroovoSongs/Main Yahaan Hoon.mp3",
     "cover": "covers/Main Yahaan Hoon.jpg"
   },
-  
-
-
-
-
-
-
-
 
   {
-    "id":31,
+    "id": 31,
     "count": 1,
     "playListId": 3,
     "title": "Why This Kolaveri Di",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Dhanus",
-    "Album":"3",
+    "Album": "3",
     "duration": "4:02",
     "songAddress": "GroovoSongs/Why This Kolaveri Di.mp3",
     "cover": "covers/Why This Kolaveri Di.jpg"
   },
   {
-    "id":32,
+    "id": 32,
     "count": 2,
     "playListId": 3,
     "title": "Rowdy Baby",
@@ -395,7 +387,7 @@
     "cover": "covers/Rowdy Baby.jpg"
   },
   {
-    "id":33,
+    "id": 33,
     "count": 3,
     "playListId": 3,
     "title": "Vaathi",
@@ -408,46 +400,46 @@
     "cover": "covers/Vaathi.jpg"
   },
   {
-    "id":34,
+    "id": 34,
     "count": 4,
     "playListId": 3,
     "title": "Munabe Va",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Shreya Ghosal Naresh Iyer",
-    "Album":"Sillunu Oru Kaadhal",
+    "Album": "Sillunu Oru Kaadhal",
     "duration": "5:56",
     "songAddress": "GroovoSongs/Munabe Va.mp3",
     "cover": "covers/Munabe Va.jpg"
   },
   {
-    "id":35,
+    "id": 35,
     "count": 5,
     "playListId": 3,
     "title": "Loosu Penne",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Silambarasan Blaaze",
-    "Album":"Vallavan",
+    "Album": "Vallavan",
     "duration": "5:58",
     "songAddress": "GroovoSongs/Loosu Penne.mp3",
     "cover": "covers/Loosu Penne.jpg"
   },
   {
-    "id":36,
+    "id": 36,
     "count": 6,
     "playListId": 3,
     "title": "Appadi Podu",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "KK Anuradha Sriram",
-    "Album":"Ghilli",
+    "Album": "Ghilli",
     "duration": "4:51",
     "songAddress": "GroovoSongs/Appadi Podu.mp3",
     "cover": "covers/Appadi Podu.jpg"
   },
   {
-    "id":37,
+    "id": 37,
     "count": 7,
     "playListId": 3,
     "title": "Vaseegara",
@@ -455,142 +447,142 @@
     "artistId": 2,
     "artistName": "Bombay Jayashri",
     "duration": "4:58",
-    "Album":"Minnale",
+    "Album": "Minnale",
     "songAddress": "GroovoSongs/Vaseegara.mp3",
     "cover": "covers/Vaseegara.jpg"
   },
   {
-    "id":38,
+    "id": 38,
     "count": 8,
     "playListId": 3,
     "title": "Ondra Renda",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Bombay Jayashri",
-    "Album":"Kaakha Kaakha",
+    "Album": "Kaakha Kaakha",
     "duration": "5:16",
     "songAddress": "GroovoSongs/Ondra Renda.mp3",
     "cover": "covers/Ondra Renda.jpg"
   },
   {
-    "id":39,
+    "id": 39,
     "count": 9,
     "playListId": 3,
     "title": "Aalaporaan Thamizhan",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Kailash Kher Sathya Prakash Pooja",
-    "Album":"Mersal",
+    "Album": "Mersal",
     "duration": "4:48",
     "songAddress": "GroovoSongs/Aalaporaan Thamizhan.mp3",
     "cover": "covers/Aalaporaan Thamizhan.jpg"
   },
   {
-    "id":40,
+    "id": 40,
     "count": 10,
     "playListId": 3,
     "title": "Naaka Mukka",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Vijay Antony Chinnaponnu Mahalingam",
-    "Album":"Kadhalil Vizhunthen",
+    "Album": "Kadhalil Vizhunthen",
     "duration": "4:32",
     "songAddress": "GroovoSongs/Naaka Mukka.mp3",
     "cover": "covers/Naaka Mukka.jpg"
   },
   {
-    "id":41,
+    "id": 41,
     "count": 11,
     "playListId": 3,
     "title": "Mental Manadhil",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "A.R Rahman Jonita",
-    "Album":"O Kadhal Kanmani",
+    "Album": "O Kadhal Kanmani",
     "duration": "3:25",
     "songAddress": "GroovoSongs/Mental Manadhil.mp3",
     "cover": "covers/Mental Manadhil.jpg"
   },
   {
-    "id":42,
+    "id": 42,
     "count": 12,
     "playListId": 3,
     "title": "Enjoy Enjaami",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Dhee Arivu",
-    "Album":"Single",
+    "Album": "Single",
     "duration": "4:38",
     "songAddress": "GroovoSongs/Enjoy Enjaami.mp3",
     "cover": "covers/Enjoy Enjaami.jpg"
   },
   {
-    "id":43,
+    "id": 43,
     "count": 13,
     "playListId": 3,
     "title": "Oru Kal Oru Kannadi",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Yuvan Shankar",
-    "Album":"Siva Manasula Sakthi",
+    "Album": "Siva Manasula Sakthi",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Oru Kal Oru Kannadi.mp3",
     "cover": "covers/Oru Kal Oru Kannadi.jpg"
   },
   {
-    "id":44,
+    "id": 44,
     "count": 14,
     "playListId": 3,
     "title": "Otha Sollaala",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "G.V. Prakash Velumrgan",
-    "Album":"Aadukalam",
+    "Album": "Aadukalam",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Otha Sollaala.mp3",
     "cover": "covers/Otha Sollaala.jpg"
   },
   {
-    "id":45,
+    "id": 45,
     "count": 15,
     "playListId": 3,
     "title": "Snehithane Snehithane",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Sadhana Sargam, Srinivas",
-    "Album":"Alaipayuthey",
+    "Album": "Alaipayuthey",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Snehithane Snehithane.mp3",
     "cover": "covers/Snehithane Snehithane.jpg"
   },
   {
-    "id":46,
+    "id": 46,
     "count": 16,
     "playListId": 3,
     "title": "Naa Ready",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Vijay, Anirudh",
-    "Album":"Leo",
+    "Album": "Leo",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Naa Ready.mp3",
     "cover": "covers/Naa Ready.jpg"
   },
   {
-    "id":47,
+    "id": 47,
     "count": 17,
     "playListId": 3,
     "title": "Sha La La",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Sunidhi Chauhan",
-    "Album":"Ghilli",
+    "Album": "Ghilli",
     "duration": "3:52",
     "songAddress": "GroovoSongs/Sha La La.mp3",
     "cover": "covers/Sha La La.jpg"
   },
   {
-    "id":48,
+    "id": 48,
     "count": 18,
     "playListId": 3,
     "title": "Neeye Neeye",
@@ -602,169 +594,162 @@
     "cover": "covers/Neeye Neeye.jpg"
   },
   {
-    "id":49,
+    "id": 49,
     "count": 19,
     "playListId": 3,
     "title": "Thottal Poomalarum",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "S.J Surya, Simran, Harini",
-    "Album":"New",
+    "Album": "New",
     "duration": "5:30",
     "songAddress": "GroovoSongs/Thottal PooMalarum.mp3",
     "cover": "covers/Thottal Poomalarum.jpg"
   },
   {
-    "id":50,
+    "id": 50,
     "count": 20,
     "playListId": 3,
     "title": "Kannazhaga",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Dhanus, Shruti Haasan",
-    "Album":"3",
+    "Album": "3",
     "duration": "3:26",
     "songAddress": "GroovoSongs/Kannazhaga.mp3",
     "cover": "covers/Kannazhaga.jpg"
   },
   {
-    "id":51,
+    "id": 51,
     "count": 21,
     "playListId": 3,
     "title": "Idhu Varai",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Andrea Jeremiah",
-    "Album":"Goa",
+    "Album": "Goa",
     "duration": "4:32",
     "songAddress": "GroovoSongs/Idhu Varais.mp3",
     "cover": "covers/Idhu Varai.jpg"
   },
   {
-    "id":52,
+    "id": 52,
     "count": 22,
     "playListId": 3,
     "title": "Kangal Irandal",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Bellie Raj",
-    "Album":"Subramaniapuram",
+    "Album": "Subramaniapuram",
     "duration": "5:11",
     "songAddress": "GroovoSongs/Kangal Irandhal.mp3",
     "cover": "covers/Kangal Irandal.jpg"
   },
   {
-    "id":53,
+    "id": 53,
     "count": 23,
     "playListId": 3,
     "title": "Kan Pesum Varthaigal",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Karthik",
-    "Album":"7G Rainbow Colony",
+    "Album": "7G Rainbow Colony",
     "duration": "5:38",
     "songAddress": "GroovoSongs/Kan Pesum Varthaigal.mp3",
     "cover": "covers/Kan Pesum Varthaigal.jpg"
   },
   {
-    "id":54,
+    "id": 54,
     "count": 24,
     "playListId": 3,
     "title": "Ava Enna",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Karthik",
-    "Album":"Vaaranam Aayiram",
+    "Album": "Vaaranam Aayiram",
     "duration": "5:21",
     "songAddress": "GroovoSongs/Ava Enna.mp3",
     "cover": "covers/Ava Enna.jpg"
   },
   {
-    "id":55,
+    "id": 55,
     "count": 25,
     "playListId": 3,
     "title": "Kaasu Panam",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Gaana Bala, Anthony Daasan",
-    "Album":"Soodhu Kavvum",
+    "Album": "Soodhu Kavvum",
     "duration": "2:54",
     "songAddress": "GroovoSongs/Kaasu Panam.mp3",
     "cover": "covers/Kaasu Panam.jpg"
   },
   {
-    "id":56,
+    "id": 56,
     "count": 26,
     "playListId": 3,
     "title": "Kanna Kaattu Podhum",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Shreya Ghosal, Jithin",
-    "Album":"Rekka",
+    "Album": "Rekka",
     "duration": "4:49",
     "songAddress": "GroovoSongs/Kanna Kaattu Podhum.mp3",
     "cover": "covers/Kanna Kaattu Podhum.jpg"
   },
   {
-    "id":57,
+    "id": 57,
     "count": 27,
     "playListId": 3,
     "title": "Kaattu Payale",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Dhee",
-    "Album":"Soorarai Pottru",
+    "Album": "Soorarai Pottru",
     "duration": "4:06",
     "songAddress": "GroovoSongs/Kaattu Payale.mp3",
     "cover": "covers/Kaattu Payale.jpg"
   },
   {
-    "id":58,
+    "id": 58,
     "count": 28,
     "playListId": 3,
     "title": "Chill Bro",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Dhanus, Mervin Solomon",
-    "Album":"Pattas",
+    "Album": "Pattas",
     "duration": "3:28",
     "songAddress": "GroovoSongs/Chill Bro.mp3",
     "cover": "covers/Chill Bro.jpg"
   },
   {
-    "id":59,
+    "id": 59,
     "count": 29,
     "playListId": 3,
     "title": "Thangamey",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Anirudh,Murugavel",
-    "Album":"Naanum Rowdy Dhaan",
+    "Album": "Naanum Rowdy Dhaan",
     "duration": "4:22",
     "songAddress": "GroovoSongs/Thangamey.mp3",
     "cover": "covers/Thangamey.jpg"
   },
   {
-    "id":60,
+    "id": 60,
     "count": 30,
     "playListId": 3,
     "title": "Engeyum Kaadhal",
     "language": "Tamil",
     "artistId": 2,
     "artistName": "Aalap Raju, Devan",
-    "Album":"Engeyum Kaadhal",
+    "Album": "Engeyum Kaadhal",
     "duration": "5:29",
     "songAddress": "GroovoSongs/Engeyum Kaadhal.mp3",
     "cover": "covers/Engeyum Kaadhal.jpg"
   },
 
-
-
-
-
-
-
-  
   {
     "id": 61,
     "count": 1,
@@ -2344,7 +2329,7 @@
     "playListId": 1,
     "title": "Crazy in Love",
     "language": "English",
-    "artistId": 2,
+    "artistId": " ",
     "artistName": "Beyoncé ft. Jay-Z",
     "Album": "Dangerously in Love (2003)",
     "duration": "3:56",
@@ -2357,7 +2342,7 @@
     "playListId": 1,
     "title": "Uptown Funk",
     "language": "English",
-    "artistId": 2,
+    "artistId": " ",
     "artistName": "Mark Ronson ft. Bruno Mars",
     "Album": "Uptown Special (2014)",
     "duration": "4:30",
@@ -2374,20 +2359,20 @@
     "artistName": "Ed Sheeran",
     "Album": "÷ (Divide) (2017)",
     "duration": "3:53",
-    "songAddress": "GroovoSongs/ShapeofYou.mp3",
+    "songAddress": "GroovoSongs/ShapeofYou-EdSheeran.mp3",
     "cover": "covers/shapeofyou.jpg"
   },
   {
     "id": 185,
     "count": 10,
     "playListId": 1,
-    "title": "Blinding Lights",
+    "title": "Popular",
     "language": "English",
-    "artistId": 2,
+    "artistId": 1,
     "artistName": "The Weeknd",
     "Album": "After Hours (2019)",
     "duration": "3:20",
-    "songAddress": "GroovoSongs/BlindingLights.mp3",
+    "songAddress": "GroovoSongs/popular-weeknd.mp3",
     "cover": "covers/blindinglights.jpg"
   },
   {
@@ -2716,19 +2701,6 @@
     "cover": "covers/chandelier.jpg"
   },
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
   {
     "id": 211,
     "count": 1,
@@ -2943,7 +2915,7 @@
     "playListId": 8,
     "title": "Afterglow",
     "language": "English",
-    "artistId": 2,
+    "artistId": 1,
     "artistName": "The Weeknd",
     "Album": "Hologram (2025)",
     "duration": "3:55",
@@ -3119,10 +3091,6 @@
     "songAddress": "GroovoSongs/Venom.mp3",
     "cover": "covers/venom.jpg"
   },
-
-
-
-
 
   {
     "id": 241,
@@ -3502,11 +3470,6 @@
     "cover": "covers/kanavugal.jpg"
   },
 
-
-
-
-
-
   {
     "id": 270,
     "count": 1,
@@ -3885,9 +3848,6 @@
     "cover": "covers/saradaaga.jpg"
   },
 
-
-
-  
   {
     "id": 299,
     "count": 1,
@@ -4266,13 +4226,6 @@
     "cover": "covers/local.jpg"
   },
 
-
-
-
-  
-
-
-
   {
     "id": 328,
     "count": 1,
@@ -4591,7 +4544,7 @@
     "playListId": 14,
     "title": "Daku Returns",
     "language": "Punjabi",
-    "artistId": 2,
+    "artistId": 0,
     "artistName": "Inderpal Moga",
     "Album": "Single (2025)",
     "duration": "3:15",
@@ -4604,7 +4557,7 @@
     "playListId": 14,
     "title": "Bewafa 2",
     "language": "Punjabi",
-    "artistId": 2,
+    "artistId": 0,
     "artistName": "Imran Khan",
     "Album": "Single (2024)",
     "duration": "3:40",
@@ -4617,7 +4570,7 @@
     "playListId": 14,
     "title": "California Love",
     "language": "Punjabi",
-    "artistId": 2,
+    "artistId": 0,
     "artistName": "AP Dhillon",
     "Album": "Final Lap (EP, 2025)",
     "duration": "3:00",
@@ -4628,9 +4581,9 @@
     "id": 355,
     "count": 28,
     "playListId": 14,
-    "title": "Filhall 2 (Sad Version)",
+    "title": "Filhall 2",
     "language": "Punjabi",
-    "artistId": 2,
+    "artistId": 0,
     "artistName": "B Praak",
     "Album": "Single (2025)",
     "duration": "4:58",
@@ -4643,14 +4596,160 @@
     "playListId": 14,
     "title": "Jatt & Juliet 3 (Title Track)",
     "language": "Punjabi",
-    "artistId": 2,
+    "artistId": 0,
     "artistName": "Diljit Dosanjh",
     "Album": "Jatt & Juliet 3 (2024)",
     "duration": "2:45",
     "songAddress": "GroovoSongs/Jatt&Juliet3TitleTrack.mp3",
     "cover": "covers/jatt&juliet3titletrack.jpg"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": 357,
+    "count": 1,
+    "playListId": 9,
+    "title": "Saiyaara",
+    "language": "Hindi",
+    "artistId": 0,
+    "artistName": "Faheem Abullah",
+    "Album": "Saiyaara",
+    "duration": "2:45",
+    "songAddress": "GroovoSongs/saiyaara-title_25.mp3",
+    "cover": "covers/jatt&juliet3titletrack.jpg"
+  },
+  {
+    "id": 358,
+    "count": 2,
+    "playListId": 9,
+    "title": "Humsafar",
+    "language": "Hindi",
+    "artistId": 0,
+    "artistName": "Sachet parampara, Sachet Tandon",
+    "Album": "Saiyaara",
+    "duration": "05:21",
+    "songAddress": "GroovoSongs/humsafar-saiyaara.mp3",
+    "cover": "covers/jatt&juliet3titletrack.jpg"
+  },
+  {
+    "id": 359,
+    "count": 3,
+    "playListId": 9,
+    "title": "Tu Hi Mera",
+    "language": "Hindi",
+    "artistId": 6,
+    "artistName": "Pritam",
+    "Album": "jannat 2",
+    "duration": "04:35",
+    "songAddress": "GroovoSongs/saiyaara.mp3",
+    "cover": "covers/jatt&juliet3titletrack.jpg"
+  },
+  {
+    "id": 360,
+    "count": 4,
+    "playListId": 9,
+    "title": "Tu Hi Mera",
+    "language": "Hindi",
+    "artistId": 6,
+    "artistName": "Pritam",
+    "Album": "jannat 2",
+    "duration": "04:35",
+    "songAddress": "GroovoSongs/saiyaara.mp3",
+    "cover": "covers/jatt&juliet3titletrack.jpg"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": 382,
+    "count": 1,
+    "playListId": 11,
+    "title": "Tu hai Kahan",
+    "language": "Urdu-trend",
+    "artistId": 7,
+    "artistName": "AUR",
+    "Album": "",
+    "duration": "02:25",
+    "songAddress": "GroovoSongs/tu_hai_kahan-aur.mp3",
+    "cover": "covers/tu_hai_kahan-aur.jpg"
+  },
+  {
+    "id": 383,
+    "count": 2,
+    "playListId": 11,
+    "title": "Shikayat",
+    "language": "Urdu-trend",
+    "artistId": 7,
+    "artistName": "AUR",
+    "Album": "",
+    "duration": "04:32",
+    "songAddress": "GroovoSongs/shikayat-aur.mp3",
+    "cover": "covers/shikayat-aur.jpg"
+  },
+  {
+    "id": 384,
+    "count": 3,
+    "playListId": 11,
+    "title": "Kahani Suno 2.0",
+    "language": "Urdu-trend",
+    "artistId": 0,
+    "artistName": "Kaifi Khalil",
+    "Album": "",
+    "duration": "02:53",
+    "songAddress": "GroovoSongs/kahani_suno-kaifi_khalil.mp3",
+    "cover": "covers/kahani_suno-kaifi_khalil.jpg"
+  },
+  {
+    "id": 385,
+    "count": 5,
+    "playListId": 11,
+    "title": "JANNAT - Farhan Khan",
+    "language": "Urdu-trend",
+    "artistId": 8,
+    "artistName": "Farhan Khan",
+    "Album": "",
+    "duration": "03:38",
+    "songAddress": "GroovoSongs/jannat-farhan_Khan.mp3",
+    "cover": "covers/jannat-farhan_khan.jpg"
+  },
+  {
+    "id": 386,
+    "count": 6,
+    "playListId": 11,
+    "title": "Iraaday - Abdul Hannan",
+    "language": "Urdu-trend",
+    "artistId": 0,
+    "artistName": "Abdul Hannnan",
+    "Album": "",
+    "duration": "02:13",
+    "songAddress": "GroovoSongs/iraaday-abdul_hannan.mp3",
+    "cover": "covers/jannat-farhan_khan.jpg"
   }
-
 ]
-
-  

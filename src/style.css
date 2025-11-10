@@ -91,13 +91,11 @@
   }
 }
 
-.active-custom-playlist{
+.active-custom-playlist {
   background-color: #ff3c00;
   color: #fff;
   border-radius: 5px;
 }
-
-
 
 .search-result-outer-div {
   position: absolute;
@@ -130,11 +128,11 @@
   cursor: pointer;
 }
 
-#add-searched-song:first-child{
+#add-searched-song:first-child {
   /* background-color: #ff3c00; */
   color: #ff3c00;
 }
-#add-searched-song:first-child:hover{
+#add-searched-song:first-child:hover {
   color: white;
 }
 
@@ -327,24 +325,23 @@ main #main {
   color: #fff;
   transform: scale(1.02);
 }
-.playlist-menu-icon{
+.playlist-menu-icon {
   cursor: pointer;
   padding: 0 10px;
 }
 
-.playlist-menu-icon:hover{
+.playlist-menu-icon:hover {
   color: #ff3c00;
-
 }
 
-.dropdown-item{
+.dropdown-item {
   position: absolute;
   font-weight: 400;
   font-size: small;
   padding: 3px 6px;
   cursor: pointer;
   background-color: #ff3c00;
-  
+
   z-index: 10;
 }
 
@@ -601,7 +598,7 @@ main #main {
 
 .play-area {
   position: fixed;
-  z-index: 100;
+  z-index: 999;
   bottom: 0;
   height: 100px;
   width: 100vw;
@@ -848,17 +845,17 @@ main #main {
   top: 30px;
   right: 120px;
 }
-.cross-icon03{
+.cross-icon03 {
   position: absolute;
   top: 30px;
   right: 60px;
 }
 
-.playlist-songs-list{
+.playlist-songs-list {
   margin: 2px 0;
 }
 
-.playlist-song-row{
+.playlist-song-row {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -869,11 +866,11 @@ main #main {
   margin: 5px;
   position: relative;
 }
-#playlist-song-title{
+#playlist-song-title {
   font-weight: 700;
   font-size: large;
 }
-#playlist-song-artistName{
+#playlist-song-artistName {
   font-weight: 500;
   font-size: small;
   color: #736969;
@@ -883,20 +880,20 @@ main #main {
   font-weight: 600;
 } */
 
-.playlist-song-row:hover{
+.playlist-song-row:hover {
   background-color: #ff3c00;
   border: 1px solid #fff;
 }
-.playlist-song-row:hover .child{
+.playlist-song-row:hover .child {
   color: #000;
 }
 
-#playlist-song-duration{
+#playlist-song-duration {
   position: absolute;
-  top: 20px ;
+  top: 20px;
   right: 90px;
 }
-.playlist-song-del-btn{
+.playlist-song-del-btn {
   position: absolute;
   top: 20px;
   right: 50px;
@@ -904,17 +901,168 @@ main #main {
   /* z-index: 400; */
 }
 
-#playlist-song-del-btn:hover{
+#playlist-song-del-btn:hover {
   color: #000;
 }
-
 
 /* Footer section  */
 
 footer {
+  /* background-color: #000; */
   margin-top: 20px;
-  height: 45vh;
+  height: 25vh;
   margin-bottom: 110px;
   width: 100%;
   background-color: #333;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  border-radius: 5px;
+}
+
+.footer-wrapper {
+  /* margin: 20px; */
+  padding: 40px 20px;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+.foot-header-msg {
+  text-align: center;
+  font-size: large;
+}
+.foot-header-msg a {
+  color: #ff3c00;
+}
+#heart-icon i {
+  color: #ff3c00;
+  transition: all ease-in-out;
+}
+#heart-icon i:hover {
+  scale: 1.2;
+}
+
+.connect {
+  text-align: center;
+  padding: 3vw;
+  font-size: x-large;
+}
+
+.fa-instagram {
+  /* background: linear-gradient(
+    45deg,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  ); */
+  background-color: rgb(253, 0, 97);
+  border-radius: 5px;
+  padding: 1px;
+  color: #fff;
+}
+.fa-linkedin {
+  color: blue;
+}
+.fa-github {
+  color: rgb(255, 0, 255);
+}
+
+.fa-github:hover,
+.fa-linkedin:hover {
+  color: #ff3c00;
+  scale: 1.2;
+}
+
+.fa-instagram:hover {
+  background: #ff3c00;
+  color: #fff;
+  scale: 1.2;
+}
+
+.landing-animation-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  z-index: 9999;
+  animation: fadeOutLoader 0.5s ease-in forwards;
+  animation-delay: 2s;
+}
+
+.landing-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-logo img {
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  animation: iconAnimate 2s ease-in-out forwards;
+}
+
+.landing-logo-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-left: 10px; 
+  z-index: 5; 
+  opacity: 0;
+  transform: translateX(-90px); 
+  animation: textAnimate 2s ease-in-out forwards;
+}
+
+
+/* Animation 1: Icon zooms in center, then moves left */
+@keyframes iconAnimate {
+  0% {
+    transform: scale(0) translateX(0);
+    opacity: 0;
+  }
+  /* At 50% (1s), it's fully zoomed in at the center */
+  50% {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+  /* At 100% (2s), it has moved to the left */
+  100% {
+    transform: scale(1) translateX(-30px);
+    opacity: 1;
+  }
+}
+
+/* Animation 2: Text holds, then slides out to the right */
+@keyframes textAnimate {
+  0% {
+    transform: translateX(-90px);
+    opacity: 0;
+  }
+  /* Hold in place for the first 1s (50%) */
+  50% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  /* At 100% (2s), it slides out to its final spot */
+  100% {
+    transform: translateX(-30px);
+    opacity: 1;
+  }
+}
+
+/* Animation 3: Whole loader fades out */
+@keyframes fadeOutLoader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    /* Hide it completely after fade out */
+    visibility: hidden;
+  }
 }

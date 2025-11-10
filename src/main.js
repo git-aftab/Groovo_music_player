@@ -1,8 +1,8 @@
 // Test if image loads
-const img = new Image();
-img.onload = () => console.log("Image loaded successfully");
-img.onerror = () => console.log("Image failed to load");
-img.src = "../assets/images/farhanKhan.jpeg";
+// const img = new Image();
+// img.onload = () => console.log("Image loaded successfully");
+// img.onerror = () => console.log("Image failed to load");
+// img.src = "../assets/images/farhanKhan.jpeg";
 
 // Main page Selectors --------------------
 let playListCards = document.querySelectorAll(".card");
@@ -32,6 +32,7 @@ let searchedSongResult = document.getElementById("searched-songs-result");
 let playlistInput = document.getElementById("playlistInput");
 let savePlaylistBtn = document.getElementById("save-playlist-btn");
 let playlistLists = document.getElementById("playlist-list");
+let artistDetails = document.querySelectorAll(".artist-card");
 
 let openedPlaylist = document.querySelector(".opened-playlist");
 let openedPlaylistTempMsg = document.getElementById("opened-play-temp-msg");
@@ -51,6 +52,7 @@ let songDuration = document.getElementById("song-duration");
 let songArtistImg = document.getElementById("song-artist-img");
 let songOrPlaylistImgBanner = document.getElementById("songOrPlaylist-img");
 let songListContainer = document.getElementById("song-lists");
+let staticPlaylistMeta = document.getElementById("static-playlist-meta");
 
 // Button Selectors--------------------------
 let backBtn = document.getElementById("back-button");
@@ -70,14 +72,39 @@ backBtn.addEventListener("click", () => {
 
 // Program Goes from here......................
 
+// playlist.json
 const playlistRes = await fetch("data/playlist.json");
 const playLists = await playlistRes.json();
-// console.log(playLists)
+console.log(playLists);
 
-async function loadBanner(playListId) {
+// Artist.json
+const artistsPlaylist = await fetch("data/artists.json");
+const artistsPlaylistRes = await artistsPlaylist.json();
+console.log(artistsPlaylistRes);
+// Song.json
+const res = await fetch("data/songs.json");
+const songData = await res.json();
+console.log(songData);
+
+async function loadBanner(playListId, mode) {
+  // console.log(mode)
+  if (mode === "artistMode") {
+    const playlist = artistsPlaylistRes.find(
+      (pl) => pl.playListId === playListId
+    );
+    console.log(playlist);
+
+    if (playlist) {
+      songOrPlaylistImgBanner.src = playlist.image;
+      songTitleInBanner.textContent = playlist.title;
+    }
+    return;
+  }
+
   // Find the playlist by Id
   const playList = playLists.find((pl) => pl.id === playListId);
   console.log(playList);
+  console.log(playListId);
 
   if (playList) {
     songOrPlaylistImgBanner.src = playList.cover;
@@ -96,17 +123,41 @@ playListCards.forEach((card, index) => {
   });
 });
 
-// Song.json
-const res = await fetch("data/songs.json");
-const songData = await res.json();
-// console.log(songData);
+async function renderSongs(playListID, mode,index) {
+  console.log(mode, playListID);
+  if (mode === "artistMode") {
+    console.log("inside artist mode")
+    const playlistSong = songData.filter(
+      (song) => song.artistId === index
+    );
+    console.log(playlistSong)
 
-async function renderSongs(playListID) {
-  // console.log("RENDERING GOES HERE--------------");
+    songListContainer.innerHTML = "";
+    playlistSong.forEach((song) => {
+      // console.log(song)
+      let songRow = document.createElement("div");
+      songRow.className = "songList-row";
+
+      songRow.innerHTML = `
+            <div class="cell">${song.count}</div>
+            <div class="cell">${song.title}</div>
+            <div class="cell">${song.artistName}</div>
+            <div class="cell">${song.duration}</div>
+            `;
+
+      songListContainer.appendChild(songRow);
+      // Play song Event trigger
+      songRow.addEventListener("click", () => {
+        playSong(song.id);
+        playBtnId.classList.add("hidden");
+        pauseBtnId.classList.remove("hidden");
+      });
+    });
+    return;
+  }
   const playListSong = songData.filter(
     (song) => song.playListId === playListID
   );
-  // console.log(playListSong);
 
   songListContainer.innerHTML = "";
 
@@ -146,6 +197,7 @@ let isUserSeeking = false;
 // playlist
 let SearchedMode = "play";
 let targetPlaylist = null;
+let staticPlaylistViewMode = "BuiltinPlaylist";
 
 function setCurrentSong(songId) {
   currentSongId = songId;
@@ -397,12 +449,7 @@ function formatTime(seconds) {
 // update current time display && Duration
 function updateCurrentTime(currTime) {
   const currentTimeElement = document.getElementById("current-time");
-  // console.log(
-  //   "Updating current time:",
-  //   currTime,
-  //   "Element found:",
-  // !!currentTimeElement
-  // );
+  
   if (currentTimeElement) {
     currentTimeElement.textContent = formatTime(currTime);
   } else {
@@ -609,12 +656,6 @@ function displayRandomSongInSearch() {
   });
 }
 
-mainArtistImg.forEach((artist, index) => {
-  artist.addEventListener("click", (id) => {
-    console.log("artist id:", index, artist, id);
-  });
-});
-
 createPlaylistBtn.addEventListener("click", () => {
   console.log("Clicked playlist btn");
   playlistNameCardBg.classList.remove("hidden");
@@ -790,32 +831,6 @@ function delSongFromPlaylist(playlistName, songId) {
   } else {
     displayPlaylistSongs(UpdatedSongs, playlistName);
   }
-
-  // const userPlaylist = JSON.parse(localStorage.getItem("userPlaylists")) || {};
-  // const LSplaylists = userPlaylist.playlists || {};
-  // console.log("Full playlists object:", LSplaylists);
-  // console.log(`Available playlist keys:`, Object.keys(LSplaylists));
-
-  // if (LSplaylists[playlistName]) {
-  //   LSplaylists[playlistName].songs.splice(index, 1);
-
-  //   userPlaylist.playlists = LSplaylists;
-
-  //   localStorage.setItem("userPlaylists", JSON.stringify(userPlaylist));
-
-  //   const songIDs = LSplaylists[playlistName].songs;
-  //   const fullSongs = songIDs.map((id) =>
-  //     songData.find((song) => song.id === id)
-  //   );
-
-  //   displayPlaylistSongs(fullSongs, playlistName);
-  //   console.log(`Deleted the song at ${index}`);
-
-  // } else {
-  //   console.log("playlist not found");
-  //   console.log("Looking for : ", playlistName);
-  //   console.log("Available playlists: ", Object.keys(LSplaylists));
-  // }
 }
 
 function loadSavedPlaylist() {
@@ -881,15 +896,15 @@ function loadSavedPlaylist() {
     let dropDownMenu = createdPlaylist.querySelector(".playlist-dropdown-menu");
     let deleteItem = createdPlaylist.querySelector(".delete-playlist");
 
-    console.log('playlist menu icon found:',PlaylistMenuIcon)
-    console.log('dropdown menu found:',dropDownMenu)
-    console.log('deleteItem found:',deleteItem)
+    // console.log('playlist menu icon found:',PlaylistMenuIcon)
+    // console.log('dropdown menu found:',dropDownMenu)
+    // console.log('deleteItem found:',deleteItem)
 
     PlaylistMenuIcon.addEventListener("click", (e) => {
       console.log("🔴 MENU ICON CLICKED");
       e.stopPropagation();
 
-       console.log("dropDownMenu before toggle:", dropDownMenu.classList);
+      console.log("dropDownMenu before toggle:", dropDownMenu.classList);
 
       document.querySelectorAll(".playlist-dropdown-menu").forEach((menu) => {
         // console.log(menu);
@@ -898,7 +913,6 @@ function loadSavedPlaylist() {
         }
       });
       dropDownMenu.classList.toggle("hidden");
-      
     });
 
     deleteItem.addEventListener("click", (e) => {
@@ -943,3 +957,19 @@ function deleteCompPlaylist(playlistName) {
 
   console.log(`Playlist "${playlistName}" deleted successfully`);
 }
+
+artistDetails.forEach((artistCard, index) => {
+  artistCard.addEventListener("click", () => {
+    const playlistId = parseInt(artistCard.dataset.id);
+    // console.log(playlistId);
+    staticPlaylistViewMode = "artistMode";
+    songBannerPage.classList.remove("hidden");
+    songMainPage.classList.add("hidden");
+    backBtn.classList.remove("hidden");
+    if (staticPlaylistViewMode === "artistMode") {
+      loadBanner(playlistId, staticPlaylistViewMode);
+      renderSongs(playlistId, staticPlaylistViewMode,index+1);
+    }
+    console.log("artist id:", index+1, artistCard, staticPlaylistViewMode);
+  });
+});

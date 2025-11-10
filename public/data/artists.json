@@ -1,42 +1,58 @@
 [
   {
     "id": 1,
+    "playListId":15,
+    "title": "Best of Weeknd",
     "name": "Weeknd",
-    "image": "../assets/images/weekend.jpeg"
+    "image": "/assets/images/Weekend.jpeg"
   },
   {
     "id": 2,
+    "playListId":16,
+    "title": "Best of Ed Sheeran",
     "name": "Ed Sheeran",
-    "image": "../assets/images/EdSheeran.jpeg"
+    "image": "./assets/images/EdSheeran.jpeg"
   },
   {
     "id": 3,
-    "name": "Anirudh",
-    "image":"../assets/images/Anirudh.jpeg"
+    "playListId":17,
+    "title": "Best of Arijit",
+    "name": "Arijit",
+    "image":"/assets/images/Arijit.jpeg"
   },
   {
     "id": 4,
-    "name": "Arijit",
-    "image":"../assets/images/Arijit.jpeg"
+    "playListId":18,
+    "title": "Best of Anirudh",
+    "name": "Anirudh",
+    "image":"/assets/images/Anirudh.jpeg"
   },
   {
     "id": 5,
+    "playListId":19,
+    "title": "Best of Atif Aslam",
     "name": "Atif Aslam",
-    "image":"../assets/images/Atif.jpeg"
+    "image":"/assets/images/Atif.jpeg"
   },
   {
     "id": 6,
+    "playListId":20,
+    "title": "Best of Pritam",
     "name": "Pritam",
-    "image":"../assets/images/pritam.jpeg"
+    "image":"/assets/images/pritam.jpeg"
   },
   {
     "id": 7,
+    "playListId":21,
+    "title": "Best of Aur",
     "name": "AUR",
-    "image":"../assets/images/Aur.jpeg"
+    "image":"/assets/images/Aur.jpeg"
   },
   {
     "id": 8,
+    "playListId":22,
+    "title": "Best of Farhan Khan",
     "name": "Farhan Khan",
-    "image":"../assets/images/farhanKhan.jpeg"
+    "image":"/assets/images/farhanKhan.jpeg"
   }
 ]
