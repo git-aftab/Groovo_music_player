@@ -63,12 +63,12 @@
     "id": 6,
     "count": 1,
     "playListId": 2,
-    "title": "Surili Ankhiyon Wali",
+    "title": "Ho Gaya Hai Tujhko Pyar",
     "language": "Hindi",
     "artistId": 5,
-    "artistName": "Atif Aslam",
+    "artistName": "Lata Mangeshkar, Udit Narayan",
     "duration": "4:22",
-    "songAddress": "GroovoSongs/Surili Ankhiyon wali.mp3",
+    "songAddress": "GroovoSongs/ho_gaya_hai_tujhko_pyar.mp3",
     "cover": "images/Surili Ankhiyon Wali.jpeg"
   },
   {
@@ -80,20 +80,20 @@
     "artistId": "",
     "artistName": "Rahat Fateh Ali Khan",
     "duration": "4:22",
-    "songAddress": "GroovoSongs/Ore Piya.mp3",
-    "cover": "images/Ore Piya.jpeg"
+    "songAddress": "GroovoSongs/ore_piya.mp3",
+    "cover": "images/ore_piya.jpeg"
   },
   {
     "id": 8,
     "count": 3,
     "playListId": 2,
-    "title": "Dekha Ek Khawaab",
+    "title": "Aankh Hai Bhari Bhari",
     "language": "Hindi",
     "artistId": "",
-    "artistName": "Arijit Singh, Shreya Ghosal",
+    "artistName": "Kumar Sanu",
     "duration": "4:22",
-    "songAddress": "GroovoSongs/Dekha Ek Khawaab.mp3",
-    "cover": "images/Dekha Ek Khawaab.jpeg"
+    "songAddress": "GroovoSongs/aankh_hai_bhari_bhari.mp3",
+    "cover": "images/aankh_hai_bhari_bhari.jpeg"
   },
   {
     "id": 9,
@@ -114,20 +114,20 @@
     "title": "Dil Hai Ke Manta nhi",
     "language": "Hindi",
     "artistId": 2,
-    "artistName": "Lady Gaga, Bruno Mars",
+    "artistName": "Anuradha Paudwal, Kumar Sanu",
     "duration": "4:22",
-    "songAddress": "GroovoSongs/DilHaiKiMantaNahin.mp3",
-    "cover": "images/Dil Hai Ke Manta nhi.jpeg"
+    "songAddress": "GroovoSongs/dil_hai_ki_manta_nahi.mp3",
+    "cover": "images/dil_hai_ki_manta_nahi.jpeg"
   },
   {
     "id": 11,
     "count": 6,
     "playListId": 2,
-    "title": "Chal Chhaiyya",
+    "title": "Chaiyya chaiyya",
     "language": "Hindi",
     "artistId": 2,
-    "artistName": "Lady Gaga, Bruno Mars",
-    "duration": "4:22",
+    "artistName": "A.R. Rahman, Sukhvinder, Kavita",
+    "duration": "06:06",
     "songAddress": "GroovoSongs/Chal Cahhiyya.mp3",
     "cover": "images/Chal Chhaiyya.jpeg"
   },

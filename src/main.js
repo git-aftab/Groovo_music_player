@@ -664,6 +664,84 @@ crossIcon02.addEventListener("click", () => {
   playlistNameCardBg.classList.add("hidden");
 });
 
+function createPlaylistElement(playlistName) {
+  let createdPlaylist = document.createElement("div");
+  createdPlaylist.className = "playlist-folder";
+  
+  createdPlaylist.innerHTML = `
+    <span class='playlist-folder-name'>${playlistName}</span>
+    <div class="playlist-menu-wrapper">
+      <i class="fa-solid fa-ellipsis-vertical playlist-menu-icon"></i>
+      <div class="playlist-dropdown-menu hidden">
+        <div class="dropdown-item delete-playlist">Delete</div>
+      </div>
+    </div>
+  `;
+  
+  createdPlaylist.setAttribute("data-playlist", playlistName);
+
+  // Main click handler - open playlist
+  createdPlaylist.addEventListener("click", (e) => {
+    // Don't open playlist if clicking menu
+    if (e.target.closest(".playlist-menu-icon")) return;
+
+    console.log("clicked the playlist:", playlistName);
+
+    // Remove active from all
+    document.querySelectorAll(".playlist-folder").forEach((p) => {
+      p.classList.remove("active-custom-playlist");
+    });
+
+    // Add active to current
+    createdPlaylist.classList.add("active-custom-playlist");
+    songMainPage.classList.add("hidden");
+    openedPlaylist.classList.remove("hidden");
+    targetPlaylist = playlistName;
+    openedPlaylistHeader.textContent = playlistName + "🎶";
+
+    const playlistSongs = getPlaylistSongs(playlistName);
+    console.log("songs in playlists: ", playlistSongs);
+
+    if (playlistSongs.length === 0) {
+      playlistSongsList.innerHTML = "";
+      addSongsMainBtn.classList.remove("hidden");
+      emptyPlaylistMsg.classList.remove("hidden");
+    } else {
+      addSongsMainBtn.classList.add("hidden");
+      emptyPlaylistMsg.classList.add("hidden");
+      displayPlaylistSongs(playlistSongs, playlistName);
+    }
+  });
+
+  // Menu icon and delete functionality
+  let PlaylistMenuIcon = createdPlaylist.querySelector(".playlist-menu-icon");
+  let dropDownMenu = createdPlaylist.querySelector(".playlist-dropdown-menu");
+  let deleteItem = createdPlaylist.querySelector(".delete-playlist");
+
+  PlaylistMenuIcon.addEventListener("click", (e) => {
+    console.log("🔴 MENU ICON CLICKED");
+    e.stopPropagation();
+
+    // Close all other dropdowns
+    document.querySelectorAll(".playlist-dropdown-menu").forEach((menu) => {
+      if (menu !== dropDownMenu) {
+        menu.classList.add("hidden");
+      }
+    });
+    
+    // Toggle current dropdown
+    dropDownMenu.classList.toggle("hidden");
+  });
+
+  deleteItem.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropDownMenu.classList.add("hidden");
+    deleteCompPlaylist(playlistName);
+  });
+
+  return createdPlaylist;
+}
+
 savePlaylistBtn.addEventListener("click", (e) => {
   e.preventDefault();
   let playlistName = playlistInput.value.trim();
@@ -676,17 +754,17 @@ savePlaylistBtn.addEventListener("click", (e) => {
     alert("playlist already exists");
     return;
   }
+  
   console.log("Playlist Created: ", playlistName);
   playlistTempMsg.classList.add("hidden");
 
-  let createdPlaylist = document.createElement("p");
-  createdPlaylist.className = "playlist-folder";
-  createdPlaylist.textContent = playlistName;
-  createdPlaylist.setAttribute("data-playlist", playlistName);
+  // Use the helper function
+  let createdPlaylist = createPlaylistElement(playlistName);
   playlistLists.appendChild(createdPlaylist);
 
   playlistNameCardBg.classList.add("hidden");
   playlistInput.value = "";
+  
   createPlayist(playlistName);
 });
 
@@ -746,16 +824,63 @@ function createPlayist(playlistName) {
 
 function addSongsToPlaylist(playlistName, songId) {
   if (playlistData.playlists[playlistName]) {
-    // if song already Exists
     if (!playlistData.playlists[playlistName].songs.includes(songId)) {
       playlistData.playlists[playlistName].songs.push(songId);
       savePlaylists();
-      // displayPlaylistSongs(songId,playlistName)
+      
+      // Check if we're currently viewing this playlist
+      if (targetPlaylist === playlistName && !openedPlaylist.classList.contains('hidden')) {
+        addSingleSongToPlaylist(songId, playlistName);
+      }
+      
       console.log(`Added song ${songId} to ${playlistName}`);
+      return true;
     } else {
       console.log("Song Already in Playlist");
+      return false;
     }
   }
+  return false;
+}
+
+function addSingleSongToPlaylist(songId, playlistName) {
+  const song = songData.find(s => s.id === songId);
+  if (!song) return;
+  
+  // Get current number of songs for index
+  const currentSongCount = playlistSongsList.children.length;
+  const index = currentSongCount; // Next index
+  
+  let songRow = document.createElement("div");
+  songRow.className = "playlist-song-row";
+  songRow.innerHTML = `
+    <span>${index + 1}</span>
+    <h4 id="playlist-song-title">${song.title}</h4>
+    <p id="playlist-song-artistName">-by ${song.artistName}</p>
+    <p id="playlist-song-duration">${song.duration}</p>
+    <p class="playlist-song-del-btn"><i class="fa-solid fa-trash"></i></p>
+  `;
+  
+  songRow.addEventListener("click", () => {
+    playSong(song.id);
+    playBtnId.classList.add("hidden");
+    pauseBtnId.classList.remove("hidden");
+  });
+  
+  // Delete button
+  let playlistDelBtn = songRow.querySelector(".playlist-song-del-btn");
+  playlistDelBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (confirm(`Delete ${song.title} from ${playlistName}..?`)) {
+      delSongFromPlaylist(playlistName, song.id);
+    }
+  });
+  
+  playlistSongsList.appendChild(songRow);
+  
+  // Hide empty state if it was showing
+  addSongsMainBtn.classList.add("hidden");
+  emptyPlaylistMsg.classList.add("hidden");
 }
 
 function getPlaylistSongs(playlistName) {
@@ -835,94 +960,16 @@ function delSongFromPlaylist(playlistName, songId) {
 
 function loadSavedPlaylist() {
   const playlists = Object.keys(playlistData.playlists);
-  // console.log("playlists", playlists);
+  
   playlists.forEach((playlistName) => {
-    // console.log(" playlists:", playlistName);
-    let createdPlaylist = document.createElement("div");
-    createdPlaylist.className = "playlist-folder";
-    //createdPlaylist.textContent = playlistName;  // <i class="fa-solid fa-ellipsis-vertical"></i>
-
-    createdPlaylist.innerHTML = `
-      <span class = 'playlist-folder-name'>${playlistName}</span>
-      <div class="playlist-menu-wrapper">
-        <i class="fa-solid fa-ellipsis-vertical playlist-menu-icon"></i>
-        <div class="playlist-dropdown-menu hidden">
-          <div class="dropdown-item delete-playlist">Delete</div>
-        </div>
-      </div>
-    `;
-    createdPlaylist.setAttribute("data-playlist", playlistName);
-
-    createdPlaylist.addEventListener("click", (e) => {
-      // Dont open playlist if click menu btn
-      if (e.target.closest(".playlist-menu-icon")) return;
-
-      console.log("clicked the playlist:", playlistName);
-
-      document.querySelectorAll(".playlist-folder").forEach((p) => {
-        p.classList.remove("active-custom-playlist");
-        // console.log(p.classList);
-      });
-
-      createdPlaylist.classList.add("active-custom-playlist");
-      songMainPage.classList.add("hidden");
-      openedPlaylist.classList.remove("hidden");
-      targetPlaylist = playlistName;
-      openedPlaylistHeader.textContent = playlistName + "🎶";
-
-      const playlistSongs = getPlaylistSongs(playlistName);
-      console.log("songs in playlists: ", playlistSongs);
-
-      if (playlistSongs.length === 0) {
-        playlistSongsList.innerHTML = "";
-        addSongsMainBtn.classList.remove("hidden");
-        emptyPlaylistMsg.classList.remove("hidden");
-      } else {
-        addSongsMainBtn.classList.add("hidden");
-        emptyPlaylistMsg.classList.add("hidden");
-        displayPlaylistSongs(playlistSongs, playlistName);
-      }
-    });
-
+    let createdPlaylist = createPlaylistElement(playlistName);
     playlistLists.appendChild(createdPlaylist);
-    playlistTempMsg.classList.add("hidden");
-
-    crossIcon03.addEventListener("click", () => {
-      createdPlaylist.classList.remove("active-custom-playlist");
-    });
-
-    // Delete complete playlist Logic
-    let PlaylistMenuIcon = createdPlaylist.querySelector(".playlist-menu-icon");
-    let dropDownMenu = createdPlaylist.querySelector(".playlist-dropdown-menu");
-    let deleteItem = createdPlaylist.querySelector(".delete-playlist");
-
-    // console.log('playlist menu icon found:',PlaylistMenuIcon)
-    // console.log('dropdown menu found:',dropDownMenu)
-    // console.log('deleteItem found:',deleteItem)
-
-    PlaylistMenuIcon.addEventListener("click", (e) => {
-      console.log("🔴 MENU ICON CLICKED");
-      e.stopPropagation();
-
-      console.log("dropDownMenu before toggle:", dropDownMenu.classList);
-
-      document.querySelectorAll(".playlist-dropdown-menu").forEach((menu) => {
-        // console.log(menu);
-        if (menu !== dropDownMenu) {
-          menu.classList.add("hidden");
-        }
-      });
-      dropDownMenu.classList.toggle("hidden");
-    });
-
-    deleteItem.addEventListener("click", (e) => {
-      e.stopPropagation();
-      dropDownMenu.classList.add("hidden");
-      deleteCompPlaylist(playlistName);
-    });
   });
+  
+  playlistTempMsg.classList.add("hidden");
 }
 
+// Close dropdown when clicking
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".playlist-menu-wrapper")) {
     document.querySelectorAll(".playlist-dropdown-menu").forEach((menu) => {
@@ -931,6 +978,16 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// Close playlist view
+crossIcon03.addEventListener("click", () => {
+  document.querySelectorAll(".playlist-folder").forEach(p => {
+    p.classList.remove("active-custom-playlist");
+  });
+  openedPlaylist.classList.add("hidden");
+  songMainPage.classList.remove("hidden");
+});
+
+// Load saved playlists on page load
 loadSavedPlaylist();
 
 function deleteCompPlaylist(playlistName) {

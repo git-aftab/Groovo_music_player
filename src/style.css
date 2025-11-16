@@ -51,6 +51,7 @@
   height: 50px;
   right: 28vh;
   top: 40vh;
+  /* border-radius: 10px; */
   background-repeat: no-repeat;
   background-image: linear-gradient(#ff3c00 50px, transparent 0),
     linear-gradient(#ff3c00 50px, transparent 0),
@@ -917,6 +918,7 @@ footer {
   border-top: 1px solid #333;
   border-left: 1px solid #333;
   border-radius: 5px;
+  color: #929292;
 }
 
 .footer-wrapper {
@@ -949,14 +951,6 @@ footer {
 }
 
 .fa-instagram {
-  /* background: linear-gradient(
-    45deg,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  ); */
   background-color: rgb(253, 0, 97);
   border-radius: 5px;
   padding: 1px;
