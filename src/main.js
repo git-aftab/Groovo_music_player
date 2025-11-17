@@ -1,9 +1,3 @@
-// Test if image loads
-// const img = new Image();
-// img.onload = () => console.log("Image loaded successfully");
-// img.onerror = () => console.log("Image failed to load");
-// img.src = "../assets/images/farhanKhan.jpeg";
-
 // Main page Selectors --------------------
 let playListCards = document.querySelectorAll(".card");
 let audioPlayer = document.getElementById("audio-player");
@@ -123,23 +117,21 @@ playListCards.forEach((card, index) => {
   });
 });
 
-async function renderSongs(playListID, mode,index) {
+async function renderSongs(playListID, mode, index) {
   console.log(mode, playListID);
   if (mode === "artistMode") {
-    console.log("inside artist mode")
-    const playlistSong = songData.filter(
-      (song) => song.artistId === index
-    );
-    console.log(playlistSong)
+    console.log("inside artist mode");
+    const playlistSong = songData.filter((song) => song.artistId === index);
+    console.log(playlistSong);
 
     songListContainer.innerHTML = "";
-    playlistSong.forEach((song) => {
+    playlistSong.forEach((song,index) => {
       // console.log(song)
       let songRow = document.createElement("div");
       songRow.className = "songList-row";
 
       songRow.innerHTML = `
-            <div class="cell">${song.count}</div>
+            <div class="cell">${index+1}</div>
             <div class="cell">${song.title}</div>
             <div class="cell">${song.artistName}</div>
             <div class="cell">${song.duration}</div>
@@ -161,11 +153,11 @@ async function renderSongs(playListID, mode,index) {
 
   songListContainer.innerHTML = "";
 
-  playListSong.forEach((song) => {
+  playListSong.forEach((song,index) => {
     let songRow = document.createElement("div");
     songRow.className = "songList-row";
     songRow.innerHTML = `
-            <div class="cell">${song.count}</div>
+            <div class="cell">${index+1}</div>
             <div class="cell">${song.title}</div>
             <div class="cell">${song.artistName}</div>
             <div class="cell">${song.duration}</div>
@@ -257,6 +249,8 @@ async function playSong(songId) {
     // new Audio.....
     currentAudio = new Audio(audioUrl);
     setupAudioEventListeners();
+    const currentVolume = volumeSlider.value / 100;
+    currentAudio.volume = currentVolume;
     try {
       await currentAudio.play();
       isPlaying = true;
@@ -449,7 +443,7 @@ function formatTime(seconds) {
 // update current time display && Duration
 function updateCurrentTime(currTime) {
   const currentTimeElement = document.getElementById("current-time");
-  
+
   if (currentTimeElement) {
     currentTimeElement.textContent = formatTime(currTime);
   } else {
@@ -534,10 +528,8 @@ function handleSongEnd() {
 }
 
 // Initialize progress bar controls when page loads
-document.addEventListener("DOMContentLoaded", function () {
-  setupProgressBarControls();
-  console.log("Progress bar controls initialized");
-});
+setupProgressBarControls();
+console.log("Progress bar controls initialized");
 
 console.log("Timer elements check:", {
   currentTime: document.getElementById("currentTime"),
@@ -667,7 +659,7 @@ crossIcon02.addEventListener("click", () => {
 function createPlaylistElement(playlistName) {
   let createdPlaylist = document.createElement("div");
   createdPlaylist.className = "playlist-folder";
-  
+
   createdPlaylist.innerHTML = `
     <span class='playlist-folder-name'>${playlistName}</span>
     <div class="playlist-menu-wrapper">
@@ -677,7 +669,7 @@ function createPlaylistElement(playlistName) {
       </div>
     </div>
   `;
-  
+
   createdPlaylist.setAttribute("data-playlist", playlistName);
 
   // Main click handler - open playlist
@@ -728,7 +720,7 @@ function createPlaylistElement(playlistName) {
         menu.classList.add("hidden");
       }
     });
-    
+
     // Toggle current dropdown
     dropDownMenu.classList.toggle("hidden");
   });
@@ -754,7 +746,7 @@ savePlaylistBtn.addEventListener("click", (e) => {
     alert("playlist already exists");
     return;
   }
-  
+
   console.log("Playlist Created: ", playlistName);
   playlistTempMsg.classList.add("hidden");
 
@@ -764,7 +756,7 @@ savePlaylistBtn.addEventListener("click", (e) => {
 
   playlistNameCardBg.classList.add("hidden");
   playlistInput.value = "";
-  
+
   createPlayist(playlistName);
 });
 
@@ -827,12 +819,15 @@ function addSongsToPlaylist(playlistName, songId) {
     if (!playlistData.playlists[playlistName].songs.includes(songId)) {
       playlistData.playlists[playlistName].songs.push(songId);
       savePlaylists();
-      
+
       // Check if we're currently viewing this playlist
-      if (targetPlaylist === playlistName && !openedPlaylist.classList.contains('hidden')) {
+      if (
+        targetPlaylist === playlistName &&
+        !openedPlaylist.classList.contains("hidden")
+      ) {
         addSingleSongToPlaylist(songId, playlistName);
       }
-      
+
       console.log(`Added song ${songId} to ${playlistName}`);
       return true;
     } else {
@@ -844,13 +839,13 @@ function addSongsToPlaylist(playlistName, songId) {
 }
 
 function addSingleSongToPlaylist(songId, playlistName) {
-  const song = songData.find(s => s.id === songId);
+  const song = songData.find((s) => s.id === songId);
   if (!song) return;
-  
+
   // Get current number of songs for index
   const currentSongCount = playlistSongsList.children.length;
   const index = currentSongCount; // Next index
-  
+
   let songRow = document.createElement("div");
   songRow.className = "playlist-song-row";
   songRow.innerHTML = `
@@ -860,13 +855,13 @@ function addSingleSongToPlaylist(songId, playlistName) {
     <p id="playlist-song-duration">${song.duration}</p>
     <p class="playlist-song-del-btn"><i class="fa-solid fa-trash"></i></p>
   `;
-  
+
   songRow.addEventListener("click", () => {
     playSong(song.id);
     playBtnId.classList.add("hidden");
     pauseBtnId.classList.remove("hidden");
   });
-  
+
   // Delete button
   let playlistDelBtn = songRow.querySelector(".playlist-song-del-btn");
   playlistDelBtn.addEventListener("click", (e) => {
@@ -875,9 +870,9 @@ function addSingleSongToPlaylist(songId, playlistName) {
       delSongFromPlaylist(playlistName, song.id);
     }
   });
-  
+
   playlistSongsList.appendChild(songRow);
-  
+
   // Hide empty state if it was showing
   addSongsMainBtn.classList.add("hidden");
   emptyPlaylistMsg.classList.add("hidden");
@@ -960,12 +955,12 @@ function delSongFromPlaylist(playlistName, songId) {
 
 function loadSavedPlaylist() {
   const playlists = Object.keys(playlistData.playlists);
-  
+
   playlists.forEach((playlistName) => {
     let createdPlaylist = createPlaylistElement(playlistName);
     playlistLists.appendChild(createdPlaylist);
   });
-  
+
   playlistTempMsg.classList.add("hidden");
 }
 
@@ -980,7 +975,7 @@ document.addEventListener("click", (e) => {
 
 // Close playlist view
 crossIcon03.addEventListener("click", () => {
-  document.querySelectorAll(".playlist-folder").forEach(p => {
+  document.querySelectorAll(".playlist-folder").forEach((p) => {
     p.classList.remove("active-custom-playlist");
   });
   openedPlaylist.classList.add("hidden");
@@ -1025,8 +1020,56 @@ artistDetails.forEach((artistCard, index) => {
     backBtn.classList.remove("hidden");
     if (staticPlaylistViewMode === "artistMode") {
       loadBanner(playlistId, staticPlaylistViewMode);
-      renderSongs(playlistId, staticPlaylistViewMode,index+1);
+      renderSongs(playlistId, staticPlaylistViewMode, index + 1);
     }
-    console.log("artist id:", index+1, artistCard, staticPlaylistViewMode);
+    console.log("artist id:", index + 1, artistCard, staticPlaylistViewMode);
   });
+});
+
+const volumeSlider = document.getElementById("volume-slider");
+const volumeIcon = document.getElementById("volume-icon");
+
+if (currentAudio) {
+  currentAudio.volume = 0.6;
+}
+
+volumeSlider.addEventListener("input", (e) => {
+  const volume = e.target.value / 100;
+
+  if (currentAudio) {
+    currentAudio.volume = volume;
+  }
+
+  updateVolumeIcon(volume);
+
+  console.log("volume set to:", volume);
+});
+
+function updateVolumeIcon(volume) {
+  if (volume === 0) {
+    volumeIcon.className = "fa-solid fa-volume-xmark";
+  } else if (volume < 0.5) {
+    volumeIcon.className = "fa-solid fa-volume-low";
+  } else {
+    volumeIcon.className = "fa-solid fa-volume-high";
+  }
+}
+
+let previousVolume = 0.7;
+
+volumeIcon.addEventListener("click", () => {
+  if (currentAudio) {
+    if (currentAudio.volume > 0) {
+      // Mute
+      previousVolume = currentAudio.volume;
+      currentAudio.volume = 0;
+      volumeSlider.value = 0;
+      updateVolumeIcon(0);
+    } else {
+      // Unmute
+      currentAudio.volume = previousVolume;
+      volumeSlider.value = previousVolume * 100;
+      updateVolumeIcon(previousVolume);
+    }
+  }
 });

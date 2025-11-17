@@ -67,9 +67,9 @@
     "language": "Hindi",
     "artistId": 5,
     "artistName": "Lata Mangeshkar, Udit Narayan",
-    "duration": "4:22",
+    "duration": "05:37",
     "songAddress": "GroovoSongs/ho_gaya_hai_tujhko_pyar.mp3",
-    "cover": "images/Surili Ankhiyon Wali.jpeg"
+    "cover": "covers/Bollywood_Classic.jpg"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "artistName": "Rahat Fateh Ali Khan",
     "duration": "4:22",
     "songAddress": "GroovoSongs/ore_piya.mp3",
-    "cover": "images/ore_piya.jpeg"
+    "cover": "covers/ore_piya.jpeg"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "artistName": "Kumar Sanu",
     "duration": "4:22",
     "songAddress": "GroovoSongs/aankh_hai_bhari_bhari.mp3",
-    "cover": "images/aankh_hai_bhari_bhari.jpeg"
+    "cover": "covers/aankh_hai_bhari_bhari.jpeg"
   },
   {
     "id": 9,
@@ -102,8 +102,8 @@
     "title": "Ajib Dastan",
     "language": "Hindi",
     "artistId": 3,
-    "artistName": "Arijit Singh",
-    "duration": "4:22",
+    "artistName": "Lata Mangeshkar",
+    "duration": "5:10",
     "songAddress": "GroovoSongs/AjibDastan.mp3",
     "cover": "images/Ajib Dastan.jpeg"
   },

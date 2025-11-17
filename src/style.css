@@ -778,15 +778,10 @@ main #main {
   border: 1px solid #ff3c00;
   cursor: pointer;
 }
-/* .searched-song-field:active {
-  background-color: #ff3c00;
-  color: #000;
-} */
 
 #searched-song-artist {
   font-size: small;
   color: #736969;
-  /* padding: 0 20px; */
 }
 
 #searched-song-duration {
