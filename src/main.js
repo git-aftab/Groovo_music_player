@@ -42,6 +42,7 @@ let playlistSongsList = document.querySelector(".playlist-songs-list");
 // Banner page Selectors------------------
 let songTitleInBanner = document.getElementById("song-title-in-banner");
 let artistNameBanner = document.getElementById("artist-name-banner");
+let artistName = document.querySelectorAll('.artist-name')
 let songDuration = document.getElementById("song-duration");
 let songArtistImg = document.getElementById("song-artist-img");
 let songOrPlaylistImgBanner = document.getElementById("songOrPlaylist-img");
@@ -173,6 +174,10 @@ async function renderSongs(playListID, mode, index) {
   });
 }
 
+// function renderSongsByArtistName(artistName,index){
+//   const songsByAritstName = songData.filter(song => song.aritsName = aritstName)
+// }
+
 // Api
 const bucketUrl = import.meta.env.VITE_BUCKET_URL;
 
@@ -190,6 +195,7 @@ let isUserSeeking = false;
 let SearchedMode = "play";
 let targetPlaylist = null;
 let staticPlaylistViewMode = "BuiltinPlaylist";
+let aritsName = null;
 
 function setCurrentSong(songId) {
   currentSongId = songId;

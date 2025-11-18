@@ -471,7 +471,7 @@ main #main {
   margin-top: 20px;
 }
 .card .head-para:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #ff3c00;
   cursor: pointer;
 }
@@ -557,6 +557,7 @@ main #main {
   height: 100%;
   width: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .song-banner-wrapper {
@@ -1054,4 +1055,8 @@ footer {
     /* Hide it completely after fade out */
     visibility: hidden;
   }
+}
+
+#volume-icon{
+  cursor: pointer;
 }

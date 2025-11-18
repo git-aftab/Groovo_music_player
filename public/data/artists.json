@@ -9,9 +9,9 @@
   {
     "id": 2,
     "playListId":16,
-    "title": "Best of Ed Sheeran",
+    "title": "Best of Sabrina",
     "name": "Ed Sheeran",
-    "image": "./assets/images/EdSheeran.jpeg"
+    "image": "./assets/images/sabrina_carpenter02.jpg"
   },
   {
     "id": 3,
@@ -37,9 +37,9 @@
   {
     "id": 6,
     "playListId":20,
-    "title": "Best of Pritam",
-    "name": "Pritam",
-    "image":"/assets/images/pritam.jpeg"
+    "title": "Best of Shreya Ghosal",
+    "name": "Shreya Ghosal",
+    "image":"/assets/images/shreya_ghosal03.jpg"
   },
   {
     "id": 7,
