@@ -118,6 +118,17 @@ playListCards.forEach((card, index) => {
   });
 });
 
+function updateActiveSong(songId) {
+  document.querySelectorAll('[data-song-id]').forEach(element => {
+    element.classList.remove('active');
+  });
+  
+  document.querySelectorAll(`[data-song-id="${songId}"]`).forEach(element => {
+    element.classList.add('active');
+  });
+}
+
+
 async function renderSongs(playListID, mode, index) {
   console.log(mode, playListID);
   if (mode === "artistMode") {
@@ -130,6 +141,11 @@ async function renderSongs(playListID, mode, index) {
       // console.log(song)
       let songRow = document.createElement("div");
       songRow.className = "songList-row";
+      songRow.setAttribute("data-song-id",song.id)
+
+      if(currentSongId === song.id){
+        songRow.classList.add('active');
+      }
 
       songRow.innerHTML = `
             <div class="cell">${index+1}</div>
@@ -141,6 +157,13 @@ async function renderSongs(playListID, mode, index) {
       songListContainer.appendChild(songRow);
       // Play song Event trigger
       songRow.addEventListener("click", () => {
+
+        document.querySelectorAll(".songList-row").forEach(song =>{
+          song.classList.remove("active");
+        })
+
+        songRow.classList.add("active");
+
         playSong(song.id);
         playBtnId.classList.add("hidden");
         pauseBtnId.classList.remove("hidden");
@@ -157,6 +180,11 @@ async function renderSongs(playListID, mode, index) {
   playListSong.forEach((song,index) => {
     let songRow = document.createElement("div");
     songRow.className = "songList-row";
+    songRow.setAttribute("data-song-id",song.id)
+
+      if(currentSongId === song.id){
+        songRow.classList.add('active');
+      }
     songRow.innerHTML = `
             <div class="cell">${index+1}</div>
             <div class="cell">${song.title}</div>
@@ -167,6 +195,12 @@ async function renderSongs(playListID, mode, index) {
     songListContainer.appendChild(songRow);
     // Play song Even trigger
     songRow.addEventListener("click", () => {
+      document.querySelectorAll(".songList-row").forEach(song =>{
+          song.classList.remove("active");
+        })
+
+        songRow.classList.add("active");
+
       playSong(song.id);
       playBtnId.classList.add("hidden");
       pauseBtnId.classList.remove("hidden");
@@ -174,11 +208,6 @@ async function renderSongs(playListID, mode, index) {
   });
 }
 
-// function renderSongsByArtistName(artistName,index){
-//   const songsByAritstName = songData.filter(song => song.aritsName = aritstName)
-// }
-
-// Api
 const bucketUrl = import.meta.env.VITE_BUCKET_URL;
 
 let currentAudio = null;
@@ -262,6 +291,7 @@ async function playSong(songId) {
       isPlaying = true;
       // playedSongImg(songId);
       console.log("✅ Song is playing", songToPlay.title);
+      updateActiveSong(songId)
     } catch (error) {
       currentAudio = null;
       isPlaying = false;
@@ -897,6 +927,11 @@ function displayPlaylistSongs(songs, playlistName) {
   songs.forEach((song, index) => {
     let songRow = document.createElement("div");
     songRow.className = "playlist-song-row";
+    songRow.setAttribute('data-song-id',song.id);
+
+    if(currentSongId===song.id){
+      songRow.classList.add("active")
+    }
     songRow.innerHTML = `
     <span>${index + 1}</span>
     <h4 id= "playlist-song-title">${song.title}</h4>
@@ -905,6 +940,12 @@ function displayPlaylistSongs(songs, playlistName) {
     <p class = "playlist-song-del-btn"><i class="fa-solid fa-trash"></i></p>
     `;
     songRow.addEventListener("click", () => {
+      document.querySelectorAll(".playlist-song-row").forEach(row=>{
+        row.classList.remove('.active')
+      })
+
+      songRow.classList.add(".active")
+
       playSong(song.id);
       playBtnId.classList.add("hidden");
       pauseBtnId.classList.remove("hidden");

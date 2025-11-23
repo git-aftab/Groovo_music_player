@@ -720,7 +720,7 @@ main #main {
 .songList-header {
   font-size: large;
   font-weight: bold;
-  background: #111; /* header bg */
+  background: #111;
   color: #fff;
 }
 
@@ -730,7 +730,7 @@ main #main {
 }
 
 .songList-row:hover {
-  background: #222; /* hover effect */
+  background: #222; 
 }
 
 #song-title-in-banner {
@@ -1059,4 +1059,30 @@ footer {
 
 #volume-icon{
   cursor: pointer;
+}
+
+.playlist-song-row.active {
+  /* background-color: #;  */
+  background: #222;
+  color: white;
+}
+
+.songList-row.active{
+  background-color: #222;
+  color: #fff;
+}
+
+.searched-song-field.active {
+  background-color: #ff6b35;
+  color: white;
+}
+
+.song-item.active {
+  background-color: #ff6b35;
+  color: white;
+}
+
+.active {
+  border-left: 4px solid #ff3c00;
+  transition: all 0.3s ease;
 }

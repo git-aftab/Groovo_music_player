@@ -9,7 +9,7 @@
     "artistName": "Ed Sheeran",
     "duration": "4:23",
     "songAddress": "Test_files/Ed Sheeran - Perfect (Lyrics)(M4A_128K).m4a",
-    "cover": "images/ShapeOfYou.jpeg"
+    "cover": "cover/ShapeOfYou.jpeg"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "artistName": "Weeknd",
     "duration": "3:20",
     "songAddress": "Test_files/Blinding Lights.mp3",
-    "cover": "images/BlindingLights.jpeg"
+    "cover": "cover/BlindingLights.jpeg"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "artistName": "Ed Sheeran",
     "duration": "4:23",
     "songAddress": "Test_files/Ed Sheeran - Shape of You (Official Music Video)(MP3_128K).mp3",
-    "cover": "images/ShapeOfYou.jpeg"
+    "cover": "cover/ShapeOfYou.jpeg"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "artistName": "Weeknd",
     "duration": "4:33",
     "songAddress": "Test_files/The Weeknd - Starboy ft. Daft Punk (Official Video)(MP3_160K).mp3",
-    "cover": "images/StarBoy.jpeg"
+    "cover": "cover/StarBoy.jpeg"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "artistName": "Lady Gaga, Bruno Mars",
     "duration": "4:14",
     "songAddress": "Test_files/Lady Gaga_ Bruno Mars - Die With A Smile(MP3_160K).mp3",
-    "cover": "images/DieWithaSmile.jpeg"
+    "cover": "cover/DieWithaSmile.jpeg"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "artistName": "Lata Mangeshkar, Udit Narayan",
     "duration": "05:37",
     "songAddress": "GroovoSongs/ho_gaya_hai_tujhko_pyar.mp3",
-    "cover": "covers/Bollywood_Classic.jpg"
+    "cover": "cover/Bollywood_Classic.jpg"
   },
   {
     "id": 7,
@@ -79,9 +79,9 @@
     "language": "Hindi",
     "artistId": "",
     "artistName": "Rahat Fateh Ali Khan",
-    "duration": "4:22",
+    "duration": "6:55",
     "songAddress": "GroovoSongs/ore_piya.mp3",
-    "cover": "covers/ore_piya.jpeg"
+    "cover": "cover/ore_piya.jpg"
   },
   {
     "id": 8,
@@ -91,21 +91,21 @@
     "language": "Hindi",
     "artistId": "",
     "artistName": "Kumar Sanu",
-    "duration": "4:22",
+    "duration": "7:12",
     "songAddress": "GroovoSongs/aankh_hai_bhari_bhari.mp3",
-    "cover": "covers/aankh_hai_bhari_bhari.jpeg"
+    "cover": "cover/aankh_hai_bhari_bhari.jpg"
   },
   {
     "id": 9,
     "count": 4,
     "playListId": 2,
-    "title": "Ajib Dastan",
+    "title": "Main Agar Kahoon",
     "language": "Hindi",
     "artistId": 3,
-    "artistName": "Lata Mangeshkar",
+    "artistName": "Sonu Nigam, Shreya Ghosal",
     "duration": "5:10",
-    "songAddress": "GroovoSongs/AjibDastan.mp3",
-    "cover": "images/Ajib Dastan.jpeg"
+    "songAddress": "GroovoSongs/main_agar_kahoon.mp3",
+    "cover": "cover/main_agar_kahoon.jpg"
   },
   {
     "id": 10,
@@ -115,9 +115,9 @@
     "language": "Hindi",
     "artistId": 10,
     "artistName": "Anuradha Paudwal, Kumar Sanu",
-    "duration": "4:22",
-    "songAddress": "GroovoSongs/dil_hai_ki_manta_nahi.mp3",
-    "cover": "images/dil_hai_ki_manta_nahi.jpeg"
+    "duration": "5:56",
+    "songAddress": "GroovoSongs/dil_hai_ke_manta_nhi.mp3",
+    "cover": "cover/dil_hai_Ke_manta_nahi.jpeg"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "artistName": "A.R. Rahman, Sukhvinder, Kavita",
     "duration": "06:06",
     "songAddress": "GroovoSongs/chaiyya_chaiyya.mp3",
-    "cover": "images/chaiyya_chaiyya.jpeg"
+    "cover": "cover/chaiyya_chaiyya.png"
   },
   {
     "id": 12,
@@ -138,10 +138,10 @@
     "title": "Dil Ne Ye Kaha Hai Dil Se",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Lady Gaga",
-    "duration": "4:22",
+    "artistName": "Udit Narayan Alka Yagnik",
+    "duration": "5:47",
     "songAddress": "GroovoSongs/Dil Ne Ye Kaha Hai Dil Se.mp3",
-    "cover": "images/Dil Ne Ye Kaha Hai Dil Se.jpeg"
+    "cover": "cover/Dil Ne Ye Kaha Hai Dil Se.jpeg"
   },
   {
     "id": 13,
@@ -150,10 +150,10 @@
     "title": "Mere Khayalon ki Malika",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Lady Gaga, Bruno Mars",
-    "duration": "4:22",
+    "artistName": "AbhiJit Bhattacharya",
+    "duration": "4:48",
     "songAddress": "AllTimeBests/Mere Khayalon Ki Malika.mp3",
-    "cover": "covers/Mere Khayalon ki Malika.jpg"
+    "cover": "cover/Mere Khayalon ki Malika.jpg"
   },
   {
     "id": 14,
@@ -162,10 +162,10 @@
     "title": "Tumse Milke Dil Ka haal",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Lady Gaga, Bruno Mars",
-    "duration": "4:22",
+    "artistName": "Sonu Nigam",
+    "duration": "5:42",
     "songAddress": "GroovoSongs/Tumse Milke Dil ka haal.mp3",
-    "cover": "covers/Tumse Milke Dil Ka haal.jpg"
+    "cover": "cover/Tumse Milke Dil Ka haal.jpg"
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "artistName": "Ami Mishra, Shreya Ghosal",
     "duration": "4:32",
     "songAddress": "GroovoSongs/Hasi.mp3",
-    "cover": "covers/Hasi.jpg"
+    "cover": "cover/Hasi.jpg"
   },
   {
     "id": 16,
@@ -186,10 +186,10 @@
     "title": "Pairo Me Bandhan Hai",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Lady Gaga, Bruno Mars",
-    "duration": "4:22",
+    "artistName": "Udhbav, Sonali",
+    "duration": "7:01",
     "songAddress": "GroovoSongs/Pairo Me Bandhan Hai.mp3",
-    "cover": "covers/Pairo Me Bandhan Hai.jpg"
+    "cover": "cover/Pairo Me Bandhan Hai.jpg"
   },
   {
     "id": 17,
@@ -198,10 +198,10 @@
     "title": "Aaye Ho Mere Zindagi Me",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Lady Gaga, Bruno Mars",
-    "duration": "4:22",
+    "artistName": "Udit Narayan",
+    "duration": "6:15",
     "songAddress": "GroovoSongs/Aaye Ho Mere Zindagi Me.mp3",
-    "cover": "covers/Aaye Ho Mere Zindagi Me.jpg"
+    "cover": "cover/Aaye Ho Mere Zindagi Me.jpg"
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "artistName": "Sachin jigar, Shreya Ghosal",
     "duration": "3:15",
     "songAddress": "GroovoSongs/Saibo.mp3",
-    "cover": "covers/Saibo.jpg"
+    "cover": "cover/Saibo.jpg"
   },
   {
     "id": 19,
@@ -225,7 +225,7 @@
     "artistName": "Kailash Kher",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Ye Tune Kya Kiya.mp3",
-    "cover": "covers/Ye Tune Kya Kiya.jpg"
+    "cover": "cover/Ye Tune Kya Kiya.jpg"
   },
   {
     "id": 20,
@@ -237,7 +237,7 @@
     "artistName": "Shreya Ghoshal",
     "duration": "5:07",
     "songAddress": "GroovoSongs/silsila_ye_chahat_ke.mp3",
-    "cover": "covers/silsila_ye_chahat_ke.jpg"
+    "cover": "cover/silsila_ye_chahat_ke.jpg"
   },
   {
     "id": 21,
@@ -249,7 +249,7 @@
     "artistName": "Shreya Ghoshal",
     "duration": "5:14",
     "songAddress": "GroovoSongs/ghar_more_pardesiya.mp3",
-    "cover": "covers/ghar_more_pardesiya.jpg"
+    "cover": "cover/ghar_more_pardesiya.jpg"
   },
   {
     "id": 22,
@@ -258,10 +258,10 @@
     "title": "Tere Naam",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Kailash Kher",
-    "duration": "4:18",
+    "artistName": "Udit Narayan, Alka Yagnik",
+    "duration": "6:38",
     "songAddress": "GroovoSongs/Tere Naam.mp3",
-    "cover": "covers/Tere Naam.jpg"
+    "cover": "cover/Tere Naam.jpg"
   },
   {
     "id": 23,
@@ -270,10 +270,10 @@
     "title": "Tip Tip Barsa Paani",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Kailash Kher",
+    "artistName": "Udit Narayan, Alka Yagnik",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Tip Tip Barsa Paani.mp3",
-    "cover": "covers/Tip Tip Barsa Paani.jpg"
+    "cover": "cover/Tip Tip Barsa Paani.jpg"
   },
   {
     "id": 24,
@@ -285,7 +285,7 @@
     "artistName": "Kailash Kher",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Kuch Kuch Hota Hai.mp3",
-    "cover": "covers/Kuch Kuch Hota Hai.jpg"
+    "cover": "cover/Kuch Kuch Hota Hai.jpg"
   },
   {
     "id": 25,
@@ -294,10 +294,10 @@
     "title": "Chand Sifarish",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Kailash Kher",
-    "duration": "4:18",
+    "artistName": "Shaan,Kailash Kher",
+    "duration": "4:37",
     "songAddress": "GroovoSongs/Chand Sifarish.mp3",
-    "cover": "covers/Chand Sifarish.jpg"
+    "cover": "cover/Chand Sifarish.jpg"
   },
   {
     "id": 26,
@@ -306,10 +306,10 @@
     "title": "Khuda Jane",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Kailash Kher",
-    "duration": "4:18",
+    "artistName": "KK",
+    "duration": "5:33",
     "songAddress": "GroovoSongs/Khuda Jane.mp3",
-    "cover": "covers/Khuda Jane.jpg"
+    "cover": "cover/Khuda Jane.jpg"
   },
   {
     "id": 27,
@@ -318,10 +318,10 @@
     "title": "Pee Loon",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Kailash Kher",
-    "duration": "4:18",
+    "artistName": "Mohit Chauhan",
+    "duration": "4:47",
     "songAddress": "GroovoSongs/Pee Loon.mp3",
-    "cover": "covers/Pee Loon.jpg"
+    "cover": "cover/Pee Loon.jpg"
   },
   {
     "id": 28,
@@ -330,10 +330,10 @@
     "title": "Tum Dil Ki DhadKan Ho",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Kailash Kher",
-    "duration": "4:18",
+    "artistName": "AbhiJit Bhattacharya, Alka Yagnik",
+    "duration": "5:29",
     "songAddress": "GroovoSongs/Tum Dil Ki DhadKan Ho.mp3",
-    "cover": "covers/Tum Dil Ki DhadKan Ho.jpg"
+    "cover": "cover/Tum Dil Ki DhadKan Ho.jpg"
   },
   {
     "id": 29,
@@ -345,7 +345,7 @@
     "artistName": "Shreya Ghoshal",
     "duration": "5:22",
     "songAddress": "GroovoSongs/deewani_mastani.mp3",
-    "cover": "covers/deewani_mastani.jpg"
+    "cover": "cover/deewani_mastani.jpg"
   },
   {
     "id": 30,
@@ -354,10 +354,10 @@
     "title": "Main Yahaan Hoon",
     "language": "Hindi",
     "artistId": 10,
-    "artistName": "Kailash Kher",
-    "duration": "4:18",
+    "artistName": "Udit Narayan",
+    "duration": "4:52",
     "songAddress": "GroovoSongs/Main Yahaan Hoon.mp3",
-    "cover": "covers/Main Yahaan Hoon.jpg"
+    "cover": "cover/Main Yahaan Hoon.jpg"
   },
 
   {
@@ -371,7 +371,7 @@
     "Album": "3",
     "duration": "4:02",
     "songAddress": "GroovoSongs/Why This Kolaveri Di.mp3",
-    "cover": "covers/Why This Kolaveri Di.jpg"
+    "cover": "cover/Why This Kolaveri Di.jpg"
   },
   {
     "id": 32,
@@ -384,7 +384,7 @@
     "Album": "Maari",
     "duration": "4:41",
     "songAddress": "GroovoSongs/Rowdy Baby.mp3",
-    "cover": "covers/Rowdy Baby.jpg"
+    "cover": "cover/Rowdy Baby.jpg"
   },
   {
     "id": 33,
@@ -397,7 +397,7 @@
     "Album": "Vaathi",
     "duration": "3:14",
     "songAddress": "GroovoSongs/Vaathi.mp3",
-    "cover": "covers/Vaathi.jpg"
+    "cover": "cover/Vaathi.jpg"
   },
   {
     "id": 34,
@@ -410,7 +410,7 @@
     "Album": "Sillunu Oru Kaadhal",
     "duration": "5:56",
     "songAddress": "GroovoSongs/Munabe Va.mp3",
-    "cover": "covers/Munabe Va.jpg"
+    "cover": "cover/Munabe Va.jpg"
   },
   {
     "id": 35,
@@ -423,7 +423,7 @@
     "Album": "Vallavan",
     "duration": "5:58",
     "songAddress": "GroovoSongs/Loosu Penne.mp3",
-    "cover": "covers/Loosu Penne.jpg"
+    "cover": "cover/Loosu Penne.jpg"
   },
   {
     "id": 36,
@@ -436,7 +436,7 @@
     "Album": "Ghilli",
     "duration": "4:51",
     "songAddress": "GroovoSongs/Appadi Podu.mp3",
-    "cover": "covers/Appadi Podu.jpg"
+    "cover": "cover/Appadi Podu.jpg"
   },
   {
     "id": 37,
@@ -449,7 +449,7 @@
     "duration": "4:58",
     "Album": "Minnale",
     "songAddress": "GroovoSongs/Vaseegara.mp3",
-    "cover": "covers/Vaseegara.jpg"
+    "cover": "cover/Vaseegara.jpg"
   },
   {
     "id": 38,
@@ -462,7 +462,7 @@
     "Album": "Kaakha Kaakha",
     "duration": "5:16",
     "songAddress": "GroovoSongs/Ondra Renda.mp3",
-    "cover": "covers/Ondra Renda.jpg"
+    "cover": "cover/Ondra Renda.jpg"
   },
   {
     "id": 39,
@@ -475,7 +475,7 @@
     "Album": "Mersal",
     "duration": "4:48",
     "songAddress": "GroovoSongs/Aalaporaan Thamizhan.mp3",
-    "cover": "covers/Aalaporaan Thamizhan.jpg"
+    "cover": "cover/Aalaporaan Thamizhan.jpg"
   },
   {
     "id": 40,
@@ -488,7 +488,7 @@
     "Album": "Kadhalil Vizhunthen",
     "duration": "4:32",
     "songAddress": "GroovoSongs/Naaka Mukka.mp3",
-    "cover": "covers/Naaka Mukka.jpg"
+    "cover": "cover/Naaka Mukka.jpg"
   },
   {
     "id": 41,
@@ -501,7 +501,7 @@
     "Album": "O Kadhal Kanmani",
     "duration": "3:25",
     "songAddress": "GroovoSongs/Mental Manadhil.mp3",
-    "cover": "covers/Mental Manadhil.jpg"
+    "cover": "cover/Mental Manadhil.jpg"
   },
   {
     "id": 42,
@@ -514,7 +514,7 @@
     "Album": "Single",
     "duration": "4:38",
     "songAddress": "GroovoSongs/Enjoy Enjaami.mp3",
-    "cover": "covers/Enjoy Enjaami.jpg"
+    "cover": "cover/Enjoy Enjaami.jpg"
   },
   {
     "id": 43,
@@ -527,7 +527,7 @@
     "Album": "Siva Manasula Sakthi",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Oru Kal Oru Kannadi.mp3",
-    "cover": "covers/Oru Kal Oru Kannadi.jpg"
+    "cover": "cover/Oru Kal Oru Kannadi.jpg"
   },
   {
     "id": 44,
@@ -540,7 +540,7 @@
     "Album": "Aadukalam",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Otha Sollaala.mp3",
-    "cover": "covers/Otha Sollaala.jpg"
+    "cover": "cover/Otha Sollaala.jpg"
   },
   {
     "id": 45,
@@ -553,7 +553,7 @@
     "Album": "Alaipayuthey",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Snehithane Snehithane.mp3",
-    "cover": "covers/Snehithane Snehithane.jpg"
+    "cover": "cover/Snehithane Snehithane.jpg"
   },
   {
     "id": 46,
@@ -566,7 +566,7 @@
     "Album": "Leo",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Naa Ready.mp3",
-    "cover": "covers/Naa Ready.jpg"
+    "cover": "cover/Naa Ready.jpg"
   },
   {
     "id": 47,
@@ -579,7 +579,7 @@
     "Album": "Ghilli",
     "duration": "3:52",
     "songAddress": "GroovoSongs/Sha La La.mp3",
-    "cover": "covers/Sha La La.jpg"
+    "cover": "cover/Sha La La.jpg"
   },
   {
     "id": 48,
@@ -591,7 +591,7 @@
     "artistName": "KK",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Neeye Neeye.mp3",
-    "cover": "covers/Neeye Neeye.jpg"
+    "cover": "cover/Neeye Neeye.jpg"
   },
   {
     "id": 49,
@@ -604,7 +604,7 @@
     "Album": "New",
     "duration": "5:30",
     "songAddress": "GroovoSongs/Thottal PooMalarum.mp3",
-    "cover": "covers/Thottal Poomalarum.jpg"
+    "cover": "cover/Thottal Poomalarum.jpg"
   },
   {
     "id": 50,
@@ -617,7 +617,7 @@
     "Album": "3",
     "duration": "3:26",
     "songAddress": "GroovoSongs/Kannazhaga.mp3",
-    "cover": "covers/Kannazhaga.jpg"
+    "cover": "cover/Kannazhaga.jpg"
   },
   {
     "id": 51,
@@ -630,7 +630,7 @@
     "Album": "Goa",
     "duration": "4:32",
     "songAddress": "GroovoSongs/Idhu Varais.mp3",
-    "cover": "covers/Idhu Varai.jpg"
+    "cover": "cover/Idhu Varai.jpg"
   },
   {
     "id": 52,
@@ -643,7 +643,7 @@
     "Album": "Subramaniapuram",
     "duration": "5:11",
     "songAddress": "GroovoSongs/Kangal Irandhal.mp3",
-    "cover": "covers/Kangal Irandal.jpg"
+    "cover": "cover/Kangal Irandal.jpg"
   },
   {
     "id": 53,
@@ -656,7 +656,7 @@
     "Album": "7G Rainbow Colony",
     "duration": "5:38",
     "songAddress": "GroovoSongs/Kan Pesum Varthaigal.mp3",
-    "cover": "covers/Kan Pesum Varthaigal.jpg"
+    "cover": "cover/Kan Pesum Varthaigal.jpg"
   },
   {
     "id": 54,
@@ -669,7 +669,7 @@
     "Album": "Vaaranam Aayiram",
     "duration": "5:21",
     "songAddress": "GroovoSongs/Ava Enna.mp3",
-    "cover": "covers/Ava Enna.jpg"
+    "cover": "cover/Ava Enna.jpg"
   },
   {
     "id": 55,
@@ -682,7 +682,7 @@
     "Album": "Soodhu Kavvum",
     "duration": "2:54",
     "songAddress": "GroovoSongs/Kaasu Panam.mp3",
-    "cover": "covers/Kaasu Panam.jpg"
+    "cover": "cover/Kaasu Panam.jpg"
   },
   {
     "id": 56,
@@ -695,7 +695,7 @@
     "Album": "Rekka",
     "duration": "4:49",
     "songAddress": "GroovoSongs/Kanna Kaattu Podhum.mp3",
-    "cover": "covers/Kanna Kaattu Podhum.jpg"
+    "cover": "cover/Kanna Kaattu Podhum.jpg"
   },
   {
     "id": 57,
@@ -708,7 +708,7 @@
     "Album": "Soorarai Pottru",
     "duration": "4:06",
     "songAddress": "GroovoSongs/Kaattu Payale.mp3",
-    "cover": "covers/Kaattu Payale.jpg"
+    "cover": "cover/Kaattu Payale.jpg"
   },
   {
     "id": 58,
@@ -721,7 +721,7 @@
     "Album": "Pattas",
     "duration": "3:28",
     "songAddress": "GroovoSongs/Chill Bro.mp3",
-    "cover": "covers/Chill Bro.jpg"
+    "cover": "cover/Chill Bro.jpg"
   },
   {
     "id": 59,
@@ -734,7 +734,7 @@
     "Album": "Naanum Rowdy Dhaan",
     "duration": "4:22",
     "songAddress": "GroovoSongs/Thangamey.mp3",
-    "cover": "covers/Thangamey.jpg"
+    "cover": "cover/Thangamey.jpg"
   },
   {
     "id": 60,
@@ -747,7 +747,7 @@
     "Album": "Engeyum Kaadhal",
     "duration": "5:29",
     "songAddress": "GroovoSongs/Engeyum Kaadhal.mp3",
-    "cover": "covers/Engeyum Kaadhal.jpg"
+    "cover": "cover/Engeyum Kaadhal.jpg"
   },
 
   {
@@ -761,7 +761,7 @@
     "Album": "Coke Studio Season 14 (2022)",
     "duration": "3:44",
     "songAddress": "GroovoSongs/Pasoori.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 62,
@@ -774,7 +774,7 @@
     "Album": "Coke Studio Season 9 (2016)",
     "duration": "6:45",
     "songAddress": "GroovoSongs/Afreen Afreen.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 63,
@@ -787,7 +787,7 @@
     "Album": "Coke Studio Season 8 (2015)",
     "duration": "10:28",
     "songAddress": "GroovoSongs/Tajdar-e-Haram.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 64,
@@ -800,7 +800,7 @@
     "Album": "Aadat (Album, 2004)",
     "duration": "4:30",
     "songAddress": "GroovoSongs/Aadat.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 65,
@@ -813,7 +813,7 @@
     "Album": "Rockstar (2011)",
     "duration": "7:52",
     "songAddress": "GroovoSongs/Kun Faya Kun.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 66,
@@ -826,7 +826,7 @@
     "Album": "Back 2 Love (2014)",
     "duration": "5:42",
     "songAddress": "GroovoSongs/Zaroori Tha.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 67,
@@ -839,7 +839,7 @@
     "Album": "Coke Studio Season 3 (2010)",
     "duration": "5:02",
     "songAddress": "GroovoSongs/Jugni.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 68,
@@ -852,7 +852,7 @@
     "Album": "Coke Studio Season 14 (2022)",
     "duration": "6:37",
     "songAddress": "GroovoSongs/Tu Jhoom.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 69,
@@ -865,7 +865,7 @@
     "Album": "Coke Studio Season 9 (2016)",
     "duration": "7:06",
     "songAddress": "GroovoSongs/Tera Woh Pyar.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 70,
@@ -878,7 +878,7 @@
     "Album": "Anwar (2007)",
     "duration": "6:04",
     "songAddress": "GroovoSongs/Maula Mere Maula.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 71,
@@ -891,7 +891,7 @@
     "Album": "Delhi-6 (2009)",
     "duration": "8:41",
     "songAddress": "GroovoSongs/Arziyan.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 72,
@@ -904,7 +904,7 @@
     "Album": "Koi Aanay Wala Hai (2008)",
     "duration": "5:14",
     "songAddress": "GroovoSongs/Sajni.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 73,
@@ -917,7 +917,7 @@
     "Album": "Bas Ek Pal (2006)",
     "duration": "4:34",
     "songAddress": "GroovoSongs/Tere Bin.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 74,
@@ -930,7 +930,7 @@
     "Album": "Zeher (2005)",
     "duration": "5:20",
     "songAddress": "GroovoSongs/Woh Lamhe.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 75,
@@ -943,7 +943,7 @@
     "Album": "Coke Studio Season 9 (2016)",
     "duration": "12:44",
     "songAddress": "GroovoSongs/Shikwa Jawab-e-Shikwa.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 76,
@@ -956,7 +956,7 @@
     "Album": "Raees (2017)",
     "duration": "4:59",
     "songAddress": "GroovoSongs/Zaalima.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 77,
@@ -969,7 +969,7 @@
     "Album": "Coke Studio Season 10 (2017)",
     "duration": "5:35",
     "songAddress": "GroovoSongs/Tinak Dhin.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 78,
@@ -982,7 +982,7 @@
     "Album": "Single (2022)",
     "duration": "2:53",
     "songAddress": "GroovoSongs/Kahani Suno 2.0.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 79,
@@ -995,7 +995,7 @@
     "Album": "Single (2019)",
     "duration": "3:19",
     "songAddress": "GroovoSongs/Baari.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 80,
@@ -1008,7 +1008,7 @@
     "Album": "Doorie (2006)",
     "duration": "4:55",
     "songAddress": "GroovoSongs/Doorie.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 81,
@@ -1021,7 +1021,7 @@
     "Album": "Single (2010)",
     "duration": "4:39",
     "songAddress": "GroovoSongs/Ankahi.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 82,
@@ -1034,7 +1034,7 @@
     "Album": "Aaja Nachle (2007)",
     "duration": "6:19",
     "songAddress": "GroovoSongs/O Re Piya.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 83,
@@ -1047,7 +1047,7 @@
     "Album": "Baadshaho (2017)",
     "duration": "3:41",
     "songAddress": "GroovoSongs/Mere Rashke Qamar.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 84,
@@ -1060,7 +1060,7 @@
     "Album": "Coke Studio Season 8 (2015)",
     "duration": "6:53",
     "songAddress": "GroovoSongs/Sammi Meri Waar.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 85,
@@ -1073,7 +1073,7 @@
     "Album": "Coke Studio Season 7 (2014)",
     "duration": "8:52",
     "songAddress": "GroovoSongs/Chaap Tilak.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 86,
@@ -1086,7 +1086,7 @@
     "Album": "Coke Studio Season 8 (2015)",
     "duration": "6:58",
     "songAddress": "GroovoSongs/Man Aamadeh Am.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 87,
@@ -1099,7 +1099,7 @@
     "Album": "Laal Singh Chaddha (2022)",
     "duration": "5:46",
     "songAddress": "GroovoSongs/Tere Hawaale.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 88,
@@ -1112,7 +1112,7 @@
     "Album": "Coke Studio Season 9 (2016)",
     "duration": "11:05",
     "songAddress": "GroovoSongs/Par Chanaa De.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 89,
@@ -1125,7 +1125,7 @@
     "Album": "Single (2015)",
     "duration": "5:09",
     "songAddress": "GroovoSongs/Main Rahoon Ya Na Rahoon.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 90,
@@ -1138,7 +1138,7 @@
     "Album": "Race (2008)",
     "duration": "5:13",
     "songAddress": "GroovoSongs/Pehli Nazar Mein.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 91,
@@ -1151,7 +1151,7 @@
     "Album": "RRR (2022)",
     "duration": "3:36",
     "songAddress": "GroovoSongs/NaatuNaatu.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 92,
@@ -1164,7 +1164,7 @@
     "Album": "Ala Vaikunthapurramuloo (2020)",
     "duration": "3:18",
     "songAddress": "GroovoSongs/ButtaBomma.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 93,
@@ -1177,7 +1177,7 @@
     "Album": "Ala Vaikunthapurramuloo (2020)",
     "duration": "4:05",
     "songAddress": "GroovoSongs/RamulooRamulaa.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 94,
@@ -1190,7 +1190,7 @@
     "Album": "Ala Vaikunthapurramuloo (2020)",
     "duration": "3:40",
     "songAddress": "GroovoSongs/Samajavaragamana.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 95,
@@ -1203,7 +1203,7 @@
     "Album": "Geetha Govindam (2018)",
     "duration": "4:26",
     "songAddress": "GroovoSongs/InkemInkemInkemKaavaale.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 96,
@@ -1216,7 +1216,7 @@
     "Album": "Pushpa: The Rise (2021)",
     "duration": "3:41",
     "songAddress": "GroovoSongs/Srivalli.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 97,
@@ -1229,7 +1229,7 @@
     "Album": "Pushpa: The Rise (2021)",
     "duration": "3:43",
     "songAddress": "GroovoSongs/OoAntavaOoOoAntava.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 98,
@@ -1242,7 +1242,7 @@
     "Album": "Arya 2 (2009)",
     "duration": "5:33",
     "songAddress": "GroovoSongs/RingaRinga.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 99,
@@ -1255,7 +1255,7 @@
     "Album": "Sarkaru Vaari Paata (2022)",
     "duration": "4:02",
     "songAddress": "GroovoSongs/Kalaavathi.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 100,
@@ -1268,7 +1268,7 @@
     "Album": "Fidaa (2017)",
     "duration": "5:27",
     "songAddress": "GroovoSongs/Vachinde.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 101,
@@ -1281,7 +1281,7 @@
     "Album": "RX 100 (2018)",
     "duration": "5:20",
     "songAddress": "GroovoSongs/PillaaRaa.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 102,
@@ -1294,7 +1294,7 @@
     "Album": "Khaidi No. 150 (2017)",
     "duration": "4:01",
     "songAddress": "GroovoSongs/AmmaduLetsDoKummudu.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 103,
@@ -1307,7 +1307,7 @@
     "Album": "Janatha Garage (2016)",
     "duration": "4:26",
     "songAddress": "GroovoSongs/PakkaLocal.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 104,
@@ -1320,7 +1320,7 @@
     "Album": "DJ: Duvvada Jagannadham (2017)",
     "duration": "4:15",
     "songAddress": "GroovoSongs/SeetiMaar.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 105,
@@ -1333,7 +1333,7 @@
     "Album": "Sarrainodu (2016)",
     "duration": "5:04",
     "songAddress": "GroovoSongs/Blockbuster.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 106,
@@ -1346,7 +1346,7 @@
     "Album": "iSmart Shankar (2019)",
     "duration": "4:41",
     "songAddress": "GroovoSongs/DimaakKharaab.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 107,
@@ -1359,7 +1359,7 @@
     "Album": "Uppena (2021)",
     "duration": "5:08",
     "songAddress": "GroovoSongs/NeeKalluNeeliSamudram.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 108,
@@ -1372,7 +1372,7 @@
     "Album": "Magadheera (2009)",
     "duration": "4:47",
     "songAddress": "GroovoSongs/PanchadaraBomma.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 109,
@@ -1385,7 +1385,7 @@
     "Album": "Baahubali: The Beginning (2015)",
     "duration": "5:49",
     "songAddress": "GroovoSongs/Dhivara.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 110,
@@ -1398,7 +1398,7 @@
     "Album": "Baahubali 2: The Conclusion (2017)",
     "duration": "4:00",
     "songAddress": "GroovoSongs/HamsaNaava.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 111,
@@ -1411,7 +1411,7 @@
     "Album": "Bommarillu (2006)",
     "duration": "5:03",
     "songAddress": "GroovoSongs/AppudoIppudo.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 112,
@@ -1424,7 +1424,7 @@
     "Album": "Varsham (2004)",
     "duration": "5:30",
     "songAddress": "GroovoSongs/NuvvostananteNenoddantana.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 113,
@@ -1437,7 +1437,7 @@
     "Album": "Jalsa (2008)",
     "duration": "4:58",
     "songAddress": "GroovoSongs/MyHeartIsBeating.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 114,
@@ -1450,7 +1450,7 @@
     "Album": "Indra (2002)",
     "duration": "5:52",
     "songAddress": "GroovoSongs/GalaGala.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 115,
@@ -1463,7 +1463,7 @@
     "Album": "Okkadu (2003)",
     "duration": "5:32",
     "songAddress": "GroovoSongs/CheppaveChirugali.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 116,
@@ -1476,7 +1476,7 @@
     "Album": "Chalo (2018)",
     "duration": "4:10",
     "songAddress": "GroovoSongs/ChoosiChudangane.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 117,
@@ -1489,7 +1489,7 @@
     "Album": "Ninnu Kori (2017)",
     "duration": "3:35",
     "songAddress": "GroovoSongs/AdigaAdiga.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 118,
@@ -1502,7 +1502,7 @@
     "Album": "Arjun Reddy (2017)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/Emitemitemito.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 119,
@@ -1515,7 +1515,7 @@
     "Album": "Aravindha Sametha (2018)",
     "duration": "5:04",
     "songAddress": "GroovoSongs/Peniviti.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 120,
@@ -1528,7 +1528,7 @@
     "Album": "Gangleader (2019)",
     "duration": "4:23",
     "songAddress": "GroovoSongs/HoynaHoyna.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 121,
@@ -1541,7 +1541,7 @@
     "Album": "Velipadinte Pusthakam (2017)",
     "duration": "3:05",
     "songAddress": "GroovoSongs/JimikkiKammal.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 122,
@@ -1554,7 +1554,7 @@
     "Album": "Premam (2015)",
     "duration": "5:16",
     "songAddress": "GroovoSongs/Malare.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 123,
@@ -1567,7 +1567,7 @@
     "Album": "Hridayam (2022)",
     "duration": "4:02",
     "songAddress": "GroovoSongs/Darshana.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 124,
@@ -1580,7 +1580,7 @@
     "Album": "Oru Adaar Love (2018)",
     "duration": "3:18",
     "songAddress": "GroovoSongs/ManikyaMalarayaPoovi.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 125,
@@ -1593,7 +1593,7 @@
     "Album": "Love Action Drama (2019)",
     "duration": "3:13",
     "songAddress": "GroovoSongs/Kudukku.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 126,
@@ -1606,7 +1606,7 @@
     "Album": "4 the People (2004)",
     "duration": "4:40",
     "songAddress": "GroovoSongs/Lajjavathiye.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 127,
@@ -1619,7 +1619,7 @@
     "Album": "Ennu Ninte Moideen (2015)",
     "duration": "5:04",
     "songAddress": "GroovoSongs/KaathirunnuKaathirunnu.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 128,
@@ -1632,7 +1632,7 @@
     "Album": "Joseph (2018)",
     "duration": "5:08",
     "songAddress": "GroovoSongs/Poomuthole.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 129,
@@ -1645,7 +1645,7 @@
     "Album": "Mayaanadhi (2017)",
     "duration": "4:10",
     "songAddress": "GroovoSongs/UyirinNadhiye.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 130,
@@ -1658,7 +1658,7 @@
     "Album": "Thattathin Marayathu (2012)",
     "duration": "2:14",
     "songAddress": "GroovoSongs/ThattumThattum.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 131,
@@ -1671,7 +1671,7 @@
     "Album": "Adam Joan (2017)",
     "duration": "4:22",
     "songAddress": "GroovoSongs/EeKaattu.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 132,
@@ -1684,7 +1684,7 @@
     "Album": "Bheeshma Parvam (2022)",
     "duration": "3:37",
     "songAddress": "GroovoSongs/Parudeesa.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 133,
@@ -1697,7 +1697,7 @@
     "Album": "Kaduva (2022)",
     "duration": "3:45",
     "songAddress": "GroovoSongs/PalaPalliThiruppalli.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 134,
@@ -1710,7 +1710,7 @@
     "Album": "Charlie (2015)",
     "duration": "5:07",
     "songAddress": "GroovoSongs/OruKariMukilinu.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 135,
@@ -1723,7 +1723,7 @@
     "Album": "Chanthupottu (2005)",
     "duration": "4:43",
     "songAddress": "GroovoSongs/ChaanthupottumChangelessum.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 136,
@@ -1736,7 +1736,7 @@
     "Album": "Romancham (2023)",
     "duration": "4:02",
     "songAddress": "GroovoSongs/Aadharanjali.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 137,
@@ -1749,7 +1749,7 @@
     "Album": "Android Kunjappan Ver 5.25 (2019)",
     "duration": "3:36",
     "songAddress": "GroovoSongs/NjaanJacksonAlleda.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 138,
@@ -1762,7 +1762,7 @@
     "Album": "Kurup (2021)",
     "duration": "2:56",
     "songAddress": "GroovoSongs/Thiruvathira.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 139,
@@ -1775,7 +1775,7 @@
     "Album": "Swapnakoodu (2003)",
     "duration": "4:40",
     "songAddress": "GroovoSongs/Karuppinazhaku.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 140,
@@ -1788,7 +1788,7 @@
     "Album": "Chocolate (2007)",
     "duration": "5:01",
     "songAddress": "GroovoSongs/Ishtamalle.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 141,
@@ -1801,7 +1801,7 @@
     "Album": "Classmates (2006)",
     "duration": "4:51",
     "songAddress": "GroovoSongs/Pachakkili.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 142,
@@ -1814,7 +1814,7 @@
     "Album": "Runway (2004)",
     "duration": "4:40",
     "songAddress": "GroovoSongs/MutheMuthe.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 143,
@@ -1827,7 +1827,7 @@
     "Album": "Premam (2015)",
     "duration": "3:00",
     "songAddress": "GroovoSongs/AluvaPuzhayude.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 144,
@@ -1840,7 +1840,7 @@
     "Album": "Bangalore Days (2014)",
     "duration": "4:29",
     "songAddress": "GroovoSongs/ThumbiPenne.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 145,
@@ -1853,7 +1853,7 @@
     "Album": "Padmini (2023)",
     "duration": "4:01",
     "songAddress": "GroovoSongs/KaathalMarangal.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 146,
@@ -1866,7 +1866,7 @@
     "Album": "Ranam (2018)",
     "duration": "3:19",
     "songAddress": "GroovoSongs/RanamTitleTrack.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 147,
@@ -1879,7 +1879,7 @@
     "Album": "Bangalore Days (2014)",
     "duration": "4:50",
     "songAddress": "GroovoSongs/EthoMazhayil.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 148,
@@ -1892,7 +1892,7 @@
     "Album": "Njan Steve Lopez (2014)",
     "duration": "3:45",
     "songAddress": "GroovoSongs/Omale.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 149,
@@ -1905,7 +1905,7 @@
     "Album": "Mayaanadhi (2017)",
     "duration": "4:21",
     "songAddress": "GroovoSongs/MizhiyilNinnum.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 150,
@@ -1918,7 +1918,7 @@
     "Album": "Neram (2013)",
     "duration": "2:16",
     "songAddress": "GroovoSongs/Pista.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 151,
@@ -1931,7 +1931,7 @@
     "Album": "Single (2020)",
     "duration": "4:14",
     "songAddress": "GroovoSongs/BrownMunde.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 152,
@@ -1944,7 +1944,7 @@
     "Album": "Laung Laachi (2018)",
     "duration": "2:48",
     "songAddress": "GroovoSongs/LaungLaachi.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 153,
@@ -1957,7 +1957,7 @@
     "Album": "Single (2017)",
     "duration": "3:44",
     "songAddress": "GroovoSongs/Lahore.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 154,
@@ -1970,7 +1970,7 @@
     "Album": "Single (2017)",
     "duration": "3:33",
     "songAddress": "GroovoSongs/HighRatedGabru.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 155,
@@ -1983,7 +1983,7 @@
     "Album": "Single (2013)",
     "duration": "2:58",
     "songAddress": "GroovoSongs/ProperPatola.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 156,
@@ -1996,7 +1996,7 @@
     "Album": "GOAT (2020)",
     "duration": "3:36",
     "songAddress": "GroovoSongs/GOAT.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 157,
@@ -2009,7 +2009,7 @@
     "Album": "Moosetape (2021)",
     "duration": "4:30",
     "songAddress": "GroovoSongs/295.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 158,
@@ -2022,7 +2022,7 @@
     "Album": "Single (2018)",
     "duration": "3:32",
     "songAddress": "GroovoSongs/Lamborghini.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 159,
@@ -2035,7 +2035,7 @@
     "Album": "Single (2015)",
     "duration": "3:00",
     "songAddress": "GroovoSongs/WakhraSwag.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 160,
@@ -2048,7 +2048,7 @@
     "Album": "Single (2019)",
     "duration": "3:15",
     "songAddress": "GroovoSongs/Lehanga.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 161,
@@ -2061,7 +2061,7 @@
     "Album": "Single (2018)",
     "duration": "3:00",
     "songAddress": "GroovoSongs/Sakhiyaan.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 162,
@@ -2074,7 +2074,7 @@
     "Album": "Still Rollin (2023)",
     "duration": "2:50",
     "songAddress": "GroovoSongs/NoLove.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 163,
@@ -2087,7 +2087,7 @@
     "Album": "Hidden Gems (2021)",
     "duration": "3:28",
     "songAddress": "GroovoSongs/Insane.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 164,
@@ -2100,7 +2100,7 @@
     "Album": "Single (2017)",
     "duration": "3:34",
     "songAddress": "GroovoSongs/NaJa.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 165,
@@ -2113,7 +2113,7 @@
     "Album": "Single (2019)",
     "duration": "4:15",
     "songAddress": "GroovoSongs/Filhall.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 166,
@@ -2126,7 +2126,7 @@
     "Album": "Single (2017)",
     "duration": "4:24",
     "songAddress": "GroovoSongs/MannBharrya.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 167,
@@ -2139,7 +2139,7 @@
     "Album": "Qismat (2018)",
     "duration": "4:09",
     "songAddress": "GroovoSongs/Qismat.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 168,
@@ -2152,7 +2152,7 @@
     "Album": "Single (2013)",
     "duration": "4:44",
     "songAddress": "GroovoSongs/Soch.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 169,
@@ -2165,7 +2165,7 @@
     "Album": "Single (2017)",
     "duration": "3:45",
     "songAddress": "GroovoSongs/SoHigh.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 170,
@@ -2178,7 +2178,7 @@
     "Album": "International Villager (2011)",
     "duration": "3:56",
     "songAddress": "GroovoSongs/AngrejiBeat.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 171,
@@ -2191,7 +2191,7 @@
     "Album": "Single (2019)",
     "duration": "2:45",
     "songAddress": "GroovoSongs/Coka.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 172,
@@ -2204,7 +2204,7 @@
     "Album": "3 Peg (2016)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/3Peg.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 173,
@@ -2217,7 +2217,7 @@
     "Album": "Street Dancer 3D (2020)",
     "duration": "3:08",
     "songAddress": "GroovoSongs/IllegalWeapon2.0.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 174,
@@ -2230,7 +2230,7 @@
     "Album": "Single (2017)",
     "duration": "3:05",
     "songAddress": "GroovoSongs/JaaniTeraNaa.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 175,
@@ -2243,7 +2243,7 @@
     "Album": "Single (2016)",
     "duration": "3:10",
     "songAddress": "GroovoSongs/SuitSuit.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 176,
@@ -2256,7 +2256,7 @@
     "Album": "Single (2014)",
     "duration": "3:00",
     "songAddress": "GroovoSongs/PatialaPeg.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 177,
@@ -2269,7 +2269,7 @@
     "Album": "Single (2022)",
     "duration": "3:05",
     "songAddress": "GroovoSongs/MiAmor.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 178,
@@ -2282,7 +2282,7 @@
     "Album": "Single (2019)",
     "duration": "3:46",
     "songAddress": "GroovoSongs/Pachtaoge.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 179,
@@ -2295,7 +2295,7 @@
     "Album": "Single (2018)",
     "duration": "2:59",
     "songAddress": "GroovoSongs/KyaBaatAy.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 180,
@@ -2308,7 +2308,7 @@
     "Album": "Single (2022)",
     "duration": "4:22",
     "songAddress": "GroovoSongs/TheLastRide.mp3",
-    "cover": "covers/tum-hi-ho.jpg"
+    "cover": "cover/tum-hi-ho.jpg"
   },
   {
     "id": 181,
@@ -2321,7 +2321,7 @@
     "Album": "21 (2010)",
     "duration": "3:48",
     "songAddress": "GroovoSongs/RollingintheDeep.mp3",
-    "cover": "covers/rollinginthedeep.jpg"
+    "cover": "cover/rollinginthedeep.jpg"
   },
   {
     "id": 182,
@@ -2334,7 +2334,7 @@
     "Album": "Dangerously in Love (2003)",
     "duration": "3:56",
     "songAddress": "GroovoSongs/CrazyinLove.mp3",
-    "cover": "covers/crazyinlove.jpg"
+    "cover": "cover/crazyinlove.jpg"
   },
   {
     "id": 183,
@@ -2347,7 +2347,7 @@
     "Album": "Uptown Special (2014)",
     "duration": "4:30",
     "songAddress": "GroovoSongs/UptownFunk.mp3",
-    "cover": "covers/uptownfunk.jpg"
+    "cover": "cover/uptownfunk.jpg"
   },
   {
     "id": 184,
@@ -2360,7 +2360,7 @@
     "Album": "÷ (Divide) (2017)",
     "duration": "3:53",
     "songAddress": "GroovoSongs/ShapeofYou-EdSheeran.mp3",
-    "cover": "covers/shapeofyou.jpg"
+    "cover": "cover/shapeofyou.jpg"
   },
   {
     "id": 185,
@@ -2373,7 +2373,7 @@
     "Album": "After Hours (2019)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/popular-weeknd.mp3",
-    "cover": "covers/blindinglights.jpg"
+    "cover": "cover/blindinglights.jpg"
   },
   {
     "id": 186,
@@ -2386,7 +2386,7 @@
     "Album": "When We All Fall Asleep, Where Do We Go? (2019)",
     "duration": "3:14",
     "songAddress": "GroovoSongs/badguy.mp3",
-    "cover": "covers/badguy.jpg"
+    "cover": "cover/badguy.jpg"
   },
   {
     "id": 187,
@@ -2399,7 +2399,7 @@
     "Album": "Oral Fixation, Vol. 2 (2006)",
     "duration": "3:38",
     "songAddress": "GroovoSongs/HipsDontLie.mp3",
-    "cover": "covers/hipsdontlie.jpg"
+    "cover": "cover/hipsdontlie.jpg"
   },
   {
     "id": 188,
@@ -2412,7 +2412,7 @@
     "Album": " ",
     "duration": "3:55",
     "songAddress": "GroovoSongs/Espresso.mp3",
-    "cover": "covers/Espresso.jpg"
+    "cover": "cover/Espresso.jpg"
   },
   {
     "id": 189,
@@ -2425,7 +2425,7 @@
     "Album": "8 Mile Soundtrack (2002)",
     "duration": "5:20",
     "songAddress": "GroovoSongs/LoseYourself.mp3",
-    "cover": "covers/loseyourself.jpg"
+    "cover": "cover/loseyourself.jpg"
   },
   {
     "id": 190,
@@ -2438,7 +2438,7 @@
     "Album": "The Fame Monster (2009)",
     "duration": "4:54",
     "songAddress": "GroovoSongs/BadRomance.mp3",
-    "cover": "covers/badromance.jpg"
+    "cover": "cover/badromance.jpg"
   },
   {
     "id": 191,
@@ -2451,7 +2451,7 @@
     "Album": "Breakaway (2004)",
     "duration": "3:08",
     "songAddress": "GroovoSongs/SinceUBeenGone.mp3",
-    "cover": "covers/sinceubeengone.jpg"
+    "cover": "cover/sinceubeengone.jpg"
   },
   {
     "id": 192,
@@ -2464,7 +2464,7 @@
     "Album": "Good Girl Gone Bad (2007)",
     "duration": "4:35",
     "songAddress": "GroovoSongs/Umbrella.mp3",
-    "cover": "covers/umbrella.jpg"
+    "cover": "cover/umbrella.jpg"
   },
   {
     "id": 193,
@@ -2477,7 +2477,7 @@
     "Album": "The E.N.D. (2009)",
     "duration": "4:49",
     "songAddress": "GroovoSongs/IGottaFeeling.mp3",
-    "cover": "covers/igottafeeling.jpg"
+    "cover": "cover/igottafeeling.jpg"
   },
   {
     "id": 194,
@@ -2490,7 +2490,7 @@
     "Album": "Talk That Talk (2011)",
     "duration": "3:35",
     "songAddress": "GroovoSongs/WeFoundLove.mp3",
-    "cover": "covers/wefoundlove.jpg"
+    "cover": "cover/wefoundlove.jpg"
   },
   {
     "id": 195,
@@ -2503,7 +2503,7 @@
     "Album": "Kiss (2012)",
     "duration": "3:13",
     "songAddress": "GroovoSongs/CallMeMaybe.mp3",
-    "cover": "covers/callmemaybe.jpg"
+    "cover": "cover/callmemaybe.jpg"
   },
   {
     "id": 196,
@@ -2516,7 +2516,7 @@
     "Album": "SOUR (2021)",
     "duration": "4:02",
     "songAddress": "GroovoSongs/driverslicense.mp3",
-    "cover": "covers/driverslicense.jpg"
+    "cover": "cover/driverslicense.jpg"
   },
   {
     "id": 197,
@@ -2529,7 +2529,7 @@
     "Album": "Harry's House (2022)",
     "duration": "2:47",
     "songAddress": "GroovoSongs/AsItWas.mp3",
-    "cover": "covers/asitwas.jpg"
+    "cover": "cover/asitwas.jpg"
   },
   {
     "id": 198,
@@ -2542,7 +2542,7 @@
     "Album": "Get Rich or Die Tryin' (2003)",
     "duration": "3:13",
     "songAddress": "GroovoSongs/InDaClub.mp3",
-    "cover": "covers/indaclub.jpg"
+    "cover": "cover/indaclub.jpg"
   },
   {
     "id": 199,
@@ -2555,7 +2555,7 @@
     "Album": "In the Zone (2003)",
     "duration": "3:18",
     "songAddress": "GroovoSongs/Toxic.mp3",
-    "cover": "covers/toxic.jpg"
+    "cover": "cover/toxic.jpg"
   },
   {
     "id": 200,
@@ -2568,7 +2568,7 @@
     "Album": "I Am... Sasha Fierce (2008)",
     "duration": "3:13",
     "songAddress": "GroovoSongs/SingleLadiesPutaRingonIt.mp3",
-    "cover": "covers/singleladiesputaringonit.jpg"
+    "cover": "cover/singleladiesputaringonit.jpg"
   },
   {
     "id": 201,
@@ -2581,7 +2581,7 @@
     "Album": "Sorry for Party Rocking (2011)",
     "duration": "4:22",
     "songAddress": "GroovoSongs/PartyRockAnthem.mp3",
-    "cover": "covers/partyrockanthem.jpg"
+    "cover": "cover/partyrockanthem.jpg"
   },
   {
     "id": 202,
@@ -2594,7 +2594,7 @@
     "Album": "1989 (2014)",
     "duration": "3:51",
     "songAddress": "GroovoSongs/BlankSpace.mp3",
-    "cover": "covers/blankspace.jpg"
+    "cover": "cover/blankspace.jpg"
   },
   {
     "id": 203,
@@ -2607,7 +2607,7 @@
     "Album": "Purpose (2015)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/Sorry.mp3",
-    "cover": "covers/sorry.jpg"
+    "cover": "cover/sorry.jpg"
   },
   {
     "id": 204,
@@ -2620,7 +2620,7 @@
     "Album": "thank u, next (2018)",
     "duration": "3:27",
     "songAddress": "GroovoSongs/thankunext.mp3",
-    "cover": "covers/thankunext.jpg"
+    "cover": "cover/thankunext.jpg"
   },
   {
     "id": 205,
@@ -2633,7 +2633,7 @@
     "Album": "Divinely Uninspired to a Hellish Extent (2018)",
     "duration": "3:02",
     "songAddress": "GroovoSongs/SomeoneYouLoved.mp3",
-    "cover": "covers/someoneyouloved.jpg"
+    "cover": "cover/someoneyouloved.jpg"
   },
   {
     "id": 206,
@@ -2646,7 +2646,7 @@
     "Album": "The Kids Are Coming (EP) (2019)",
     "duration": "3:29",
     "songAddress": "GroovoSongs/DanceMonkey.mp3",
-    "cover": "covers/dancemonkey.jpg"
+    "cover": "cover/dancemonkey.jpg"
   },
   {
     "id": 207,
@@ -2659,7 +2659,7 @@
     "Album": "SOUR (2021)",
     "duration": "2:58",
     "songAddress": "GroovoSongs/good4u.mp3",
-    "cover": "covers/good4u.jpg"
+    "cover": "cover/good4u.jpg"
   },
   {
     "id": 208,
@@ -2672,7 +2672,7 @@
     "Album": "Endless Summer Vacation (2023)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/Flowers.mp3",
-    "cover": "covers/flowers.jpg"
+    "cover": "cover/flowers.jpg"
   },
   {
     "id": 209,
@@ -2685,7 +2685,7 @@
     "Album": "Midnights (2022)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/Anti-Hero.mp3",
-    "cover": "covers/anti-hero.jpg"
+    "cover": "cover/anti-hero.jpg"
   },
   {
     "id": 210,
@@ -2698,7 +2698,7 @@
     "Album": "1000 Forms of Fear (2014)",
     "duration": "3:36",
     "songAddress": "GroovoSongs/Chandelier.mp3",
-    "cover": "covers/chandelier.jpg"
+    "cover": "cover/chandelier.jpg"
   },
 
   {
@@ -2712,7 +2712,7 @@
     "Album": "Single (2025)",
     "duration": "2:20",
     "songAddress": "GroovoSongs/2AMEcho.mp3",
-    "cover": "covers/2amecho.jpg"
+    "cover": "cover/2amecho.jpg"
   },
   {
     "id": 212,
@@ -2725,7 +2725,7 @@
     "Album": " ",
     "duration": "3:40",
     "songAddress": "GroovoSongs/Feather.mp3",
-    "cover": "covers/sabrina_carpenter01.jpg"
+    "cover": "cover/Feather.jpg"
   },
   {
     "id": 213,
@@ -2738,7 +2738,7 @@
     "Album": "Single (2025)",
     "duration": "3:12",
     "songAddress": "GroovoSongs/GoldenHourHaze.mp3",
-    "cover": "covers/goldenhourhaze.jpg"
+    "cover": "cover/goldenhourhaze.jpg"
   },
   {
     "id": 214,
@@ -2751,7 +2751,7 @@
     "Album": "Concrete Dreams (2025)",
     "duration": "2:55",
     "songAddress": "GroovoSongs/Pavement.mp3",
-    "cover": "covers/pavement.jpg"
+    "cover": "cover/pavement.jpg"
   },
   {
     "id": 215,
@@ -2764,7 +2764,7 @@
     "Album": "Hit Me Hard and Soft (2024)",
     "duration": "2:59",
     "songAddress": "GroovoSongs/LUNCH.mp3",
-    "cover": "covers/lunch.jpg"
+    "cover": "cover/lunch.jpg"
   },
   {
     "id": 216,
@@ -2777,7 +2777,7 @@
     "Album": "Single (2024)",
     "duration": "2:58",
     "songAddress": "GroovoSongs/IHadSomeHelp.mp3",
-    "cover": "covers/ihadsomehelp.jpg"
+    "cover": "cover/ihadsomehelp.jpg"
   },
   {
     "id": 217,
@@ -2790,7 +2790,7 @@
     "Album": "Single (2025)",
     "duration": "3:08",
     "songAddress": "GroovoSongs/Satellite.mp3",
-    "cover": "covers/satellite.jpg"
+    "cover": "cover/satellite.jpg"
   },
   {
     "id": 218,
@@ -2803,7 +2803,7 @@
     "Album": "Single (2025)",
     "duration": "3:33",
     "songAddress": "GroovoSongs/ChromeHeart.mp3",
-    "cover": "covers/chromeheart.jpg"
+    "cover": "cover/chromeheart.jpg"
   },
   {
     "id": 219,
@@ -2816,7 +2816,7 @@
     "Album": "The Great American Bar Scene (2024)",
     "duration": "4:20",
     "songAddress": "GroovoSongs/MemoryLane.mp3",
-    "cover": "covers/memorylane.jpg"
+    "cover": "cover/memorylane.jpg"
   },
   {
     "id": 220,
@@ -2829,7 +2829,7 @@
     "Album": "The Albatross (2025)",
     "duration": "4:18",
     "songAddress": "GroovoSongs/TheLastPage.mp3",
-    "cover": "covers/thelastpage.jpg"
+    "cover": "cover/thelastpage.jpg"
   },
   {
     "id": 221,
@@ -2842,7 +2842,7 @@
     "Album": " ",
     "duration": "3:17",
     "songAddress": "GroovoSongs/because_i_liked_a_boy.mp3",
-    "cover": "covers/because_i_liked_a_boy.jpg"
+    "cover": "cover/because_i_liked_a_boy.jpg"
   },
   {
     "id": 222,
@@ -2855,7 +2855,7 @@
     "Album": " ",
     "duration": "3:05",
     "songAddress": "GroovoSongs/looking_at_me.mp3",
-    "cover": "covers/looking_at_me.jpg"
+    "cover": "cover/looking_at_me.jpg"
   },
   {
     "id": 223,
@@ -2868,7 +2868,7 @@
     "Album": "Hit Me Hard and Soft (2024)",
     "duration": "3:30",
     "songAddress": "GroovoSongs/BirdsofaFeather.mp3",
-    "cover": "covers/birdsofafeather.jpg"
+    "cover": "cover/birdsofafeather.jpg"
   },
   {
     "id": 224,
@@ -2881,7 +2881,7 @@
     "Album": " ",
     "duration": "3:04",
     "songAddress": "GroovoSongs/sue_me.mp3",
-    "cover": "covers/sue_me.jpg"
+    "cover": "cover/sue_me.jpg"
   },
   {
     "id": 225,
@@ -2894,7 +2894,7 @@
     "Album": " ",
     "duration": "3:46",
     "songAddress": "GroovoSongs/thumbs.mp3",
-    "cover": "covers/thumbs.jpg"
+    "cover": "cover/thumbs.jpg"
   },
   {
     "id": 226,
@@ -2907,7 +2907,7 @@
     "Album": " ",
     "duration": "3:36",
     "songAddress": "GroovoSongs/on_my_way.mp3",
-    "cover": "covers/on_my_way.jpg"
+    "cover": "cover/on_my_way.jpg"
   },
   {
     "id": 227,
@@ -2920,7 +2920,7 @@
     "Album": "Hologram (2025)",
     "duration": "3:55",
     "songAddress": "GroovoSongs/afterglow.mp3",
-    "cover": "covers/afterglow.jpg"
+    "cover": "cover/afterglow.jpg"
   },
   {
     "id": 228,
@@ -2933,7 +2933,7 @@
     "Album": "The Albatross (2025)",
     "duration": "3:28",
     "songAddress": "GroovoSongs/Masquerade.mp3",
-    "cover": "covers/masquerade.jpg"
+    "cover": "cover/masquerade.jpg"
   },
   {
     "id": 229,
@@ -2946,7 +2946,7 @@
     "Album": "Digital Ghost (2025)",
     "duration": "3:10",
     "songAddress": "GroovoSongs/ElectricDreams.mp3",
-    "cover": "covers/electricdreams.jpg"
+    "cover": "cover/electricdreams.jpg"
   },
   {
     "id": 230,
@@ -2959,7 +2959,7 @@
     "Album": "Single (2024)",
     "duration": "4:34",
     "songAddress": "GroovoSongs/NotLikeUs.mp3",
-    "cover": "covers/notlikeus.jpg"
+    "cover": "cover/notlikeus.jpg"
   },
   {
     "id": 231,
@@ -2972,7 +2972,7 @@
     "Album": "Where I've Been, Isn't Where I'm Going (2024)",
     "duration": "2:51",
     "songAddress": "GroovoSongs/ABarSongTipsy.mp3",
-    "cover": "covers/abarsongtipsy.jpg"
+    "cover": "cover/abarsongtipsy.jpg"
   },
   {
     "id": 232,
@@ -2985,7 +2985,7 @@
     "Album": "The Death of Slim Shady (2024)",
     "duration": "3:47",
     "songAddress": "GroovoSongs/Houdini.mp3",
-    "cover": "covers/houdini.jpg"
+    "cover": "cover/houdini.jpg"
   },
   {
     "id": 233,
@@ -2998,7 +2998,7 @@
     "Album": "Single (2025)",
     "duration": "2:58",
     "songAddress": "GroovoSongs/WarpSpeed.mp3",
-    "cover": "covers/warpspeed.jpg"
+    "cover": "cover/warpspeed.jpg"
   },
   {
     "id": 234,
@@ -3011,7 +3011,7 @@
     "Album": "Nomad (2025)",
     "duration": "4:15",
     "songAddress": "GroovoSongs/LastSunset.mp3",
-    "cover": "covers/lastsunset.jpg"
+    "cover": "cover/lastsunset.jpg"
   },
   {
     "id": 235,
@@ -3024,7 +3024,7 @@
     "Album": "Single (2025)",
     "duration": "4:05",
     "songAddress": "GroovoSongs/CarCrashinSlowMotion.mp3",
-    "cover": "covers/carcrashinslowmotion.jpg"
+    "cover": "cover/carcrashinslowmotion.jpg"
   },
   {
     "id": 236,
@@ -3037,7 +3037,7 @@
     "Album": " ",
     "duration": "3:06",
     "songAddress": "GroovoSongs/please_please_please.mp3",
-    "cover": "covers/please_please_please.jpg"
+    "cover": "cover/please_please_please.jpg"
   },
   {
     "id": 237,
@@ -3050,7 +3050,7 @@
     "Album": "Single (2024)",
     "duration": "3:38",
     "songAddress": "GroovoSongs/GoodLuckBabe.mp3",
-    "cover": "covers/goodluckbabe.jpg"
+    "cover": "cover/goodluckbabe.jpg"
   },
   {
     "id": 238,
@@ -3063,7 +3063,7 @@
     "Album": "Single (2025)",
     "duration": "3:50",
     "songAddress": "GroovoSongs/NightShift.mp3",
-    "cover": "covers/nightshift.jpg"
+    "cover": "cover/nightshift.jpg"
   },
   {
     "id": 239,
@@ -3076,7 +3076,7 @@
     "Album": "Single (2025)",
     "duration": "3:22",
     "songAddress": "GroovoSongs/TidalWave.mp3",
-    "cover": "covers/tidalwave.jpg"
+    "cover": "cover/tidalwave.jpg"
   },
   {
     "id": 240,
@@ -3089,7 +3089,7 @@
     "Album": "Think Later (2024)",
     "duration": "2:48",
     "songAddress": "GroovoSongs/Venom.mp3",
-    "cover": "covers/venom.jpg"
+    "cover": "cover/venom.jpg"
   },
 
   {
@@ -3103,7 +3103,7 @@
     "Album": "Vettaiyan (2024)",
     "duration": "3:50",
     "songAddress": "GroovoSongs/VettaiyanTitleTrack.mp3",
-    "cover": "covers/vettaiyantitletrack.jpg"
+    "cover": "cover/vettaiyantitletrack.jpg"
   },
   {
     "id": 242,
@@ -3116,7 +3116,7 @@
     "Album": "Thalaivar 171 (2025)",
     "duration": "3:10",
     "songAddress": "GroovoSongs/RolexReturns.mp3",
-    "cover": "covers/rolexreturns.jpg"
+    "cover": "cover/rolexreturns.jpg"
   },
   {
     "id": 243,
@@ -3129,7 +3129,7 @@
     "Album": "Kanguva (2024)",
     "duration": "4:20",
     "songAddress": "GroovoSongs/Kanguva.mp3",
-    "cover": "covers/kanguva.jpg"
+    "cover": "cover/kanguva.jpg"
   },
   {
     "id": 244,
@@ -3142,7 +3142,7 @@
     "Album": "Thug Life (2025)",
     "duration": "4:45",
     "songAddress": "GroovoSongs/NayaganMeendum.mp3",
-    "cover": "covers/nayaganmeendum.jpg"
+    "cover": "cover/nayaganmeendum.jpg"
   },
   {
     "id": 245,
@@ -3155,7 +3155,7 @@
     "Album": "Thalapathy 70 (2025)",
     "duration": "4:05",
     "songAddress": "GroovoSongs/MakkalThalaivan.mp3",
-    "cover": "covers/makkalthalaivan.jpg"
+    "cover": "cover/makkalthalaivan.jpg"
   },
   {
     "id": 246,
@@ -3168,7 +3168,7 @@
     "Album": "VidaaMuyarchi (2025)",
     "duration": "3:33",
     "songAddress": "GroovoSongs/AdhiradiVibe.mp3",
-    "cover": "covers/adhiradivibe.jpg"
+    "cover": "cover/adhiradivibe.jpg"
   },
   {
     "id": 247,
@@ -3181,7 +3181,7 @@
     "Album": "Think Originals (2025)",
     "duration": "4:12",
     "songAddress": "GroovoSongs/ManninMagal.mp3",
-    "cover": "covers/manninmagal.jpg"
+    "cover": "cover/manninmagal.jpg"
   },
   {
     "id": 248,
@@ -3194,7 +3194,7 @@
     "Album": "Thangalaan (2024)",
     "duration": "3:55",
     "songAddress": "GroovoSongs/ThangalaanTheme.mp3",
-    "cover": "covers/thangalaantheme.jpg"
+    "cover": "cover/thangalaantheme.jpg"
   },
   {
     "id": 249,
@@ -3207,7 +3207,7 @@
     "Album": "Kaadhal Kaaviyam (2025)",
     "duration": "4:30",
     "songAddress": "GroovoSongs/MazhaiyoduPesu.mp3",
-    "cover": "covers/mazhaiyodupesu.jpg"
+    "cover": "cover/mazhaiyodupesu.jpg"
   },
   {
     "id": 250,
@@ -3220,7 +3220,7 @@
     "Album": "STR 50 (2025)",
     "duration": "3:25",
     "songAddress": "GroovoSongs/YSRMagic.mp3",
-    "cover": "covers/ysrmagic.jpg"
+    "cover": "cover/ysrmagic.jpg"
   },
   {
     "id": 251,
@@ -3233,7 +3233,7 @@
     "Album": "Nilavuku En Mel Ennadi Kobam (2025)",
     "duration": "4:40",
     "songAddress": "GroovoSongs/KaadhalThee.mp3",
-    "cover": "covers/kaadhalthee.jpg"
+    "cover": "cover/kaadhalthee.jpg"
   },
   {
     "id": 252,
@@ -3246,7 +3246,7 @@
     "Album": "Viduthalai Part 2 (2024)",
     "duration": "4:02",
     "songAddress": "GroovoSongs/Porattam.mp3",
-    "cover": "covers/porattam.jpg"
+    "cover": "cover/porattam.jpg"
   },
   {
     "id": 253,
@@ -3259,7 +3259,7 @@
     "Album": "Single (2025)",
     "duration": "3:58",
     "songAddress": "GroovoSongs/Megham.mp3",
-    "cover": "covers/megham.jpg"
+    "cover": "cover/megham.jpg"
   },
   {
     "id": 254,
@@ -3272,7 +3272,7 @@
     "Album": "Komban 2 (2025)",
     "duration": "4:18",
     "songAddress": "GroovoSongs/OorSanda.mp3",
-    "cover": "covers/oorsanda.jpg"
+    "cover": "cover/oorsanda.jpg"
   },
   {
     "id": 255,
@@ -3285,7 +3285,7 @@
     "Album": "Minnal (2025)",
     "duration": "4:22",
     "songAddress": "GroovoSongs/IdhayamUnathu.mp3",
-    "cover": "covers/idhayamunathu.jpg"
+    "cover": "cover/idhayamunathu.jpg"
   },
   {
     "id": 256,
@@ -3298,7 +3298,7 @@
     "Album": "College Days (2025)",
     "duration": "3:14",
     "songAddress": "GroovoSongs/FirstBench.mp3",
-    "cover": "covers/firstbench.jpg"
+    "cover": "cover/firstbench.jpg"
   },
   {
     "id": 257,
@@ -3311,7 +3311,7 @@
     "Album": "Raayan (2024)",
     "duration": "3:48",
     "songAddress": "GroovoSongs/RaayanTitleTrack.mp3",
-    "cover": "covers/raayantitletrack.jpg"
+    "cover": "cover/raayantitletrack.jpg"
   },
   {
     "id": 258,
@@ -3324,7 +3324,7 @@
     "Album": "Vaathi Raid 2 (2025)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/NaanThaniAalu.mp3",
-    "cover": "covers/naanthaniaalu.jpg"
+    "cover": "cover/naanthaniaalu.jpg"
   },
   {
     "id": 259,
@@ -3337,7 +3337,7 @@
     "Album": "Single (2024)",
     "duration": "4:04",
     "songAddress": "GroovoSongs/Siragugal.mp3",
-    "cover": "covers/siragugal.jpg"
+    "cover": "cover/siragugal.jpg"
   },
   {
     "id": 260,
@@ -3350,7 +3350,7 @@
     "Album": "Single (2025)",
     "duration": "2:59",
     "songAddress": "GroovoSongs/VaaVaathiRemix.mp3",
-    "cover": "covers/vaavaathiremix.jpg"
+    "cover": "cover/vaavaathiremix.jpg"
   },
   {
     "id": 261,
@@ -3363,7 +3363,7 @@
     "Album": "Vettaiyan (2024)",
     "duration": "2:55",
     "songAddress": "GroovoSongs/ThalaivarsSwag.mp3",
-    "cover": "covers/thalaivarsswag.jpg"
+    "cover": "cover/thalaivarsswag.jpg"
   },
   {
     "id": 262,
@@ -3376,7 +3376,7 @@
     "Album": "Sivaji 2 (2025)",
     "duration": "3:05",
     "songAddress": "GroovoSongs/Thee.mp3",
-    "cover": "covers/thee.jpg"
+    "cover": "cover/thee.jpg"
   },
   {
     "id": 263,
@@ -3389,7 +3389,7 @@
     "Album": "Dhruva Natchathiram (2024)",
     "duration": "5:10",
     "songAddress": "GroovoSongs/KuruKuruPaarvai.mp3",
-    "cover": "covers/kurukurupaarvai.jpg"
+    "cover": "cover/kurukurupaarvai.jpg"
   },
   {
     "id": 264,
@@ -3402,7 +3402,7 @@
     "Album": "Jailer 2 (2025)",
     "duration": "1:58",
     "songAddress": "GroovoSongs/Jailer2Theme.mp3",
-    "cover": "covers/jailer2theme.jpg"
+    "cover": "cover/jailer2theme.jpg"
   },
   {
     "id": 265,
@@ -3415,7 +3415,7 @@
     "Album": "Captain Miller 2 (2025)",
     "duration": "3:37",
     "songAddress": "GroovoSongs/Maaran.mp3",
-    "cover": "covers/maaran.jpg"
+    "cover": "cover/maaran.jpg"
   },
   {
     "id": 266,
@@ -3428,7 +3428,7 @@
     "Album": "Single (2024)",
     "duration": "3:19",
     "songAddress": "GroovoSongs/EthirNeechal2.0.mp3",
-    "cover": "covers/ethirneecha2.0.jpg"
+    "cover": "cover/ethirneecha2.0.jpg"
   },
   {
     "id": 267,
@@ -3441,7 +3441,7 @@
     "Album": "Indian 2 (2024)",
     "duration": "4:00",
     "songAddress": "GroovoSongs/Indian2Theme.mp3",
-    "cover": "covers/indian2theme.jpg"
+    "cover": "cover/indian2theme.jpg"
   },
   {
     "id": 268,
@@ -3454,7 +3454,7 @@
     "Album": "Karnan Returns (2025)",
     "duration": "4:25",
     "songAddress": "GroovoSongs/Sooriyan.mp3",
-    "cover": "covers/sooriyan.jpg"
+    "cover": "cover/sooriyan.jpg"
   },
   {
     "id": 269,
@@ -3467,7 +3467,7 @@
     "Album": "Oh My Kadavule 2 (2025)",
     "duration": "3:45",
     "songAddress": "GroovoSongs/Kanavugal.mp3",
-    "cover": "covers/kanavugal.jpg"
+    "cover": "cover/kanavugal.jpg"
   },
 
   {
@@ -3481,7 +3481,7 @@
     "Album": "Pushpa 2: The Rule (2024)",
     "duration": "4:20",
     "songAddress": "GroovoSongs/PushpaPushpa.mp3",
-    "cover": "covers/pushpapushpa.jpg"
+    "cover": "cover/pushpapushpa.jpg"
   },
   {
     "id": 271,
@@ -3494,7 +3494,7 @@
     "Album": "Devara: Part 1 (2024)",
     "duration": "3:55",
     "songAddress": "GroovoSongs/AllHailTheTiger.mp3",
-    "cover": "covers/allhailthetiger.jpg"
+    "cover": "cover/allhailthetiger.jpg"
   },
   {
     "id": 272,
@@ -3507,7 +3507,7 @@
     "Album": "Game Changer (2024)",
     "duration": "4:15",
     "songAddress": "GroovoSongs/Jaragandi.mp3",
-    "cover": "covers/jaragandi.jpg"
+    "cover": "cover/jaragandi.jpg"
   },
   {
     "id": 273,
@@ -3520,7 +3520,7 @@
     "Album": "Pushpa 2: The Rule (2024)",
     "duration": "3:45",
     "songAddress": "GroovoSongs/SoosekiTheCoupleSong.mp3",
-    "cover": "covers/soosekithecouplesong.jpg"
+    "cover": "cover/soosekithecouplesong.jpg"
   },
   {
     "id": 274,
@@ -3533,7 +3533,7 @@
     "Album": "Kalki 2898 AD (2024)",
     "duration": "4:30",
     "songAddress": "GroovoSongs/Yugaantam.mp3",
-    "cover": "covers/yugaantam.jpg"
+    "cover": "cover/yugaantam.jpg"
   },
   {
     "id": 275,
@@ -3546,7 +3546,7 @@
     "Album": "SSMB29 (2025)",
     "duration": "5:10",
     "songAddress": "GroovoSongs/Adavi.mp3",
-    "cover": "covers/adavi.jpg"
+    "cover": "cover/adavi.jpg"
   },
   {
     "id": 276,
@@ -3559,7 +3559,7 @@
     "Album": "VD14 (2025)",
     "duration": "4:05",
     "songAddress": "GroovoSongs/NaaPriyasi.mp3",
-    "cover": "covers/naapriyasi.jpg"
+    "cover": "cover/naapriyasi.jpg"
   },
   {
     "id": 277,
@@ -3572,7 +3572,7 @@
     "Album": "OG (2024)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/OGsSwordTitleTrack.mp3",
-    "cover": "covers/ogswordtitletrack.jpg"
+    "cover": "cover/ogswordtitletrack.jpg"
   },
   {
     "id": 278,
@@ -3585,7 +3585,7 @@
     "Album": "Pushpa 2: The Rule (2024)",
     "duration": "4:11",
     "songAddress": "GroovoSongs/Jaathara.mp3",
-    "cover": "covers/jaathara.jpg"
+    "cover": "cover/jaathara.jpg"
   },
   {
     "id": 279,
@@ -3598,7 +3598,7 @@
     "Album": "Devara: Part 1 (2024)",
     "duration": "3:50",
     "songAddress": "GroovoSongs/Katthi.mp3",
-    "cover": "covers/katthi.jpg"
+    "cover": "cover/katthi.jpg"
   },
   {
     "id": 280,
@@ -3611,7 +3611,7 @@
     "Album": "Game Changer (2024)",
     "duration": "4:25",
     "songAddress": "GroovoSongs/Nayakude.mp3",
-    "cover": "covers/nayakude.jpg"
+    "cover": "cover/nayakude.jpg"
   },
   {
     "id": 281,
@@ -3624,7 +3624,7 @@
     "Album": "Prema Desam 2 (2025)",
     "duration": "3:58",
     "songAddress": "GroovoSongs/Vidipoke.mp3",
-    "cover": "covers/vidipoke.jpg"
+    "cover": "cover/vidipoke.jpg"
   },
   {
     "id": 282,
@@ -3637,7 +3637,7 @@
     "Album": "Single (2025)",
     "duration": "4:18",
     "songAddress": "GroovoSongs/Manasuna.mp3",
-    "cover": "covers/manasuna.jpg"
+    "cover": "cover/manasuna.jpg"
   },
   {
     "id": 283,
@@ -3650,7 +3650,7 @@
     "Album": "Kalki 2898 AD (2024)",
     "duration": "3:33",
     "songAddress": "GroovoSongs/BhairavaAnthem.mp3",
-    "cover": "covers/bhairavaanthem.jpg"
+    "cover": "cover/bhairavaanthem.jpg"
   },
   {
     "id": 284,
@@ -3663,7 +3663,7 @@
     "Album": "Palnadu (2025)",
     "duration": "4:02",
     "songAddress": "GroovoSongs/Thalli.mp3",
-    "cover": "covers/thalli.jpg"
+    "cover": "cover/thalli.jpg"
   },
   {
     "id": 285,
@@ -3676,7 +3676,7 @@
     "Album": "Single (2024)",
     "duration": "3:15",
     "songAddress": "GroovoSongs/GalliPoragadu.mp3",
-    "cover": "covers/galliporagadu.jpg"
+    "cover": "cover/galliporagadu.jpg"
   },
   {
     "id": 286,
@@ -3689,7 +3689,7 @@
     "Album": "Maha Veera (2025)",
     "duration": "4:55",
     "songAddress": "GroovoSongs/Sooreede.mp3",
-    "cover": "covers/sooreede.jpg"
+    "cover": "cover/sooreede.jpg"
   },
   {
     "id": 287,
@@ -3702,7 +3702,7 @@
     "Album": "Raja (2025)",
     "duration": "3:40",
     "songAddress": "GroovoSongs/RajaTitleTrack.mp3",
-    "cover": "covers/rajatitletrack.jpg"
+    "cover": "cover/rajatitletrack.jpg"
   },
   {
     "id": 288,
@@ -3715,7 +3715,7 @@
     "Album": "Ustaad Bhagat Singh (2025)",
     "duration": "4:01",
     "songAddress": "GroovoSongs/MassMogudu.mp3",
-    "cover": "covers/massmogudu.jpg"
+    "cover": "cover/massmogudu.jpg"
   },
   {
     "id": 289,
@@ -3728,7 +3728,7 @@
     "Album": "Devara: Part 1 (2024)",
     "duration": "3:18",
     "songAddress": "GroovoSongs/FearSong.mp3",
-    "cover": "covers/fearsong.jpg"
+    "cover": "cover/fearsong.jpg"
   },
   {
     "id": 290,
@@ -3741,7 +3741,7 @@
     "Album": "The Raja Saab (2025)",
     "duration": "3:30",
     "songAddress": "GroovoSongs/RebelStar.mp3",
-    "cover": "covers/rebelstar.jpg"
+    "cover": "cover/rebelstar.jpg"
   },
   {
     "id": 291,
@@ -3754,7 +3754,7 @@
     "Album": "G.O.A.T (2025)",
     "duration": "3:50",
     "songAddress": "GroovoSongs/Ammayi.mp3",
-    "cover": "covers/ammayi.jpg"
+    "cover": "cover/ammayi.jpg"
   },
   {
     "id": 292,
@@ -3767,7 +3767,7 @@
     "Album": "Sita Ramam 2 (2025)",
     "duration": "4:12",
     "songAddress": "GroovoSongs/NaaGunde.mp3",
-    "cover": "covers/naagunde.jpg"
+    "cover": "cover/naagunde.jpg"
   },
   {
     "id": 293,
@@ -3780,7 +3780,7 @@
     "Album": "Pushpa 2: The Rule (2024)",
     "duration": "2:58",
     "songAddress": "GroovoSongs/RuleTheWorld.mp3",
-    "cover": "covers/ruletheworld.jpg"
+    "cover": "cover/ruletheworld.jpg"
   },
   {
     "id": 294,
@@ -3793,7 +3793,7 @@
     "Album": "Single (2024)",
     "duration": "4:28",
     "songAddress": "GroovoSongs/Cheliya.mp3",
-    "cover": "covers/cheliya.jpg"
+    "cover": "cover/cheliya.jpg"
   },
   {
     "id": 295,
@@ -3806,7 +3806,7 @@
     "Album": "Macherla Niyojakavargam 2 (2025)",
     "duration": "4:10",
     "songAddress": "GroovoSongs/RaRaReddy2.0.mp3",
-    "cover": "covers/rarareddy2.0.jpg"
+    "cover": "cover/rarareddy2.0.jpg"
   },
   {
     "id": 296,
@@ -3819,7 +3819,7 @@
     "Album": "G.O.A.T (2025)",
     "duration": "3:55",
     "songAddress": "GroovoSongs/TheGreatestOfAllTime.mp3",
-    "cover": "covers/thegreatestofalltime.jpg"
+    "cover": "cover/thegreatestofalltime.jpg"
   },
   {
     "id": 297,
@@ -3832,7 +3832,7 @@
     "Album": "Hi Nanna (2024)",
     "duration": "3:45",
     "songAddress": "GroovoSongs/HeyNanna.mp3",
-    "cover": "covers/heynanna.jpg"
+    "cover": "cover/heynanna.jpg"
   },
   {
     "id": 298,
@@ -3845,7 +3845,7 @@
     "Album": "Family Star (2024)",
     "duration": "3:52",
     "songAddress": "GroovoSongs/Saradaaga.mp3",
-    "cover": "covers/saradaaga.jpg"
+    "cover": "cover/saradaaga.jpg"
   },
 
   {
@@ -3859,7 +3859,7 @@
     "Album": "Single (2024)",
     "duration": "3:58",
     "songAddress": "GroovoSongs/Aaro.mp3",
-    "cover": "covers/aaro.jpg"
+    "cover": "cover/aaro.jpg"
   },
   {
     "id": 300,
@@ -3872,7 +3872,7 @@
     "Album": "Chocolate 2 (2025)",
     "duration": "3:42",
     "songAddress": "GroovoSongs/OruNokkil.mp3",
-    "cover": "covers/orunokkil.jpg"
+    "cover": "cover/orunokkil.jpg"
   },
   {
     "id": 301,
@@ -3885,7 +3885,7 @@
     "Album": "Aavesham (2024)",
     "duration": "2:45",
     "songAddress": "GroovoSongs/AaveshamTitleTrack.mp3",
-    "cover": "covers/aaveshamtitletrack.jpg"
+    "cover": "cover/aaveshamtitletrack.jpg"
   },
   {
     "id": 302,
@@ -3898,7 +3898,7 @@
     "Album": "Night Drive 2 (2025)",
     "duration": "4:18",
     "songAddress": "GroovoSongs/EthoRaavil.mp3",
-    "cover": "covers/ethoraavil.jpg"
+    "cover": "cover/ethoraavil.jpg"
   },
   {
     "id": 303,
@@ -3911,7 +3911,7 @@
     "Album": "Backpackers (2025)",
     "duration": "3:33",
     "songAddress": "GroovoSongs/80sKaalam.mp3",
-    "cover": "covers/80skaalam.jpg"
+    "cover": "cover/80skaalam.jpg"
   },
   {
     "id": 304,
@@ -3924,7 +3924,7 @@
     "Album": "God's Own Country (Soundtrack, 2025)",
     "duration": "4:50",
     "songAddress": "GroovoSongs/EnteKeralam.mp3",
-    "cover": "covers/entekeralam.jpg"
+    "cover": "cover/entekeralam.jpg"
   },
   {
     "id": 305,
@@ -3937,7 +3937,7 @@
     "Album": "Single (2024)",
     "duration": "4:25",
     "songAddress": "GroovoSongs/Mizhikal.mp3",
-    "cover": "covers/mizhikal.jpg"
+    "cover": "cover/mizhikal.jpg"
   },
   {
     "id": 306,
@@ -3950,7 +3950,7 @@
     "Album": "Family Man (2025)",
     "duration": "3:59",
     "songAddress": "GroovoSongs/KaalamMaari.mp3",
-    "cover": "covers/kaalammaari.jpg"
+    "cover": "cover/kaalammaari.jpg"
   },
   {
     "id": 307,
@@ -3963,7 +3963,7 @@
     "Album": "Jacobinte Swargarajyam 2 (2025)",
     "duration": "4:08",
     "songAddress": "GroovoSongs/Minnamini.mp3",
-    "cover": "covers/minnamini.jpg"
+    "cover": "cover/minnamini.jpg"
   },
   {
     "id": 308,
@@ -3976,7 +3976,7 @@
     "Album": "Bazooka (2024)",
     "duration": "3:16",
     "songAddress": "GroovoSongs/WelcometoHyderabad.mp3",
-    "cover": "covers/welcometohyderabad.jpg"
+    "cover": "cover/welcometohyderabad.jpg"
   },
   {
     "id": 309,
@@ -3989,7 +3989,7 @@
     "Album": "Guppy 2 (2025)",
     "duration": "4:00",
     "songAddress": "GroovoSongs/Maraykku.mp3",
-    "cover": "covers/maraykku.jpg"
+    "cover": "cover/maraykku.jpg"
   },
   {
     "id": 310,
@@ -4002,7 +4002,7 @@
     "Album": "Aavesham (2024)",
     "duration": "3:40",
     "songAddress": "GroovoSongs/Jaada.mp3",
-    "cover": "covers/jaada.jpg"
+    "cover": "cover/jaada.jpg"
   },
   {
     "id": 311,
@@ -4015,7 +4015,7 @@
     "Album": "Manjummel Boys (2024)",
     "duration": "4:02",
     "songAddress": "GroovoSongs/Thalapushpam.mp3",
-    "cover": "covers/thalapushpam.jpg"
+    "cover": "cover/thalapushpam.jpg"
   },
   {
     "id": 312,
@@ -4028,7 +4028,7 @@
     "Album": "Anbulla Abraham (2025)",
     "duration": "4:15",
     "songAddress": "GroovoSongs/Nilaave.mp3",
-    "cover": "covers/nilaave.jpg"
+    "cover": "cover/nilaave.jpg"
   },
   {
     "id": 313,
@@ -4041,7 +4041,7 @@
     "Album": "Aavesham (2024)",
     "duration": "3:18",
     "songAddress": "GroovoSongs/Illuminati.mp3",
-    "cover": "covers/illuminati.jpg"
+    "cover": "cover/illuminati.jpg"
   },
   {
     "id": 314,
@@ -4054,7 +4054,7 @@
     "Album": "Varshangalkku Shesham (2024)",
     "duration": "4:22",
     "songAddress": "GroovoSongs/Nyabagam.mp3",
-    "cover": "covers/nyabagam.jpg"
+    "cover": "cover/nyabagam.jpg"
   },
   {
     "id": 315,
@@ -4067,7 +4067,7 @@
     "Album": "L2: Empuraan (2025)",
     "duration": "3:05",
     "songAddress": "GroovoSongs/L2EmpuraanTheme.mp3",
-    "cover": "covers/l2empuraantheme.jpg"
+    "cover": "cover/l2empuraantheme.jpg"
   },
   {
     "id": 316,
@@ -4080,7 +4080,7 @@
     "Album": "VS6 (2025)",
     "duration": "3:55",
     "songAddress": "GroovoSongs/Orma.mp3",
-    "cover": "covers/orma.jpg"
+    "cover": "cover/orma.jpg"
   },
   {
     "id": 317,
@@ -4093,7 +4093,7 @@
     "Album": "Manjummel Boys (2024)",
     "duration": "2:58",
     "songAddress": "GroovoSongs/Kuthanthram.mp3",
-    "cover": "covers/kuthanthram.jpg"
+    "cover": "cover/kuthanthram.jpg"
   },
   {
     "id": 318,
@@ -4106,7 +4106,7 @@
     "Album": "Irul 2 (2025)",
     "duration": "4:01",
     "songAddress": "GroovoSongs/Maya.mp3",
-    "cover": "covers/maya.jpg"
+    "cover": "cover/maya.jpg"
   },
   {
     "id": 319,
@@ -4119,7 +4119,7 @@
     "Album": "Barroz (2025)",
     "duration": "4:44",
     "songAddress": "GroovoSongs/Manthrika.mp3",
-    "cover": "covers/manthrika.jpg"
+    "cover": "cover/manthrika.jpg"
   },
   {
     "id": 320,
@@ -4132,7 +4132,7 @@
     "Album": "Wanderlust (2025)",
     "duration": "3:48",
     "songAddress": "GroovoSongs/Payanam.mp3",
-    "cover": "covers/payanam.jpg"
+    "cover": "cover/payanam.jpg"
   },
   {
     "id": 321,
@@ -4145,7 +4145,7 @@
     "Album": "Romancham 2 (2025)",
     "duration": "4:10",
     "songAddress": "GroovoSongs/AadharanjaliReprise.mp3",
-    "cover": "covers/aadharanjalireprise.jpg"
+    "cover": "cover/aadharanjalireprise.jpg"
   },
   {
     "id": 322,
@@ -4158,7 +4158,7 @@
     "Album": "Varshangalkku Shesham (2024)",
     "duration": "3:50",
     "songAddress": "GroovoSongs/MadhuPakaroo.mp3",
-    "cover": "covers/madhupakaroo.jpg"
+    "cover": "cover/madhupakaroo.jpg"
   },
   {
     "id": 323,
@@ -4171,7 +4171,7 @@
     "Album": "ARM (2025)",
     "duration": "3:25",
     "songAddress": "GroovoSongs/TheGalattaSong.mp3",
-    "cover": "covers/thegalattasong.jpg"
+    "cover": "cover/thegalattasong.jpg"
   },
   {
     "id": 324,
@@ -4184,7 +4184,7 @@
     "Album": "Veettukaar (2025)",
     "duration": "3:30",
     "songAddress": "GroovoSongs/KalyanaRaavu.mp3",
-    "cover": "covers/kalyanaraavu.jpg"
+    "cover": "cover/kalyanaraavu.jpg"
   },
   {
     "id": 325,
@@ -4197,7 +4197,7 @@
     "Album": "Single (2024)",
     "duration": "4:05",
     "songAddress": "GroovoSongs/Thaniye.mp3",
-    "cover": "covers/thaniye.jpg"
+    "cover": "cover/thaniye.jpg"
   },
   {
     "id": 326,
@@ -4210,7 +4210,7 @@
     "Album": "Minnal Murali 2 (2025)",
     "duration": "4:28",
     "songAddress": "GroovoSongs/Theerame.mp3",
-    "cover": "covers/theerame.jpg"
+    "cover": "cover/theerame.jpg"
   },
   {
     "id": 327,
@@ -4223,7 +4223,7 @@
     "Album": "Single (2025)",
     "duration": "2:50",
     "songAddress": "GroovoSongs/Local.mp3",
-    "cover": "covers/local.jpg"
+    "cover": "cover/local.jpg"
   },
 
   {
@@ -4237,7 +4237,7 @@
     "Album": "Street Dreams (Album, 2025)",
     "duration": "3:10",
     "songAddress": "GroovoSongs/OnTop.mp3",
-    "cover": "covers/ontop.jpg"
+    "cover": "cover/ontop.jpg"
   },
   {
     "id": 329,
@@ -4250,7 +4250,7 @@
     "Album": "Final Lap (EP, 2025)",
     "duration": "2:55",
     "songAddress": "GroovoSongs/FinalLap.mp3",
-    "cover": "covers/finallap.jpg"
+    "cover": "cover/finallap.jpg"
   },
   {
     "id": 330,
@@ -4263,7 +4263,7 @@
     "Album": "Still Rollin 2 (Album, 2025)",
     "duration": "3:05",
     "songAddress": "GroovoSongs/KingsBack.mp3",
-    "cover": "covers/kingsback.jpg"
+    "cover": "cover/kingsback.jpg"
   },
   {
     "id": 331,
@@ -4276,7 +4276,7 @@
     "Album": "Single (Posthumous, 2024)",
     "duration": "4:15",
     "songAddress": "GroovoSongs/Vaapsi.mp3",
-    "cover": "covers/vaapsi.jpg"
+    "cover": "cover/vaapsi.jpg"
   },
   {
     "id": 332,
@@ -4289,7 +4289,7 @@
     "Album": "Global Domination (Album, 2025)",
     "duration": "3:20",
     "songAddress": "GroovoSongs/Amreeka.mp3",
-    "cover": "covers/amreeka.jpg"
+    "cover": "cover/amreeka.jpg"
   },
   {
     "id": 333,
@@ -4302,7 +4302,7 @@
     "Album": "Single (2025)",
     "duration": "4:45",
     "songAddress": "GroovoSongs/Jannat.mp3",
-    "cover": "covers/jannat.jpg"
+    "cover": "cover/jannat.jpg"
   },
   {
     "id": 334,
@@ -4315,7 +4315,7 @@
     "Album": "Single (2025)",
     "duration": "3:40",
     "songAddress": "GroovoSongs/GameOn.mp3",
-    "cover": "covers/gameon.jpg"
+    "cover": "cover/gameon.jpg"
   },
   {
     "id": 335,
@@ -4328,7 +4328,7 @@
     "Album": "Still Rollin 2 (Album, 2025)",
     "duration": "3:18",
     "songAddress": "GroovoSongs/Scars.mp3",
-    "cover": "covers/scars.jpg"
+    "cover": "cover/scars.jpg"
   },
   {
     "id": 336,
@@ -4341,7 +4341,7 @@
     "Album": "Final Lap (EP, 2025)",
     "duration": "3:30",
     "songAddress": "GroovoSongs/Farishtey.mp3",
-    "cover": "covers/farishtey.jpg"
+    "cover": "cover/farishtey.jpg"
   },
   {
     "id": 337,
@@ -4354,7 +4354,7 @@
     "Album": "Single (2024)",
     "duration": "2:40",
     "songAddress": "GroovoSongs/Hypnotize.mp3",
-    "cover": "covers/hypnotize.jpg"
+    "cover": "cover/hypnotize.jpg"
   },
   {
     "id": 338,
@@ -4367,7 +4367,7 @@
     "Album": "Single (2025)",
     "duration": "3:12",
     "songAddress": "GroovoSongs/WhiteGold.mp3",
-    "cover": "covers/whitegold.jpg"
+    "cover": "cover/whitegold.jpg"
   },
   {
     "id": 339,
@@ -4380,7 +4380,7 @@
     "Album": "Sikandar (Soundtrack, 2025)",
     "duration": "2:58",
     "songAddress": "GroovoSongs/DontStop.mp3",
-    "cover": "covers/dontstop.jpg"
+    "cover": "cover/dontstop.jpg"
   },
   {
     "id": 340,
@@ -4393,7 +4393,7 @@
     "Album": "Global Domination (Album, 2025)",
     "duration": "3:50",
     "songAddress": "GroovoSongs/JindMahi2.0.mp3",
-    "cover": "covers/jindmahi2.0.jpg"
+    "cover": "cover/jindmahi2.0.jpg"
   },
   {
     "id": 341,
@@ -4406,7 +4406,7 @@
     "Album": "Single (2025)",
     "duration": "3:01",
     "songAddress": "GroovoSongs/Bijlee2.mp3",
-    "cover": "covers/bijlee2.jpg"
+    "cover": "cover/bijlee2.jpg"
   },
   {
     "id": 342,
@@ -4419,7 +4419,7 @@
     "Album": "Single (2024)",
     "duration": "3:00",
     "songAddress": "GroovoSongs/Gallan.mp3",
-    "cover": "covers/gallan.jpg"
+    "cover": "cover/gallan.jpg"
   },
   {
     "id": 343,
@@ -4432,7 +4432,7 @@
     "Album": "Single (2025)",
     "duration": "2:48",
     "songAddress": "GroovoSongs/Sharara.mp3",
-    "cover": "covers/sharara.jpg"
+    "cover": "cover/sharara.jpg"
   },
   {
     "id": 344,
@@ -4445,7 +4445,7 @@
     "Album": "Single (2024)",
     "duration": "3:22",
     "songAddress": "GroovoSongs/Designer2.mp3",
-    "cover": "covers/designer2.jpg"
+    "cover": "cover/designer2.jpg"
   },
   {
     "id": 345,
@@ -4458,7 +4458,7 @@
     "Album": "Single (Posthumous, 2025)",
     "duration": "3:55",
     "songAddress": "GroovoSongs/LevelsRemix.mp3",
-    "cover": "covers/levelsremix.jpg"
+    "cover": "cover/levelsremix.jpg"
   },
   {
     "id": 346,
@@ -4471,7 +4471,7 @@
     "Album": "Wanderlust (Album, 2025)",
     "duration": "5:10",
     "songAddress": "GroovoSongs/Toronto.mp3",
-    "cover": "covers/toronto.jpg"
+    "cover": "cover/toronto.jpg"
   },
   {
     "id": 347,
@@ -4484,7 +4484,7 @@
     "Album": "Single (2024)",
     "duration": "2:55",
     "songAddress": "GroovoSongs/Glassy.mp3",
-    "cover": "covers/glassy.jpg"
+    "cover": "cover/glassy.jpg"
   },
   {
     "id": 348,
@@ -4497,7 +4497,7 @@
     "Album": "Global Domination (Album, 2025)",
     "duration": "3:25",
     "songAddress": "GroovoSongs/Chauffeur2.mp3",
-    "cover": "covers/chauffeur2.jpg"
+    "cover": "cover/chauffeur2.jpg"
   },
   {
     "id": 349,
@@ -4510,7 +4510,7 @@
     "Album": "Street Dreams (Album, 2025)",
     "duration": "3:33",
     "songAddress": "GroovoSongs/MakingMemories.mp3",
-    "cover": "covers/makingmemories.jpg"
+    "cover": "cover/makingmemories.jpg"
   },
   {
     "id": 350,
@@ -4523,7 +4523,7 @@
     "Album": "Single (2025)",
     "duration": "3:45",
     "songAddress": "GroovoSongs/OneQuestion.mp3",
-    "cover": "covers/onequestion.jpg"
+    "cover": "cover/onequestion.jpg"
   },
   {
     "id": 351,
@@ -4536,7 +4536,7 @@
     "Album": "Single (2024)",
     "duration": "2:50",
     "songAddress": "GroovoSongs/Taare.mp3",
-    "cover": "covers/taare.jpg"
+    "cover": "cover/taare.jpg"
   },
   {
     "id": 352,
@@ -4549,7 +4549,7 @@
     "Album": "Single (2025)",
     "duration": "3:15",
     "songAddress": "GroovoSongs/DakuReturns.mp3",
-    "cover": "covers/dakureturns.jpg"
+    "cover": "cover/dakureturns.jpg"
   },
   {
     "id": 353,
@@ -4562,7 +4562,7 @@
     "Album": "Single (2024)",
     "duration": "3:40",
     "songAddress": "GroovoSongs/Bewafa2.mp3",
-    "cover": "covers/bewafa2.jpg"
+    "cover": "cover/bewafa2.jpg"
   },
   {
     "id": 354,
@@ -4575,7 +4575,7 @@
     "Album": "Final Lap (EP, 2025)",
     "duration": "3:00",
     "songAddress": "GroovoSongs/CaliforniaLove.mp3",
-    "cover": "covers/californialove.jpg"
+    "cover": "cover/californialove.jpg"
   },
   {
     "id": 355,
@@ -4588,7 +4588,7 @@
     "Album": "Single (2025)",
     "duration": "4:58",
     "songAddress": "GroovoSongs/Filhall2SadVersion.mp3",
-    "cover": "covers/filhall2sadversion.jpg"
+    "cover": "cover/filhall2sadversion.jpg"
   },
   {
     "id": 356,
@@ -4601,7 +4601,7 @@
     "Album": "Jatt & Juliet 3 (2024)",
     "duration": "2:45",
     "songAddress": "GroovoSongs/Jatt&Juliet3TitleTrack.mp3",
-    "cover": "covers/jatt&juliet3titletrack.jpg"
+    "cover": "cover/jatt&juliet3titletrack.jpg"
   },
 
 
@@ -4629,7 +4629,7 @@
     "Album": "Saiyaara",
     "duration": "2:45",
     "songAddress": "GroovoSongs/saiyaara-title_25.mp3",
-    "cover": "covers/saiyaara-title_25.jpg"
+    "cover": "cover/saiyaara-title_25.jpg"
   },
   {
     "id": 358,
@@ -4642,7 +4642,7 @@
     "Album": "Saiyaara",
     "duration": "5:21",
     "songAddress": "GroovoSongs/humsafar-saiyaara.mp3",
-    "cover": "covers/humsafar-saiyaara.jpg"
+    "cover": "cover/humsafar-saiyaara.jpg"
   },
   {
     "id": 359,
@@ -4655,7 +4655,7 @@
     "Album": "jannat 2",
     "duration": "4:35",
     "songAddress": "GroovoSongs/tu_hi_mera.mp3",
-    "cover": "covers/tu_hi_mera.jpg"
+    "cover": "cover/tu_hi_mera.jpg"
   },
   {
     "id": 360,
@@ -4663,12 +4663,12 @@
     "playListId": 9,
     "title": "Param Sundari",
     "language": "Hindi",
-    "artistId": 6,
+    "artistId": 10,
     "artistName": "Shreya Ghoshal, A.R Rahman",
     "Album": "",
     "duration": "3:20",
     "songAddress": "GroovoSongs/param_sundari.mp3",
-    "cover": "covers/param_sundari.jpg"
+    "cover": "cover/param_sundari.jpg"
   },
   {
     "id": 360,
@@ -4680,8 +4680,8 @@
     "artistName": "Arijit Singh, Mithoon",
     "Album": "",
     "duration": "3:20",
-    "songAddress": "GroovoSongs/dhun-saiyaara.mp3",
-    "cover": "covers/dhun-saiyaara.jpg"
+    "songAddress": "GroovoSongs/dhun-saiyaara-2.mp3",
+    "cover": "cover/dhun_saiyaara.jpg"
   },
   {
     "id": 360,
@@ -4689,12 +4689,12 @@
     "playListId": 9,
     "title": "Finding Her",
     "language": "Hindi",
-    "artistId": 3,
+    "artistId": 10,
     "artistName": "Kushagra, Bharath",
     "Album": "",
     "duration": "3:27",
     "songAddress": "GroovoSongs/finding_her.mp3",
-    "cover": "covers/FindingHer.jpeg"
+    "cover": "cover/FindingHer.jpeg"
   },
 
 
@@ -4724,7 +4724,7 @@
     "Album": "",
     "duration": "02:25",
     "songAddress": "GroovoSongs/tu_hai_kahan-aur.mp3",
-    "cover": "covers/tu_hai_kahan-aur.jpg"
+    "cover": "cover/tu_hai_kahan-aur.jpg"
   },
   {
     "id": 383,
@@ -4737,7 +4737,7 @@
     "Album": "",
     "duration": "04:32",
     "songAddress": "GroovoSongs/shikayat-aur.mp3",
-    "cover": "covers/shikayat-aur.jpg"
+    "cover": "cover/shikayat-aur.jpg"
   },
   {
     "id": 384,
@@ -4750,7 +4750,7 @@
     "Album": "",
     "duration": "02:53",
     "songAddress": "GroovoSongs/kahani_suno-kaifi_khalil.mp3",
-    "cover": "covers/kahani_suno-kaifi_khalil.jpg"
+    "cover": "cover/kahani_suno-kaifi_khalil.jpg"
   },
   {
     "id": 385,
@@ -4763,7 +4763,7 @@
     "Album": "",
     "duration": "03:38",
     "songAddress": "GroovoSongs/jannat-farhan_Khan.mp3",
-    "cover": "covers/jannat-farhan_khan.jpg"
+    "cover": "cover/jannat-farhan_khan.jpg"
   },
   {
     "id": 386,
@@ -4776,6 +4776,6 @@
     "Album": "",
     "duration": "02:13",
     "songAddress": "GroovoSongs/iraaday-abdul_hannan.mp3",
-    "cover": "covers/jannat-farhan_khan.jpg"
+    "cover": "cover/jannat-farhan_khan.jpg"
   }
 ]
